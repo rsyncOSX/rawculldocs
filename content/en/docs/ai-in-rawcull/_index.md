@@ -13,5 +13,4 @@ Read:
 
 - [AI Support in RawCull](/docs/ai-in-rawcull/ai/) for supported features,
   models, and system requirements.
-- [AI Model Licences and Downloads](/docs/ai-in-rawcull/ailicences/) before
   downloading any converted model through RawCull.
