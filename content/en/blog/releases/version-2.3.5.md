@@ -1,22 +1,22 @@
 +++
 author = "Thomas Evensen"
-title = "Version 2.3.4"
+title = "Version 2.3.5"
 date = "2026-08-03"
-tags = ["changelog","version 2.3.4"]
+tags = ["changelog","version 2.3.5"]
 categories = ["changelog"]
 +++
  
-# RawCull Changelog: v2.3.4 → Latest Commits 
+# RawCull Changelog: v2.3.5 → Latest Commits 
 
-NOT YET RELEASED
+To be updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
-Important: This release will be the final version for macOS 26. The next version, 3.0.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 2.3.4 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.0.0 is released.
+Important: This release will be the final version for macOS 26. The next version, 3.0.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 2.3.5 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.0.0 is released.
 
  ------------------------------------------------------------------------------------------------------------------------------
   
-  # 📸 RawCull 2.3.4 Changelog
+  # 📸 RawCull 2.3.5 Changelog
 
-RawCull 2.3.4 is a maintenance and stabilization update for macOS 26. It improves Actual Pixels inspection, histogram reliability, thumbnail-cache correctness, catalog-loading behavior, persistence testing, accessibility, and release validation.
+RawCull 2.3.5 is a maintenance and stabilization update for macOS 26. It improves Actual Pixels inspection, histogram reliability, thumbnail-cache correctness, catalog-loading behavior, persistence testing, accessibility, and release validation.
 
 This release introduces no new AI requirements.
 
@@ -236,16 +236,16 @@ The final automated validation completed successfully:
 
 Verified in both Debug and Release configurations:
 
-- Marketing version: `2.3.4`
-- Proposed build number: `231`
+- Marketing version: `2.3.5`
+- Proposed build number: `335`
 - Minimum system version: `macOS 26.2`
 - Supported architecture: Apple Silicon `arm64`
 - Bundle identifier: `no.blogspot.RawCull`
 
 Built application inspection confirmed:
 
-- `CFBundleShortVersionString`: `2.3.4`
-- `CFBundleVersion`: `231`
+- `CFBundleShortVersionString`: `2.3.5`
+- `CFBundleVersion`: `335`
 - `LSMinimumSystemVersion`: `26.2`
 - Executable format: arm64 Mach-O
 
@@ -264,7 +264,7 @@ All seven directly documented package names and versions now agree with the reso
 
 - Added a separate AI-preserving stabilization plan for RawCull 3.0.0.
 - The plan was based on read-only inspection of the current `main` and `version-3.0.0` implementation.
-- Every 2.3.4 requirement is classified for 3.0.0 as:
+- Every 2.3.5 requirement is classified for 3.0.0 as:
   - Apply unchanged in behavior.
   - Adapt to the AI architecture.
   - Already resolved and requiring verification.
@@ -281,9 +281,9 @@ All seven directly documented package names and versions now agree with the reso
   - Model downloads and licence acceptance.
   - AI settings and diagnostics.
 - The 3.0.0 plan explicitly prohibits:
-  - Merging the 2.3.4 branch into the AI code line.
+  - Merging the 2.3.5 branch into the AI code line.
   - Cherry-picking the maintenance implementation.
-  - Mechanically transplanting 2.3.4 code.
+  - Mechanically transplanting 2.3.5 code.
   - Replacing AI implementations with older Vision-only implementations.
 - No 3.0.0 production code, tests, dependencies, project settings, model resources, or branch pointers were changed.
 
@@ -320,11 +320,11 @@ Before publishing, the release still requires:
 - Gatekeeper assessment.
 - DMG generation and SHA-256 publication.
 - App Store upload.
-- Creation of the final `2.3.4` tag at the exact tested commit.
+- Creation of the final `2.3.5` tag at the exact tested commit.
 
 ## 📝 Implementation Commits
 
-- `5da6ff4` — Record RawCull 2.3.4 stabilization baseline
+- `5da6ff4` — Record RawCull 2.3.5 stabilization baseline
 - `53c3057` — Fix actual-pixel viewport behavior and tests
 - `7ba0a32` — Make histogram loading cancellation safe
 - `5e802e6` — Make release test gates authoritative
@@ -332,7 +332,7 @@ Before publishing, the release still requires:
 - `4874fa1` — Gate thumbnail grids during catalog preload
 - `dea2b9b` — Close similarity persistence regression gaps
 - `36157c9` — Improve bounded accessibility semantics
-- `ab711df` — Update RawCull 2.3.4 metadata documentation
+- `ab711df` — Update RawCull 2.3.5 metadata documentation
 - `de58ca3` — Stabilize integrated release verification
 - `f2f86b6` — Prepare release and AI-safe 3.0.0 handoff
 
@@ -380,7 +380,7 @@ A total of **17 commits** were pushed to the `rsyncOSX/RawCull` repository today
 - **docs: align version 3 release metadata** ([`4f29912`](https://github.com/rsyncOSX/RawCull/commit/4f29912))
   - **What it does:** Added official V3 release notes, updated project metadata, bumped versions in the Xcode project (`project.pbxproj`), and added `ReleaseMetadataTests` to prevent future metadata drift.
 - **docs: add Code Review and Issues documentation** ([`ffec0de`](https://github.com/rsyncOSX/RawCull/commit/ffec0de), [`8529b78`](https://github.com/rsyncOSX/RawCull/commit/8529b78))
-  - **What it does:** Integrated the comprehensive static deep code review (the one we just translated!) into `Docs/issues.md` and added historical update notes for version 2.3.4.
+  - **What it does:** Integrated the comprehensive static deep code review (the one we just translated!) into `Docs/issues.md` and added historical update notes for version 2.3.5.
 - **docs: record version 3 stabilization baseline & phases** ([`505d0a7`](https://github.com/rsyncOSX/RawCull/commit/505d0a7), [`b8b4e2e`](https://github.com/rsyncOSX/RawCull/commit/b8b4e2e), [`1ecb75e`](https://github.com/rsyncOSX/RawCull/commit/1ecb75e))
   - **What it does:** Created the foundational documentation for the Version 3.0.0 stabilization effort, including the Phase 0 baseline, V3 update notes, and structural documentation cleanup.
   
