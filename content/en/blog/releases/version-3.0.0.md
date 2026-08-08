@@ -8,7 +8,7 @@ categories = ["changelog"]
  
 # RawCull Changelog: v3.0.0 beta → Latest Commits 
 
-The version 3.0.0 beta requiere macOS 27 (Golde Gate) latest beta either public or developer.
+The version 3.0.0 beta requiere macOS 27 (Golden Gate) latest beta either public or developer.
 
 These commits are for version 3.0.0 beta and the AI-version of RawCull, the future and next version of RawCull.
 
