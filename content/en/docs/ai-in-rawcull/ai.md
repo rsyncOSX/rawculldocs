@@ -21,8 +21,6 @@ RawCull uses two types of vision model:
 
 AI results are review aids, not automatic decisions. Semantic-search scores describe relative similarity rather than confidence, and the photographer always makes the final selection.
 
-![RawCull Burst Groups after AI-assisted similarity analysis, with semantic search available above the review workspace.](/images/ai/burstgroup.png)
-
 ## Similarity and CLIP
 
 CLIP does not create captions, keywords, or fixed labels while indexing. It converts each image into a normalized numeric embedding that summarizes its overall visual content. RawCull stores that embedding locally and can reuse it for both similarity analysis and semantic search.
@@ -39,33 +37,17 @@ Select **Analyze Bursts** after indexing. RawCull compares the cached image embe
 
 The burst list shows each group and highlights its suggested pick. From here you can open the burst, run **Deep Review**, mark it reviewed, or defer it until later.
 
-![CLIP-based Burst Groups showing related puffin and bird sequences, suggested picks, and review actions.](/images/ai/burstgroups.png)
-
 ### Review a Burst
 
 Open a burst to inspect its frames in the filmstrip and compare them at a larger size. The review workspace combines the candidate rank with sharpness, focus-point, saliency, metadata, and subject evidence. You can navigate between frames, assign ratings, pick or reject a photograph, and return to the burst list when the review is complete.
 
 The suggested pick and component scores are starting points, not final judgments. Check expression, pose, timing, framing, and critical focus before deciding which frame to keep.
 
-![Review Burst workspace showing a puffin candidate, the burst filmstrip, ratings, and detailed scoring evidence.](/images/ai/reviewburst.png)
-
 ## Semantic Search
 
 After a catalog has been indexed with a compatible CLIP model, enter a short description such as `puffin`, `raven`, or `squirrel`. RawCull ranks the catalog using the cached image embeddings, so later searches do not have to reprocess every image.
 
 Search terms work best in English because the supported CLIP models were primarily trained and evaluated with English text.
-
-### Puffin
-
-![Semantic-search results for puffin, showing perched and flying puffins ranked together.](/images/ai/puffin.png)
-
-### Raven
-
-![Semantic-search results for raven, showing a burst of dark birds in flight.](/images/ai/raven.png)
-
-### Squirrel
-
-![Semantic-search results for squirrel, showing related frames ranked across the catalog.](/images/ai/squirrel.png)
 
 ## Supported Models
 
