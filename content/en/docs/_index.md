@@ -10,6 +10,11 @@ RawCull is a native macOS app for reviewing RAW photos before editing. It scans 
 
 RawCull does not edit or delete the source photos.
 
+RawCull 3 adds optional local AI for semantic search, visual similarity, and
+subject-aware burst review. These features require macOS 27; the current macOS
+26 release keeps the established non-AI workflow. See [AI in
+RawCull](/docs/ai-in-rawcull/) for details.
+
 ## Quick Start
 
 1. Select **Add Catalog** and choose a folder of RAW files.
@@ -27,12 +32,13 @@ Ratings, sharpness results, and catalog state are saved automatically on your Ma
 | Loupe | Browse a list and inspect one photo at a time |
 | Grid | Rate, filter, and select many thumbnails |
 | Similarity | Analyze bursts and review suggested frames |
+| Semantic Search | Find locally indexed photos using a written description in RawCull 3 |
 | Rated | Show photos with saved culling data |
 | Compare | Inspect up to four selected photos closely |
 
 ## Requirements and Files
 
-- macOS Tahoe 26 or later
+- macOS Tahoe 26.2 or later for the current release; macOS 27 for RawCull 3
 - Apple Silicon Mac
 - Sony ARW and Nikon NEF catalogs
 

@@ -63,17 +63,25 @@ The upstream files on Hugging Face are the source models. RawCull requires model
 
 ## Model Downloads
 
-The AI models are **not included in the RawCull application or its release download**. Compatible model bundles will be available separately. Each RawCull AI release note will identify the supported model versions, download locations, installation steps, and expected checksums.
+The AI models are **not included in the RawCull application or its release
+download**. Open **Settings > AI** and select **Download AI Models** to view the
+available models, their purpose, publisher, version, licence, and installation
+status.
 
-Follow the [RawCull release notes](/blog/releases/) rather than installing an arbitrary conversion. RawCull validates an installed bundle before enabling it and falls back safely when a required model is missing or invalid.
+Downloads use macOS Managed Background Assets. macOS stores and manages each
+asset pack, and its location can change between app launches. RawCull validates
+an installed model before enabling it and falls back safely when a required
+model is missing or invalid.
+
+Review the licence in the model manager before selecting **Download**. Progress
+and cancellation are shown in the same window. After installation, the models
+run locally; photographs are not uploaded as part of downloading or using a
+model.
 
 Keeping the models separate makes the application download smaller. It does
-not remove the upstream model's licence conditions. Every model archive
-distributed by RawCull must contain the complete applicable licence, model
-provenance, conversion information, and checksums.
-
-Before using **Download** or **Accept and Download** in RawCull, read
-[AI Model Licences and Downloads](/docs/ai-in-rawcull/ailicences/).
+not remove the upstream model's licence conditions. Follow the [RawCull release
+notes](/blog/releases/) for the model versions supported by each beta or
+release rather than installing an arbitrary conversion.
 
 ## Model Licences
 

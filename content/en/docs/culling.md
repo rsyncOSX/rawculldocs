@@ -28,6 +28,9 @@ In Grid view, use Command-click to select separate photos or Shift-click to sele
 
 Double-click a thumbnail to open the full-window viewer. From there you can zoom, rate, show focus aids, and switch between the embedded JPG and a developed RAW preview when supported.
 
+Open the information panel to see the histogram, culling evidence, file and
+camera details, and quick actions for the selected photo.
+
 Useful viewer keys are `+`/`-` for zoom, `J` for embedded JPG, `R` for developed RAW, `F` for focus mask, `A` for focus point, and Escape to close.
 
 ## Copy Selected RAW Files
