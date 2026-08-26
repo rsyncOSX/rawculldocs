@@ -1,17 +1,18 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.1.1 beta"
-date = "2026-08-20"
+date = "2026-08-26"
 tags = ["changelog","version 3.1.1 beta"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.3.5 → Latest Commits 
 
-The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public or developer.
+# RawCull Changelog: v2.3.5 → Latest Commit
 
-**Commit range:** `3b1c41d..ef34c7a`  
-**Current version:** RawCull 3.1.1 (Build 307)
+RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Golden Gate).
+
+**Commit range:** `3b1c41d..be9d7dd`  
+**Latest commit:** `be9d7dd` (`cleanup`, 2026-08-26)  
+**Current version:** RawCull 3.1.1 (Build 309)
 
 ## 🚀 Major Features
 
@@ -54,7 +55,12 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 
 ## 🎞️ Burst View
 
-- Redesigned the burst-culling workspace.
+- Redesigned the burst-culling workspace around a photo-first review experience.
+- Redesigned the Burst Groups home screen with a guided **Next up** card, review queues, recent groups, and completion progress.
+- Added staged catalog-preparation status for semantic indexing, sharpness scoring, and burst-group discovery.
+- Added clearer progress and estimated-time feedback while preparing a catalog.
+- Added separate queues for bursts that need review, completed bursts, and all burst groups.
+- Added maintenance actions for scoring parameters, catalog re-indexing, and similarity indexing.
 - Added clearer burst numbering and frame-position indicators.
 - Added navigation back to the burst list.
 - Added reviewed and unreviewed burst controls.
@@ -67,10 +73,13 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 
 - Refined the main catalog sidebar and file presentation.
 - Added clearer empty, filtered, and missing-file states.
+- Improved scan progress by reporting the discovered-file count directly.
+- Added accurate completed/total progress for thumbnail creation and JPEG export.
 - Added image-sorting progress and status indicators.
 - Moved additional navigation actions into application menu commands.
 - Improved toolbar organization and reduced duplicate controls.
 - Refined rating controls, filters, and rating-pin behavior.
+- Corrected rated-photo counts so only files with an explicit rating are counted.
 
 ## ⚡ Performance and Reliability
 
@@ -78,8 +87,9 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 - Prevented stale cached thumbnails from being reused after files are replaced.
 - Added bounded thumbnail preloading to reduce CPU and memory contention.
 - Improved thumbnail loading, scanning, and disk-cache coordination.
-- Added contention and memory diagnostics.
+- Simplified thumbnail and shared-memory cache paths after removing obsolete diagnostics instrumentation.
 - Made histogram loading use the latest request when selections change quickly.
+- Improved JPEG extraction progress, cancellation handling, and per-file failure reporting.
 - Improved AI artifact persistence and cache-boundary handling.
 - Improved catalog loading, sorting, saved-file persistence, and culling-state restoration.
 - Improved similarity, sharpness, focus, and burst-analysis consistency.
@@ -90,6 +100,7 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 - Improved accessibility for ratings, image controls, focus controls, model management, and comparison views.
 - Added accessible descriptions for image sorting and metadata controls.
 - Improved keyboard-accessible culling and navigation actions.
+- Added accessible progress descriptions to the redesigned Burst Groups workflow.
 
 ## 🧪 Testing and Quality
 
@@ -100,13 +111,26 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 - Added typed AI persistence and cache-boundary tests.
 - Added accessibility presentation tests.
 - Added Loupe and Burst metadata tests.
-- Added smoke-test and performance-test manifests.
+- Added focused tests for Burst catalog-preparation presentation and JPEG-export selection behavior.
+- Updated culling, burst queue, navigation, concurrency, and thumbnail-provider tests for the latest behavior.
+- Removed obsolete diagnostics and contention tests together with the retired diagnostics implementation.
+- Updated native Xcode smoke-test enumeration to 177 enabled tests with no duplicate identifiers.
 - Expanded release metadata and package migration verification.
 - Improved concurrency and Thread Sanitizer stability.
+
+## 🧹 Diagnostics and Code Cleanup
+
+- Removed the Diagnostics menu and the memory, RAW-file, similarity, and semantic-search diagnostics screens.
+- Removed the supporting diagnostics logs, view models, cache statistics, and obsolete contention instrumentation.
+- Removed unused production APIs and their obsolete test-only coverage.
+- Retained active operational logging and intentional test-support APIs.
+- Added a cleanup plan documenting completed removals, retained APIs, validation, and remaining non-functional cleanup.
 
 ## 🛠️ Build and Documentation
 
 - Updated the project for RawCull 3.0.0, 3.1.0, and 3.1.1.
+- Advanced RawCull 3.1.1 from Build 307 to Build 309.
+- Updated README branch and release-artifact references to `version-3.1.1`.
 - Added a dedicated model-downloader target and supporting entitlements.
 - Updated Swift package dependencies and project configuration.
 - Added model installation, provenance, and licensing documentation.
@@ -119,4 +143,5 @@ The version 3.1.1 beta requiere macOS 27 (Golden Gate) latest beta either public
 - Released the initial RawCull 3.0.0 implementation.
 - Stabilized AI persistence, thumbnail loading, accessibility, and release validation.
 - Advanced the project to RawCull 3.1.0.
-- Updated the current release to RawCull 3.1.1, Build 307.
+- Updated the current release to RawCull 3.1.1, Build 309.
+- Updated this changelog through commit `be9d7dd` on 2026-08-26.
