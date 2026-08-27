@@ -1,18 +1,25 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.1.1 beta"
-date = "2026-08-26"
+date = "2026-08-27"
 tags = ["changelog","version 3.1.1 beta"]
 categories = ["changelog"]
 +++
 
 # RawCull Changelog: v2.3.5 → Latest Commit
 
+<div class="alert alert-secondary" role="alert">
+
+I have joined the beta testing for the RocketTrace app, and several concurrency problems have been resolved, prompting a new build. Antoine van der Lee has produced an impressive application and effort. I will keep testing, and further issues will bring additional updates.
+
+</div>
+
 RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Golden Gate).
 
-**Commit range:** `3b1c41d..be9d7dd`  
-**Latest commit:** `be9d7dd` (`cleanup`, 2026-08-26)  
+**Commit range:** `3b1c41d.. e3a58e1 `  
+**Latest commit:** `e3a58e1 ` (`concurrency fixes`, 2026-08-27)  
 **Current version:** RawCull 3.1.1 (Build 309)
+
 
 ## 🚀 Major Features
 
