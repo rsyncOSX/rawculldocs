@@ -8,6 +8,8 @@ categories = ["changelog"]
 
 # RawCull Changelog: v2.3.5 → Latest Commit
 
+RawCull version 3.1.1 is also available via Apple’s TestFlight; please email thomeven@gmail.com if you would like to try it through that service.
+
 <div class="alert alert-secondary" role="alert">
 
 I have joined the beta testing for the RocketTrace app, and several concurrency problems have been resolved, prompting a new build. Antoine van der Lee has produced an impressive application and effort. I will keep testing, and further issues will bring additional updates.
