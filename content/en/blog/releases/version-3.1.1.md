@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.1.1 beta"
-date = "2026-08-27"
+date = "2026-08-28"
 tags = ["changelog","version 3.1.1 beta"]
 categories = ["changelog"]
 +++
@@ -18,10 +18,9 @@ I have joined the beta testing for the RocketTrace app, and several concurrency 
 
 RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Golden Gate).
 
-**Commit range:** `3b1c41d.. e3a58e1 `  
-**Latest commit:** `e3a58e1 ` (`concurrency fixes`, 2026-08-27)  
-**Current version:** RawCull 3.1.1 (Build 309)
-
+**Commit range:** `3b1c41d..f7668e0`  
+**Latest commit:** `f7668e0` (`button catalog`, 2026-08-28)  
+**Current version:** RawCull 3.1.1 (Build 345)
 
 ## 🚀 Major Features
 
@@ -49,6 +48,7 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 - Added contextual scoring targets for selected images, filtered images, or the complete catalog.
 - Added combined **Index & Find Similar** behavior when CLIP index entries are missing.
 - Improved similarity backend status and progress presentation.
+- Reserved consistent space for semantic-search activity messages to prevent layout shifts.
 - Improved selection coordination and keyboard navigation.
 - Refined grid controls, button styling, and rating interactions.
 
@@ -82,6 +82,7 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 
 - Refined the main catalog sidebar and file presentation.
 - Added clearer empty, filtered, and missing-file states.
+- Made the empty-state catalog icon an accessible button that opens the catalog folder picker.
 - Improved scan progress by reporting the discovered-file count directly.
 - Added accurate completed/total progress for thumbnail creation and JPEG export.
 - Added image-sorting progress and status indicators.
@@ -98,6 +99,7 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 - Improved thumbnail loading, scanning, and disk-cache coordination.
 - Simplified thumbnail and shared-memory cache paths after removing obsolete diagnostics instrumentation.
 - Made histogram loading use the latest request when selections change quickly.
+- Reduced histogram-processing cost by sampling large previews to a maximum dimension of 512 pixels.
 - Improved JPEG extraction progress, cancellation handling, and per-file failure reporting.
 - Improved AI artifact persistence and cache-boundary handling.
 - Improved catalog loading, sorting, saved-file persistence, and culling-state restoration.
@@ -108,6 +110,7 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 - Added bounded accessibility labels, values, and hints across major workflows.
 - Improved accessibility for ratings, image controls, focus controls, model management, and comparison views.
 - Added accessible descriptions for image sorting and metadata controls.
+- Added accessible labeling and guidance to the empty-state Add Catalog button.
 - Improved keyboard-accessible culling and navigation actions.
 - Added accessible progress descriptions to the redesigned Burst Groups workflow.
 
@@ -116,14 +119,14 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 - Added tests for semantic search, Deep Review, and AI integration.
 - Added model-download and model-validation test coverage.
 - Added thumbnail cache identity and contention tests.
-- Added histogram request-ordering tests.
+- Added histogram request-ordering and bounded-sampling tests.
 - Added typed AI persistence and cache-boundary tests.
 - Added accessibility presentation tests.
 - Added Loupe and Burst metadata tests.
 - Added focused tests for Burst catalog-preparation presentation and JPEG-export selection behavior.
 - Updated culling, burst queue, navigation, concurrency, and thumbnail-provider tests for the latest behavior.
 - Removed obsolete diagnostics and contention tests together with the retired diagnostics implementation.
-- Updated native Xcode smoke-test enumeration to 177 enabled tests with no duplicate identifiers.
+- Updated native Xcode smoke-test enumeration to 179 enabled tests with no duplicate identifiers.
 - Expanded release metadata and package migration verification.
 - Improved concurrency and Thread Sanitizer stability.
 
@@ -138,12 +141,13 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 ## 🛠️ Build and Documentation
 
 - Updated the project for RawCull 3.0.0, 3.1.0, and 3.1.1.
-- Advanced RawCull 3.1.1 from Build 307 to Build 309.
+- Advanced RawCull 3.1.1 from Build 307 to Build 345.
 - Updated README branch and release-artifact references to `version-3.1.1`.
 - Added a dedicated model-downloader target and supporting entitlements.
 - Updated Swift package dependencies and project configuration.
 - Added model installation, provenance, and licensing documentation.
 - Added Copy Engine design documentation.
+- Added a detailed modular-AI architecture and migration plan.
 - Updated the README with the RawCull 3 architecture, AI workflow, requirements, and build instructions.
 - Updated export, release, smoke-test, and performance-test configuration.
 
@@ -152,5 +156,5 @@ RawCull 3.1.1 beta requires the latest public or developer beta of macOS 27 (Gol
 - Released the initial RawCull 3.0.0 implementation.
 - Stabilized AI persistence, thumbnail loading, accessibility, and release validation.
 - Advanced the project to RawCull 3.1.0.
-- Updated the current release to RawCull 3.1.1, Build 309.
-- Updated this changelog through commit `be9d7dd` on 2026-08-26.
+- Updated the current release to RawCull 3.1.1, Build 345.
+- Updated this changelog through commit `f7668e0` on 2026-08-28.
