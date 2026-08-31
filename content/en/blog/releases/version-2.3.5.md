@@ -10,8 +10,6 @@ categories = ["changelog"]
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
-*Important*: This release is the final version for *macOS 26*. The next version, 3.0.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 2.3.5 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.0.0 is released.
-
 <div class="alert alert-secondary" role="alert">
 
 Version 2.3.5 on the Apple App Store is built and uploaded to App Store Connect for release on the App Store by utilizing Xcode Cloud. I have installed macOS 27 developer beta on both my Macs and cannot build and upload a release version directly from Xcode 27 beta. The version 2.3.5 on GitHub is built by Xcode 27 beta, and if you have some doubts about it, please install this version from the Apple App Store.
