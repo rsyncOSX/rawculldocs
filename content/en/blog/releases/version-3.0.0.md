@@ -8,7 +8,7 @@ categories = ["changelog"]
  
 # RawCull Changelog: v2.3.5 → v3.0.0
 
-To be updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 *Important*: This release is the final version for *macOS 26*. The next version, 3.2.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 3.0.0 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.0.0 is released.
 
