@@ -5,8 +5,8 @@ date = "2026-08-07"
 tags = ["changelog","version 2.3.5"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.3.5 → Latest Commits 
+
+# RawCull Changelog: v2.3.3 → v2.3.5
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
@@ -17,7 +17,7 @@ Version 2.3.5 on the Apple App Store is built and uploaded to App Store Connect 
 </div>
 
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
   # 📸 RawCull 2.3.5 Changelog
 
 RawCull 2.3.5 is a maintenance and stabilization update for macOS 26. It improves Actual Pixels inspection, histogram reliability, thumbnail-cache correctness, catalog-loading behavior, persistence testing, accessibility, and release validation.

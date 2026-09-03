@@ -8,12 +8,16 @@ menu: { main: { weight: 20 } }
 
 RawCull is a native macOS app for reviewing RAW photos before editing. It scans a folder, shows fast previews and camera information, records your picks and ratings, compares similar frames, and copies the selected files to another folder.
 
+<div class="alert alert-secondary" role="alert">
+
+RawCull is solely a photo-culling app; it has no photo-editing features, nor are any planned, and all future additions will support the culling workflow.
+
+</div>
+
+
 RawCull does not edit or delete the source photos.
 
-RawCull 3 adds optional local AI for semantic search, visual similarity, and
-subject-aware burst review. These features require macOS 27; the current macOS
-26 release keeps the established non-AI workflow. See [AI in
-RawCull](/docs/ai-in-rawcull/) for details.
+RawCull 3 adds optional local AI for semantic search, visual similarity, and subject-aware burst review. These features require macOS 27; the current macOS 26 release keeps the established non-AI workflow. See [AI in RawCull](/docs/ai-in-rawcull/) for details.
 
 ## Quick Start
 

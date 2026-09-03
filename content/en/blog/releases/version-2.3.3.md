@@ -5,14 +5,14 @@ date = "2026-08-01"
 tags = ["changelog","version 2.3.3"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.3.3 → Latest Commits 
+
+# RawCull Changelog: v2.3.2 → v2.3.3
 
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
 # 📸 RawCull 2.3.3
 
-Updated  on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 Changes since version 2.3.2 through commit `e576ca0`.
 

@@ -5,14 +5,14 @@ date = "2026-07-19"
 tags = ["changelog","version 2.3.0"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.3.0 → Latest Commits 
+
+# RawCull Changelog: v2.2.6 → v2.3.0
 
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
 ## 🚀 Version 2.3.0
 
-Updated  on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 ### 🧠 Photo Analysis
 

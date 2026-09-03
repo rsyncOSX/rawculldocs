@@ -11,7 +11,7 @@ The Focus Mask highlights areas with strong edge detail. Use it in the full-wind
 
 Press `F` or use the focus-mask control. For a more detailed check, switch from the small thumbnail to the embedded JPG (`J`) or developed RAW preview (`R`) when supported.
 
-Sharpness scoring calibrates the mask threshold for the current catalog. You can fine-tune it in **RawCull -> Settings -> Focus**:
+Sharpness scoring calibrates the mask threshold for the current catalog. You can fine-tune it in **RawCull > Settings > Focus**:
 
 | Control | Effect |
 |---|---|

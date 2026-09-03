@@ -41,6 +41,6 @@ RawCull copies files with the system rsync tool. It does not delete source files
 
 ## Export JPGs
 
-Select one or more photos and use **Actions -> Extract JPGs** (`Command-J`). You can export the embedded JPG or, for supported Sony files, a demosaiced RAW JPEG. Choose a destination folder before starting.
+Select one or more photos and use **Actions > Extract JPGs** (`Command-J`). You can export the embedded JPG or, for supported Sony files, a demosaiced RAW JPEG. Choose a destination folder before starting.
 
 Use [Sharpness Scoring](/docs/sharpness/) and [Similarity](/docs/similarity/) for large catalogs or burst sequences.

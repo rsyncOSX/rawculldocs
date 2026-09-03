@@ -5,12 +5,12 @@ date = "2026-08-31"
 tags = ["changelog","version 3.0.0"]
 categories = ["changelog"]
 +++
- 
+
 # RawCull Changelog: v2.3.5 → v3.0.0
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
-*Important*: This release is the final version for *macOS 26*. The next version, 3.2.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 3.0.0 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.0.0 is released.
+*Important*: This release is the final version for *macOS 26*. The next version, 3.2.0, will introduce AI features exclusively available on macOS 27 upon its release. Version 3.0.0 will remain available on GitHub for an extended period following the release of macOS 27. The Apple App Store version will only support macOS 27 once version 3.2.0 is released.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -21,7 +21,7 @@ Version 3.0.0 is based on the latest version 3.2.0 with all AI features removed.
 </div>
 
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
 # 📸 RawCull 3.0.0 Changelog
 
 ## 🍂 macOS Tahoe
@@ -109,7 +109,7 @@ RawCull 3.0.0 contains no CLIP, semantic search, SAM, Deep Review, downloadable 
 - Added a redesigned, context-sensitive About window.
 - The About window now documents shortcuts for browsing, rating, previews, burst groups, burst review, and manual comparison.
 
-##⚡ Cache and performance
+## ⚡ Cache and performance
 
 - Added source-aware thumbnail cache identities.
 - Thumbnail keys now include source metadata, requested size, purpose, and orientation policy.

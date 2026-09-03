@@ -6,9 +6,9 @@ tags = ["changelog","version 1.8.0"]
 categories = ["changelog"]
 +++
 
-# RawCull Changelog — v1.7.4 → 1.8.0 
+# RawCull Changelog — v1.7.4 → 1.8.0
 
-RawCull has received improvements to image comparison, zoom review, rating workflow, thumbnail responsiveness, cache reliability, sharpness/similarity behavior, and release/test tooling. 
+RawCull has received improvements to image comparison, zoom review, rating workflow, thumbnail responsiveness, cache reliability, sharpness/similarity behavior, and release/test tooling.
 Version 1.8.0 is submitted for update on Apple App Store.
 
 ## 🚀 v1.8.0

@@ -8,9 +8,9 @@ categories = ["changelog"]
 
 # RawCull Changelog — v1.7.0 → 1.7.4
 
-Version 1.7.4 is submitted for update on Apple App Store. RawCull 1.7.0 focuses on faster zoom previews, better cache management, and more reliable culling-data saving.
+Version 1.7.4 is submitted for update on the Apple App Store. It focuses on faster zoom previews, better cache management, and more reliable culling-data saving.
 
-## ✨New
+## ✨ New
 
 - **Full-size JPG disk cache.** The zoom view now caches the full-resolution embedded JPEG to disk (`~/Library/Caches/no.blogspot.RawCull/FullsizeJPGs/`), so re-opening a previously zoomed photo is instant instead of re-extracting from the ARW.
 - **"Cache JPGs" button** in the catalog sidebar lets you pre-warm the full-size JPG cache for an entire catalog in one go (uses a new `ScanAndExtractJPGs` actor with progress + ETA).

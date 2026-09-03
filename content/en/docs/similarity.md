@@ -9,9 +9,8 @@ categories = ["user doc"]
 
 Similarity groups visually related frames into bursts and suggests the strongest candidates. It is intended to shorten review, while leaving the final choice to you.
 
-RawCull 3 can use the CLIP model selected in **Settings > AI**. If that model is
-unavailable, visual grouping falls back to Apple Vision. Semantic search
-requires a compatible CLIP index.
+RawCull 3 uses DataComp CLIP for visual grouping and semantic search. Install
+and enable it in **Settings > AI** before indexing a catalog.
 
 ## Analyze a Catalog
 
@@ -21,9 +20,8 @@ requires a compatible CLIP index.
 
 RawCull runs any missing sharpness scoring and similarity indexing automatically. Use **Re-index** after the catalog changes or when you want to rebuild the analysis.
 
-CLIP indexes are model-specific. Re-index after switching between the OpenAI
-and DataComp models; embeddings created by one model are never reused by the
-other.
+Re-index after updating DataComp CLIP or changing the catalog so RawCull can
+create compatible embeddings for every photo.
 
 The similarity slider controls grouping: lower values make tighter groups; higher values include more related frames.
 
@@ -46,7 +44,7 @@ Analysis results are cached for the catalog. Ratings and manual picks are saved 
 
 ## Semantic Search in RawCull 3
 
-After CLIP indexing finishes, enter a short English description such as `bird
+After DataComp CLIP indexing finishes, enter a short English description such as `bird
 in flight` or `backlit portrait`. RawCull ranks the catalog by relative
 text-to-image similarity. The ranking is not a confidence score, so inspect the
 results before making culling decisions.

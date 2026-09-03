@@ -5,13 +5,13 @@ date = "2026-06-22"
 tags = ["changelog","version 2.1.8"]
 categories = ["changelog"]
 +++
- 
+
 # RawCull Changelog — v2.0.5 → 2.1.8
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
- 
+
  ------------------------------------------------------------------------------------------------------------------------------
- 
+
 ### 🔍 Actual-Pixels Inspection
 
 - Added `Z` as a fast inspection shortcut from grid, loupe, and comparison views.
@@ -60,4 +60,3 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
 - Aligned project versioning across build settings and release branches.
 - Added a `test-performance` Makefile target.
 - Performed cleanup in scoring parameter UI and cache-related code.
- 

@@ -21,13 +21,13 @@ results, file details, and camera settings needed for a careful decision.
 
 ## Similar Photos in Grid View
 
-Choose a reference photo and RawCull uses CLIP to bring visually related frames together. The grid makes it easy to compare poses and timing across the catalog.
+Choose a reference photo and RawCull uses DataComp CLIP to bring visually related frames together. The grid makes it easy to compare poses and timing across the catalog.
 
 {{< figure src="/images/gridviewbysimilarity.png" alt="Grid view ordered by visual similarity to a selected puffin portrait" position="center" style="border-radius: 8px;" >}}
 
-By estimated sharpness.
+The same grid can also be sorted by estimated sharpness.
 
-{{< figure src="/images/gridbysharpness.png" alt="Grid view ordered by sharpnesst" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/gridbysharpness.png" alt="Grid view ordered by estimated sharpness" position="center" style="border-radius: 8px;" >}}
 
 ## Burst List
 
@@ -51,18 +51,20 @@ indexed catalog by meaning, as shown here for the search `puffins in flight`.
 
 {{< figure src="/images/puffinsinflight.png" alt="Semantic search results ranked for the phrase puffins in flight" position="center" style="border-radius: 8px;" >}}
 
-## Deep Review 
+## Deep Review
 
-Deep Review by SAM 3
+SAM 3 isolates the subject during Deep Review so RawCull can combine
+subject-aware sharpness with focus and camera metadata. The resulting scores
+support the comparison; you still make the final selection.
 
-{{< figure src="/images/deepreview.png" alt="Semantic search results ranked for the phrase puffins in flight" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/deepreview.png" alt="SAM 3 Deep Review comparing burst frames with subject-aware scores" position="center" style="border-radius: 8px;" >}}
 
 ## AI Settings
 
-The AI settings show which local models and supporting features are ready. Here
-you can select the CLIP model used for similarity indexing and semantic search.
+The AI settings show whether the local DataComp CLIP and SAM 3 models are ready.
+DataComp CLIP powers similarity indexing and semantic search.
 
-{{< figure src="/images/aisettings.png" alt="AI settings showing available CLIP models and integration readiness" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/aisettings.png" alt="AI settings showing DataComp CLIP and SAM 3 readiness" position="center" style="border-radius: 8px;" >}}
 
 ## Model Downloads
 
@@ -70,7 +72,6 @@ RawCull lists each optional model with its purpose, source, licence, and current
 status. Models run locally after installation, and photographs are not uploaded
 as part of the download.
 
-{{< figure src="/images/modeldownload.png" alt="AI model download window showing one installed CLIP model and another ready to download" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/modeldownload.png" alt="AI model download window showing model installation status" position="center" style="border-radius: 8px;" >}}
 
 Download progress is shown in the same window, where an active transfer can also be cancelled.
-

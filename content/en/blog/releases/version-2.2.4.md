@@ -5,12 +5,12 @@ date = "2026-07-03"
 tags = ["changelog","version 2.2.4"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.2.1 → Latest Commits 
 
-Updated  on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+# RawCull Changelog: v2.2.1 → v2.2.4
+
+Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
 ## 🖼️ JPG Export Improvements
 
 - Added a new **Extract JPGs** sheet.

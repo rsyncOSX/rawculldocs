@@ -1,3 +1,3 @@
-# RawCull Documentation 
+# RawCull Documentation
 
-This is the Documentation for RawCull.
+This repository contains the documentation website for RawCull.

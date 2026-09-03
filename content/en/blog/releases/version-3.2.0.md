@@ -6,29 +6,28 @@ tags = ["changelog","version 3.2.0 beta"]
 categories = ["changelog"]
 +++
 
-# RawCull Changelog: v2.3.5 → Latest Commit
+# RawCull Changelog: v3.1.1 → v3.2.0 beta
 
 RawCull 3.2.0 beta is the modular-AI development release based on RawCull 3.1.1. RawCull 3.2.0 is available through Apple’s TestFlight; please email thomeven@gmail.com if you would like to try that build.
 
 <div class="alert alert-secondary" role="alert">
 
-RawCull’s AI implementation has been reorganized behind focused feature boundaries for similarity, semantic search, burst analysis, Deep Review, model management, persistence, and presentation. This is a structural refactor: CLIP remains the primary AI implementation, Apple Vision remains the similarity fallback, and existing behavior and persisted data formats are preserved.
+RawCull’s AI implementation has been reorganized behind focused feature boundaries for similarity, semantic search, burst analysis, Deep Review, model management, persistence, and presentation. This is a structural refactor: DataComp CLIP powers similarity and semantic search, SAM 3 powers Deep Review, and existing behavior and persisted data formats are preserved.
 
 </div>
 
 RawCull 3.2.0 beta requires macOS 27 (Golden Gate), an Apple Silicon Mac, and Xcode 27 when building from source.
 
-**Commit range:** `3b1c41d..56931c2`  
-**Latest commit:** `56931c2` (`update docs`, 2026-08-30)  
+**Commit range:** `3b1c41d..56931c2`
+**Latest commit:** `56931c2` (`update docs`, 2026-08-30)
 **Current version:** RawCull 3.2.0 (Build 350)
 
 ## 🚀 Major Features
 
 - Introduced the RawCull 3 local AI workflow.
-- Added natural-language semantic photo search using CLIP models.
-- Added CLIP-powered visual similarity analysis and burst grouping.
+- Added natural-language semantic photo search using DataComp CLIP.
+- Added DataComp CLIP-powered visual similarity analysis and burst grouping.
 - Added SAM 3 Deep Review with subject isolation, detailed scoring, and burst-winner recommendations.
-- Added automatic fallback to Apple Vision similarity when the selected CLIP model is unavailable.
 - Added persistent storage for AI embeddings, masks, scores, signatures, and burst-review decisions.
 - Modularized the complete AI application layer while preserving the RawCull 3.1.1 workflow, ranking policies, cache formats, preferences, and migration behavior.
 
@@ -50,7 +49,7 @@ RawCull 3.2.0 beta requires macOS 27 (Golden Gate), an Apple Silicon Mac, and Xc
 
 - Added dedicated AI model settings and model-management views.
 - Added model bundle discovery, validation, and resource management.
-- Added support for selecting CLIP, SAM 3, and EfficientSAM models.
+- Added support for DataComp CLIP and SAM 3 models.
 - Added model-location controls and validation feedback.
 - Added model-download and Managed Background Assets infrastructure.
 - Added licence-acceptance handling for externally distributed models.
@@ -63,7 +62,7 @@ RawCull 3.2.0 beta requires macOS 27 (Golden Gate), an Apple Silicon Mac, and Xc
 
 - Added clearer sharpness-scoring controls with scoring, re-scoring, sorting, and cancellation actions.
 - Added contextual scoring targets for selected images, filtered images, or the complete catalog.
-- Added combined **Index & Find Similar** behavior when CLIP index entries are missing.
+- Added combined **Index & Find Similar** behavior when DataComp CLIP index entries are missing.
 - Improved similarity backend status and progress presentation.
 - Reserved consistent space for semantic-search activity messages to prevent layout shifts.
 - Improved selection coordination and keyboard navigation.
@@ -126,7 +125,7 @@ RawCull 3.2.0 beta requires macOS 27 (Golden Gate), an Apple Silicon Mac, and Xc
 - Improved catalog loading, sorting, saved-file persistence, and culling-state restoration.
 - Improved similarity, sharpness, focus, and burst-analysis consistency.
 - Preserved generation-token and cancellation behavior so superseded AI work cannot publish stale results.
-- Kept DataComp CLIP, OpenAI CLIP, and Vision artifacts separated by compatible backend identity.
+- Kept DataComp CLIP and SAM 3 artifacts separated by compatible model identity.
 
 ## ♿ Accessibility
 

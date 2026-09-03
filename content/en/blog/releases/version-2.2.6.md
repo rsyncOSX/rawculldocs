@@ -5,14 +5,14 @@ date = "2026-07-13"
 tags = ["changelog","version 2.2.6"]
 categories = ["changelog"]
 +++
- 
-# RawCull Changelog: v2.2.4 → Latest Commits 
+
+# RawCull Changelog: v2.2.4 → v2.2.6
 
  ------------------------------------------------------------------------------------------------------------------------------
-  
+
 ## 🚀 Version 2.2.6
 
-Updated  on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 ### 🗂️ Redesigned Burst Groups
 

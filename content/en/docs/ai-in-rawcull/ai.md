@@ -14,22 +14,22 @@ The AI features run locally on Apple Silicon. RawCull does not upload photos to 
 
 ## AI-Assisted Culling
 
-RawCull uses two types of vision model:
+RawCull uses two vision models:
 
-- **CLIP** converts images and text into comparable vectors. RawCull uses those vectors for semantic search, visual similarity, and burst grouping.
+- **DataComp CLIP** converts images and text into comparable vectors. RawCull uses those vectors for semantic search, visual similarity, and burst grouping.
 - **SAM 3** locates the subject in an image. Deep Review uses the resulting subject mask together with sharpness and camera autofocus evidence to help compare frames.
 
 AI results are review aids, not automatic decisions. Semantic-search scores describe relative similarity rather than confidence, and the photographer always makes the final selection.
 
-## Similarity and CLIP
+## Similarity and DataComp CLIP
 
-CLIP does not create captions, keywords, or fixed labels while indexing. It converts each image into a normalized numeric embedding that summarizes its overall visual content. RawCull stores that embedding locally and can reuse it for both similarity analysis and semantic search.
+DataComp CLIP does not create captions, keywords, or fixed labels while indexing. It converts each image into a normalized numeric embedding that summarizes its overall visual content. RawCull stores that embedding locally and can reuse it for both similarity analysis and semantic search.
 
 ### Build the Similarity Index
 
-Choose a CLIP model in **Settings > AI**, enable it for similarity, and select **Index Similarity** or **Re-index** in the burst workspace. Indexing runs the image encoder once for each photograph that does not already have a compatible cached embedding.
+Enable DataComp CLIP in **Settings > AI**, then select **Index Similarity** or **Re-index** in the burst workspace. Indexing runs the image encoder once for each photograph that does not already have a compatible cached embedding.
 
-CLIP embeddings are specific to the selected model and its preprocessing configuration. Changing the CLIP model or installing an incompatible model version requires a new index. If CLIP is unavailable, RawCull can use the macOS Vision feature-print fallback for visual grouping, but text-based semantic search requires compatible CLIP embeddings.
+CLIP embeddings are specific to the model and its preprocessing configuration. Installing an incompatible model version requires a new index. Similarity and semantic search require compatible DataComp CLIP embeddings.
 
 ### Group Similar Frames
 
@@ -45,17 +45,16 @@ The suggested pick and component scores are starting points, not final judgments
 
 ## Semantic Search
 
-After a catalog has been indexed with a compatible CLIP model, enter a short description such as `puffin`, `raven`, or `squirrel`. RawCull ranks the catalog using the cached image embeddings, so later searches do not have to reprocess every image.
+After a catalog has been indexed with DataComp CLIP, enter a short description such as `puffin`, `raven`, or `squirrel`. RawCull ranks the catalog using the cached image embeddings, so later searches do not have to reprocess every image.
 
-Search terms work best in English because the supported CLIP models were primarily trained and evaluated with English text.
+Search terms work best in English because DataComp CLIP was primarily trained and evaluated with English text.
 
 ## Supported Models
 
-RawCull supports one selected CLIP model for similarity and semantic search, plus SAM 3 for subject-aware Deep Review.
+RawCull supports DataComp CLIP for similarity and semantic search, plus SAM 3 for subject-aware Deep Review.
 
 | RawCull model | Purpose | Upstream model |
 |---|---|---|
-| OpenAI CLIP ViT-B/32 | Semantic search, similarity, and burst grouping | [OpenAI CLIP ViT-B/32 on Hugging Face](https://huggingface.co/openai/clip-vit-base-patch32) |
 | OpenCLIP ViT-B/32 DataComp | Semantic search, similarity, and burst grouping | [DataComp `s34B-b86K` on Hugging Face](https://huggingface.co/laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K) |
 | Meta SAM 3 | Subject masks and Deep Review | [Meta SAM 3 on Hugging Face](https://huggingface.co/facebook/sam3) |
 
@@ -87,7 +86,6 @@ release rather than installing an arbitrary conversion.
 
 The RawCull application licence does not replace or extend the licences for the separately downloaded models.
 
-- OpenAI's CLIP source repository is published under the [MIT License](https://github.com/openai/CLIP/blob/main/LICENSE).
 - The DataComp model page identifies its licence as MIT. Its model card also documents the training data, intended uses, and limitations.
 - SAM 3 is distributed under Meta's separate [SAM License](https://huggingface.co/facebook/sam3/blob/main/LICENSE), not the MIT License. Access to the official Hugging Face files may require signing in, sharing the requested contact information, and accepting Meta's terms.
 

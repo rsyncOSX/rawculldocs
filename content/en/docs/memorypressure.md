@@ -17,6 +17,6 @@ Large catalogs and high-resolution previews can use substantial unified memory. 
 
 When pressure returns to normal, RawCull recalculates its normal cache limits. Source photos and saved ratings are not affected.
 
-The **Memory** settings tab shows total and used memory, RawCull's memory use, and the current system pressure. For troubleshooting, **Diagnostics -> Memory Console** records detailed cache and memory samples.
+The **Memory** settings tab shows total and used memory, RawCull's memory use, and the current system pressure.
 
 If warnings continue, close other memory-heavy apps, stop the current task with **Actions -> Abort task** (`Command-K`), or work with a smaller catalog.

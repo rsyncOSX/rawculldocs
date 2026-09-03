@@ -5,11 +5,11 @@ date = "2026-06-27"
 tags = ["changelog","version 2.2.1"]
 categories = ["changelog"]
 +++
- 
+
 # RawCull Changelog — v2.1.8 → 2.2.1
 
 To be submitted for update on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
- 
+
  ------------------------------------------------------------------------------------------------------------------------------
 
 ### ✨ Added

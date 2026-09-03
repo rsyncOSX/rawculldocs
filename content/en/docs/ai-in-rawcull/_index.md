@@ -13,5 +13,5 @@ Read:
 
 - [AI Support in RawCull](/docs/ai-in-rawcull/ai/) for supported features,
   models, downloads, and system requirements.
-- [CLIP Models and Beta Testing](/docs/ai-in-rawcull/clipevaluation/) for
-  comparing the OpenAI and DataComp models.
+- [DataComp CLIP and Beta Testing](/docs/ai-in-rawcull/clipevaluation/) for
+  evaluation details and guidance on reporting beta results.
