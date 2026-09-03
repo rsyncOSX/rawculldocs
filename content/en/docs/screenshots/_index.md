@@ -10,4 +10,4 @@ burst review, while keeping the photographer in control of every decision.
 
 Read:
 
-- [Explore the RawCull screenshots](/docs/screenshots/screenshots/).
+- [Explore the RawCull screenshots](/docs/screenshots/samplescreenshots/).

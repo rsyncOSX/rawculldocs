@@ -21,10 +21,13 @@ results, file details, and camera settings needed for a careful decision.
 
 ## Similar Photos in Grid View
 
-Choose a reference photo and RawCull uses CLIP to bring visually related frames
-together. The grid makes it easy to compare poses and timing across the catalog.
+Choose a reference photo and RawCull uses CLIP to bring visually related frames together. The grid makes it easy to compare poses and timing across the catalog.
 
 {{< figure src="/images/gridviewbysimilarity.png" alt="Grid view ordered by visual similarity to a selected puffin portrait" position="center" style="border-radius: 8px;" >}}
+
+By estimated sharpness.
+
+{{< figure src="/images/gridbysharpness.png" alt="Grid view ordered by sharpnesst" position="center" style="border-radius: 8px;" >}}
 
 ## Burst List
 
@@ -48,6 +51,12 @@ indexed catalog by meaning, as shown here for the search `puffins in flight`.
 
 {{< figure src="/images/puffinsinflight.png" alt="Semantic search results ranked for the phrase puffins in flight" position="center" style="border-radius: 8px;" >}}
 
+## Deep Review 
+
+Deep Review by SAM 3
+
+{{< figure src="/images/deepreview.png" alt="Semantic search results ranked for the phrase puffins in flight" position="center" style="border-radius: 8px;" >}}
+
 ## AI Settings
 
 The AI settings show which local models and supporting features are ready. Here
@@ -63,7 +72,5 @@ as part of the download.
 
 {{< figure src="/images/modeldownload.png" alt="AI model download window showing one installed CLIP model and another ready to download" position="center" style="border-radius: 8px;" >}}
 
-Download progress is shown in the same window, where an active transfer can also
-be cancelled.
+Download progress is shown in the same window, where an active transfer can also be cancelled.
 
-{{< figure src="/images/downloading.png" alt="AI model download in progress with a progress bar and cancel control" position="center" style="border-radius: 8px;" >}}
