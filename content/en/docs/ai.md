@@ -8,9 +8,7 @@ tags = ["AI", "CLIP", "SAM 3", "semantic search", "similarity", "bursts"]
 categories = ["user doc"]
 +++
 
-RawCull AI is planned for release when macOS 27 becomes publicly available. It adds local AI-assisted search and review while retaining the same culling workflow and non-AI functions as the current RawCull version.
-
-The AI features run locally on Apple Silicon. RawCull does not upload photos to an external inference service.
+RawCull supports local AI-assisted search and review while retaining the same culling workflow and non-AI functions as the current RawCull version. The AI features run locally on Apple Silicon. RawCull does not upload photos to an external inference service.
 
 ## AI-Assisted Culling
 
