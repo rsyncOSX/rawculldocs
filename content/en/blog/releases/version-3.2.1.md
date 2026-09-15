@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 # RawCull Changelog: v3.1.1 -> v3.2.1
 
-RawCull 3.2.1 is the modular-AI release based on RawCull 3.1.1. It is available through Apple's TestFlight; please email thomeven@gmail.com if you would like to try that build.
+Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 <div class="alert alert-secondary" role="alert">
 
