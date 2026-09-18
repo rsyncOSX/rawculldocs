@@ -18,6 +18,10 @@ RawCull does not edit or delete the source photos.
 
 </div>
 
+## Install
+
+RawCull is only available for download from the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).   There are also some more  [detailed release notes on GitHub](https://github.com/rsyncOSX/RawCull/releases).
+
 ## Quick Start
 
 1. Select **Add Catalog** and choose a folder of RAW files.
@@ -41,18 +45,9 @@ Ratings, sharpness results, and catalog state are saved automatically on your Ma
 
 ## Requirements and Files
 
-- macOS Tahoe 26.2 or later for the current release; macOS 27 for RawCull 3
+- macOS 27 Golden Gate
 - Apple Silicon Mac
-- Sony ARW and Nikon NEF catalogs
+- Sony ARW and Nikon NEF catalogs, NEF support is experimental
 
 Sony ARW is the primary format. Some functions depend on the camera metadata and RAW support available in macOS. Demosaiced RAW preview and export are Sony-specific; embedded previews are used when RAW development is unavailable.
 
-## Install
-
-Install RawCull from the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12), [GitHub Releases](https://github.com/rsyncOSX/RawCull/releases), or Homebrew:
-
-```bash
-brew tap rsyncOSX/cask && brew install --cask rawcull
-```
-
-GitHub releases are signed and notarized by Apple and may be newer than the App Store version. RawCull is sandboxed, works offline, and keeps photos and culling data on your Mac. See [Security & Privacy](/docs/security/).

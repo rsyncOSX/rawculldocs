@@ -8,6 +8,8 @@ tags = ["AI", "CLIP", "SAM 3", "Qwen", "semantic search", "similarity", "bursts"
 categories = ["user doc"]
 +++
 
+RawCull requires **macOS 27 Golden Gate** and **Apple Silicon** mac.
+
 RawCull supports local AI-assisted search and review while retaining the same culling workflow and non-AI functions as the current RawCull version. The AI features run locally on Apple Silicon. RawCull does not upload photos to an external inference service.
 
 ## AI-Assisted Culling
@@ -105,11 +107,3 @@ Review the complete licence and model card shown by RawCull before downloading
 or using a model. RawCull records the exact model revision and licence version
 applicable to each converted bundle. If a model update changes its licence,
 RawCull must present the new terms before downloading that update.
-
-## macOS Support
-
-RawCull AI requires macOS 27 and Apple Silicon and will be released when the public version of macOS 27 is available.
-
-At that point, active RawCull development and support move to macOS 27. The existing macOS 26 version will no longer receive support or new features, but installed copies will continue to work with their current functionality.
-
-The macOS 27 AI version retains the current RawCull feature set and workflows. AI support is additive: catalogs, ratings, culling, comparison, sharpness tools, previews, and copying continue to work as they do in the current version.
