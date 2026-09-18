@@ -8,8 +8,7 @@ tags = ["screenshots"]
 categories = ["user doc"]
 +++
 
-This visual tour shows how RawCull helps you inspect, group, search, and review
-photos before making the final selections.
+This visual tour shows the major RawCull tools for inspecting, grouping, searching, and reviewing photographs before making the final selections.
 
 ## Loupe View
 
@@ -31,8 +30,7 @@ The same grid can also be sorted by estimated sharpness.
 
 ## Burst List
 
-RawCull groups related frames into bursts and highlights a suggested pick. You
-can open a burst, run a deeper review, mark it complete, or defer the decision.
+RawCull groups related frames into bursts and highlights a suggested pick. You can open a burst, mark it complete, or defer the decision.
 
 {{< figure src="/images/burslists.png" alt="Burst list with grouped puffin sequences and a suggested pick" position="center" style="border-radius: 8px;" >}}
 
@@ -55,7 +53,7 @@ moment, rate it, or reject it.
 
 ## AI Analysis
 
-AI Analysis works with photographs selected in Grid View or tagged for review.
+AI Analysis works with photographs selected in Grid View or rated two stars and higher.
 Choose **SAM 3 + CLIP** for a subject-aware Deep Review or **Qwen** for a
 criteria-based assessment. Both modes run locally on the Mac.
 
@@ -85,16 +83,14 @@ indexed catalog by meaning, as shown here for the search `puffins in flight`.
 
 ## AI Settings
 
-The AI settings show whether the local DataComp CLIP, SAM 3 and Qwen models are ready.
+The AI settings show whether the local DataComp CLIP, SAM 3, and Qwen models are ready.
 DataComp CLIP powers similarity indexing and semantic search.
 
-{{< figure src="/images/aisettings.png" alt="AI settings showing DataComp CLIP and SAM 3 readiness" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/aisettings.png" alt="AI settings showing DataComp CLIP, SAM 3, and Qwen readiness" position="center" style="border-radius: 8px;" >}}
 
 ## Model Downloads
 
-RawCull lists each optional model with its purpose, source, licence, and current
-status. Models run locally after installation, and photographs are not uploaded
-as part of the download.
+RawCull lists each optional model with its purpose, source, licence, and current status. Models run locally after installation; RawCull does not upload photographs for downloading or using a model.
 
 {{< figure src="/images/modeldownload.png" alt="AI model download window showing model installation status" position="center" style="border-radius: 8px;" >}}
 

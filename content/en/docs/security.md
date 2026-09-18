@@ -7,8 +7,7 @@ tags = ["security", "privacy"]
 categories = ["user doc"]
 +++
 
-RawCull is designed for local photo culling. Core culling works offline, and
-RawCull 3 performs AI indexing, search, and review on the Mac.
+RawCull is designed for local photo culling. Core culling works offline, and AI indexing, search, and review run on the Mac.
 
 ## File Access
 
@@ -18,7 +17,7 @@ Copying is non-destructive: RawCull copies the chosen RAW files with the system 
 
 ## Local Data
 
-RawCull stores settings, approved folder locations, ratings, sharpness results, burst choices, and rebuildable preview caches on your Mac. RawCull 3 also stores embeddings, masks, and AI review results locally. Caches can be cleared from Settings.
+RawCull stores settings, approved folder locations, ratings, sharpness results, burst choices, and rebuildable preview caches on your Mac. Embeddings, masks, and AI review results are also stored locally. Caches can be cleared from Settings.
 
 RawCull does not use analytics, telemetry, cloud inference, cloud sync,
 advertising, or tracking. Photographs, search descriptions, embeddings, masks,

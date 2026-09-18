@@ -7,7 +7,7 @@ tags = ["sharpness"]
 categories = ["user doc"]
 +++
 
-Sharpness scoring estimates image detail and sorts the strongest candidates first. It is a comparison aid, not an automatic reason to reject a photo.
+Sharpness scoring estimates image detail and sorts stronger candidates first. It is a comparison aid, not an automatic reason to reject a photograph.
 
 ## Score Photos
 
@@ -15,13 +15,13 @@ Sharpness scoring estimates image detail and sorts the strongest candidates firs
 2. Choose **Score Sharpness**.
 3. Leave the **Sharpness** sort enabled to show higher scores first.
 
-RawCull scores the current multi-selection, the active star-rating filter, or the full catalog. It first calibrates the focus threshold to the selected photos, then saves the resulting scores and detected subject labels.
+RawCull scores the current multi-selection, the active star-rating filter, or the full catalog. It calibrates the focus threshold for those photographs, then saves the scores and detected subject labels.
 
 Choose **Re-score** after changing scoring parameters. Canceling a run discards that run's results.
 
 ## Scoring Parameters
 
-For normal culling, use **Fast** quality with **Embedded Preview**. Use **Balanced** or **High Precision** when small detail matters, and **RAW Demosaic** only for slower final checks on supported files.
+For normal culling, use **Fast** quality with **Embedded Preview**. Use **Balanced** or **High Precision** when fine detail matters, and **RAW Demosaic** only for slower final checks on supported Sony files.
 
 The parameter sheet also controls thumbnail size, border exclusion, subject classification, and how strongly the detected subject affects the score. Larger images and RAW demosaicing take longer.
 

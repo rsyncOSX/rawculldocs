@@ -7,7 +7,7 @@ tags = ["memory", "pressure", "cache"]
 categories = ["user doc"]
 +++
 
-Large catalogs and high-resolution previews can use substantial unified memory. RawCull monitors the macOS memory-pressure level and adjusts its caches automatically.
+Large catalogs and high-resolution previews can use substantial unified memory. RawCull monitors macOS memory pressure and adjusts its caches automatically.
 
 | Level | RawCull response |
 |---|---|
@@ -19,4 +19,4 @@ When pressure returns to normal, RawCull recalculates its normal cache limits. S
 
 The **Memory** settings tab shows total and used memory, RawCull's memory use, and the current system pressure.
 
-If warnings continue, close other memory-heavy apps, stop the current task with **Actions -> Abort task** (`Command-K`), or work with a smaller catalog.
+If warnings continue, close other memory-heavy apps, stop the current task with **Actions > Abort task** (`Command-K`), or work with a smaller catalog.

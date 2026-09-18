@@ -1,16 +1,15 @@
 +++
 author = "Thomas Evensen"
-title = "Similarity and Bursts"
+title = "Similarity, Bursts, and Search"
 date = "2026-07-15"
-weight = 15
+weight = 11
 tags = ["similarity", "bursts"]
 categories = ["user doc"]
 +++
 
-Similarity groups visually related frames into bursts and suggests the strongest candidates. It is intended to shorten review, while leaving the final choice to you.
+Similarity groups visually related frames into bursts and suggests strong candidates. It shortens review while leaving the final choice to you.
 
-RawCull 3 uses DataComp CLIP for visual grouping and semantic search. Install
-and enable it in **Settings > AI** before indexing a catalog.
+RawCull uses DataComp CLIP for visual grouping and semantic search. Install and enable it in **Settings > AI** before indexing a catalog.
 
 ## Analyze a Catalog
 
@@ -18,7 +17,7 @@ and enable it in **Settings > AI** before indexing a catalog.
 2. Choose **Analyze Bursts**.
 3. Open **Needs Review** when analysis finishes.
 
-RawCull runs any missing sharpness scoring and similarity indexing automatically. Use **Re-index** after the catalog changes or when you want to rebuild the analysis.
+RawCull runs any missing sharpness scoring and CLIP indexing automatically. Use **Re-index** after the catalog changes or when you want to rebuild the analysis.
 
 Re-index after updating DataComp CLIP or changing the catalog so RawCull can
 create compatible embeddings for every photo.
@@ -27,7 +26,7 @@ The similarity slider controls grouping: lower values make tighter groups; highe
 
 ## Review Bursts
 
-Each group can include a suggested pick and supporting sharpness or subject information. Open a group to inspect its filmstrip, rate frames, defer the group, mark it reviewed, or open **Compare** for a closer view. In RawCull 3, **Deep Review** adds subject-mask, focus, and sharpness evidence to the comparison.
+Each group can include a suggested pick and supporting sharpness or subject information. Open a group to inspect its filmstrip, rate frames, defer the group, mark it reviewed, or open **Compare** for a closer view.
 
 Use **Set pick** to override the suggestion. One-click **Keep Best** rates the suggested frame 3 stars and rejects the other frames; **Keep Top Two** rates the first two candidates 3 and 2 stars and rejects the rest. Review the suggestion before applying either action.
 
@@ -42,9 +41,8 @@ The main queues are:
 
 Analysis results are cached for the catalog. Ratings and manual picks are saved with the rest of the culling data.
 
-## Semantic Search in RawCull 3
+For deeper model-based review, select photographs in Grid View and open [AI Analysis](/docs/ai/). SAM 3 and Qwen operate on the selected set rather than on every catalog photograph.
 
-After DataComp CLIP indexing finishes, enter a short English description such as `bird
-in flight` or `backlit portrait`. RawCull ranks the catalog by relative
-text-to-image similarity. The ranking is not a confidence score, so inspect the
-results before making culling decisions.
+## Semantic Search
+
+After DataComp CLIP indexing finishes, enter a short English description such as `bird in flight` or `backlit portrait`. RawCull ranks the catalog by relative text-to-image similarity. The ranking is not a confidence score, so inspect the results before making culling decisions.
