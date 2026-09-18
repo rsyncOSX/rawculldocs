@@ -85,7 +85,7 @@ indexed catalog by meaning, as shown here for the search `puffins in flight`.
 
 ## AI Settings
 
-The AI settings show whether the local DataComp CLIP and SAM 3 models are ready.
+The AI settings show whether the local DataComp CLIP, SAM 3 and Qwen models are ready.
 DataComp CLIP powers similarity indexing and semantic search.
 
 {{< figure src="/images/aisettings.png" alt="AI settings showing DataComp CLIP and SAM 3 readiness" position="center" style="border-radius: 8px;" >}}
