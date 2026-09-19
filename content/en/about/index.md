@@ -5,7 +5,6 @@ menu: {main: {weight: 10}}
 ---
 
 {{% blocks/cover title="About RawCull" height="auto" color="dark" %}}
-{{% /blocks/cover %}}
 
 ## Hello!
 
@@ -25,8 +24,6 @@ I retired in May 2022 at age 62. Outside of code, I'm an avid [bird photographer
 
 Since late 2020 I've been building **RsyncUI**, now in maintenance mode. As a photographer, I needed a fast way to cull ARW files from my Sony A1 Mk II after coming home with several thousand shots from a single outing. That itch — combined with a project idea I'd been sitting on for a while — is what became RawCull.
 
-{{% /blocks/section %}}
-
 ### Development approach
 
 Most of my career was spent in IT management rather than hands-on development. What coding experience I have comes from personal projects — RawCull, RsyncUI, and RsyncOSX. Along the way I've learned a lot from AI tools, documentation, and studying how other developers solve problems.
@@ -43,4 +40,3 @@ Get RawCull from the **[App Store](https://apps.apple.com/no/app/rawcull/id67593
 
 This documentation runs on **Hugo**, a fast static site generator, with the **[Docsy](https://github.com/google/docsy)** theme. The source lives on GitHub; Netlify rebuilds the site automatically within seconds of any change to `main` — so what you're reading is always current.
 
-{{% /blocks/section %}}
