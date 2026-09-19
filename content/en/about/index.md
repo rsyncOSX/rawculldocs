@@ -4,7 +4,7 @@ linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About RawCull" height="auto" %}}
+{{% blocks/cover title="About RawCull" height="auto" color="dark" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="primary" %}}
@@ -40,7 +40,7 @@ Most of my career was spent in IT management rather than hands-on development. W
 RawCull is built with **Swift** and **SwiftUI**, using modern macOS APIs. It's digitally signed and notarized by Apple, so you can trust it hasn't been tampered with and meets Apple's security standards.
 
 {{% alert title="Download" color="info" %}}
-Get RawCull from the **[App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12)** or the **[GitHub releases page](https://github.com/rsyncOSX/RawCull/releases)**. GitHub releases may appear 1–2 days ahead of the App Store, since the two platforms have different review processes.
+Get RawCull from the **[App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12)** .
 {{% /alert %}}
 
 ### About this website
