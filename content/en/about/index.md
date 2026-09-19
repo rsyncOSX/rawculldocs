@@ -7,8 +7,6 @@ menu: {main: {weight: 10}}
 {{% blocks/cover title="About RawCull" height="auto" color="dark" %}}
 {{% /blocks/cover %}}
 
-{{% blocks/section color="primary" %}}
-
 ## Hello!
 
 RawCull is a macOS app for culling RAW files fast — built by one developer who needed a better way to sort through thousands of ARW files after a day in the field.
@@ -28,8 +26,6 @@ I retired in May 2022 at age 62. Outside of code, I'm an avid [bird photographer
 Since late 2020 I've been building **RsyncUI**, now in maintenance mode. As a photographer, I needed a fast way to cull ARW files from my Sony A1 Mk II after coming home with several thousand shots from a single outing. That itch — combined with a project idea I'd been sitting on for a while — is what became RawCull.
 
 {{% /blocks/section %}}
-
-{{% blocks/section color="white" %}}
 
 ### Development approach
 
