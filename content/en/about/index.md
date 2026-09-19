@@ -4,7 +4,6 @@ linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About RawCull" height="auto" color="dark" %}}
 
 ## Hello!
 
