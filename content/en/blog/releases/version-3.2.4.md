@@ -1,14 +1,14 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.2.4"
-date = "2026-09-18"
+date = "2026-09-20"
 tags = ["changelog", "version 3.2.4"]
 categories = ["changelog"]
 +++
 
 # RawCull Changelog: v3.2.1 → v3.2.4
 
-RawCull 3.2.4 is available through Apple TestFlight. Please email [thomeven@gmail.com](mailto:thomeven@gmail.com) if you would like to try it.
+Version 3.2.4 to be released in some days, final testing and verification of the AI-analysis view and download of Ai-models in progress. RawCull 3.2.4 is available through Apple TestFlight. Please email [thomeven@gmail.com](mailto:thomeven@gmail.com) if you would like to try it.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -18,9 +18,9 @@ RawCull 3.2.4 adds a dedicated AI Analysis workspace for selected or rated photo
 
 RawCull 3.2.4 requires macOS 27 (Golden Gate), an Apple Silicon Mac, and Xcode 27 when building from source.
 
-**Commit range:** `v3.2.1..a6e1d1c`  
-**Latest commit:** `a6e1d1c` (`AI`, 2026-09-18)  
-**Current version:** RawCull 3.2.4 (Build 376)
+**Commit range:** `v3.2.1..3b39d82`  
+**Latest commit:** `3b39d82` (`AI`, 2026-09-20)  
+**Current version:** RawCull 3.2.4 (Build 380)
 
 ## 🚀 Major Features
 
