@@ -8,7 +8,7 @@ categories = ["changelog"]
 
 # RawCull Changelog: v3.2.1 → v3.2.4
 
-Version 3.2.4 to be released in some days, final testing and verification of the AI-analysis view and download of Ai-models in progress. RawCull 3.2.4 is available through Apple TestFlight. Please email [thomeven@gmail.com](mailto:thomeven@gmail.com) if you would like to try it.
+Version 3.2.4 is submitted for update on Apple App Store. 
 
 <div class="alert alert-secondary" role="alert">
 
