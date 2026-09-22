@@ -8,7 +8,7 @@ menu: { main: { weight: 20 } }
 
 RawCull is a native macOS app for reviewing RAW photos before editing. It shows fast previews and camera information, records picks and ratings, groups similar frames, and copies the selected files to an editing folder.
 
-The current version requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features run locally for semantic search, visual similarity, and deeper analysis of selected photographs.
+RawCull requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features **run locally** for semantic search, visual similarity, and deeper analysis of selected photographs.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -20,7 +20,7 @@ RawCull does not edit or delete the source photos.
 
 ## Install
 
-Download RawCull from the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12). See the [GitHub releases](https://github.com/rsyncOSX/RawCull/releases) for detailed release notes.
+Download RawCull from the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 ## Quick Start
 
