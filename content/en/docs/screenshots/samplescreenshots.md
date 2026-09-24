@@ -57,6 +57,10 @@ AI Analysis works with photographs selected in Grid View or rated two stars and 
 Choose **SAM 3 + CLIP** for a subject-aware Deep Review or **Qwen** for a
 criteria-based assessment. Both modes run locally on the Mac.
 
+### AI Objects
+
+{{< figure src="/images/aiobjects.png" alt="AI Analysis using SAM 3 and CLIP to rank selected photographs and outline the subject in the preview" position="center" style="border-radius: 8px;" >}}
+
 ### SAM 3 + CLIP
 
 Deep Review isolates the subject and combines subject-aware detail, sharpness,

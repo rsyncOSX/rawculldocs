@@ -3,7 +3,6 @@ author = "Thomas Evensen"
 title = "AI Analysis"
 date = "2026-07-28"
 weight = 12
-aliases = ["/docs/ai/"]
 tags = ["AI", "CLIP", "SAM 3", "Qwen", "semantic search", "similarity", "bursts"]
 categories = ["user doc"]
 +++

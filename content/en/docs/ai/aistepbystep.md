@@ -107,7 +107,11 @@ Use this review to answer: **Does the photograph work as a photograph?** Qwen
 adds a visual critique; it does not participate in burst similarity or SAM 3
 subject-detail scoring.
 
-## 5. Make the final choice
+## 5. Run AI Objects
+
+Text to be added.
+
+## 6. Make the final choice
 
 Put the evidence in this order:
 
