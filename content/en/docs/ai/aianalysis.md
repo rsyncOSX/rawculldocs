@@ -2,8 +2,9 @@
 author = "Thomas Evensen"
 title = "AI Analysis"
 date = "2026-07-28"
+lastmod = "2026-09-24"
 weight = 12
-tags = ["AI", "CLIP", "SAM 3", "Qwen", "semantic search", "similarity", "bursts"]
+tags = ["AI", "CLIP", "SAM 3", "Qwen", "Objects", "semantic search", "similarity", "bursts"]
 categories = ["user doc"]
 +++
 
@@ -16,8 +17,8 @@ RawCull provides optional local AI for search and review. All inference runs on 
 RawCull uses three vision models:
 
 - **DataComp CLIP** converts images and text into comparable vectors. RawCull uses those vectors to index every ARW file in a catalog for semantic search, visual similarity, and burst grouping.
-- **SAM 3** locates the subject in selected images. Deep Review uses the resulting subject mask together with sharpness, CLIP, and camera autofocus evidence to help compare frames.
-- **Qwen3-VL** performs a deeper vision-language assessment of selected images against editable criteria, returning structured scores, strengths, possible problems, confidence, and subject details.
+- **SAM 3** locates subjects in selected images. Deep Review uses a subject mask together with sharpness, CLIP, and camera autofocus evidence; Objects keeps separate masks for individual visible instances.
+- **Qwen3-VL** assesses selected images against editable criteria. In Objects mode it can suggest object concepts and describe the numbered objects, their relationships, strengths, and possible problems.
 
 CLIP is compact and fast enough to index all ARW files in a catalog. SAM 3 and Qwen are substantially larger and require more computation, so RawCull reserves them for deeper analysis of selected photographs rather than running them across the complete catalog.
 
@@ -38,9 +39,12 @@ See [Similarity, Bursts, and Search](/docs/similarity/) for the catalog workflow
 Select photographs in Grid View, or use photographs rated two stars and higher, then open **AI Analysis**. This focused workflow avoids the time and computational cost of running the larger models on every ARW file in the catalog.
 
 - **SAM 3 + CLIP** isolates the subject and combines subject-aware detail, sharpness, autofocus, and coverage evidence to rank the selected photographs and recommend a frame.
-- **Qwen** evaluates each selected photograph against editable criteria such as composition, exposure, subject visibility, expression, and obstructions. It returns an advisory assessment with scores, strengths, possible problems, confidence, and subject details.
+- **Qwen Vision** evaluates each selected photograph against editable criteria such as composition, exposure, subject visibility, expression, and obstructions. It returns an advisory assessment with scores, strengths, possible problems, confidence, and subject details.
+- **Objects** combines SAM 3 and Qwen to find and assess individual visible objects. Choose **Automatic** to let Qwen suggest concrete concepts, or **Specific Concepts** to enter comma-separated terms such as `bird, deer`. SAM 3 draws a separate mask and numbered outline for each retained instance; Qwen then describes the objects and the photograph. The table shows object counts, concepts, Qwen assessment confidence, and status. Select a row, then a numbered object, to inspect its crop and detail.
 
-Both analysis modes run locally on the Mac. Their results are review aids; confirm the findings against the photographs before making culling decisions.
+The numbered overview and crops are views of one source photograph. A SAM 3 mask percentage measures the model's confidence in that mask; Qwen assessment confidence is a separate judgment. Neither proves that an object was found or described correctly. Check each outline, crop, and description against the original photograph before making a culling decision.
+
+All three analysis modes run locally on the Mac. See [AI Step by Step](/docs/ai/aistepbystep/) for a practical Objects workflow and [RawCull Screenshots](/docs/screenshots/samplescreenshots/) for examples.
 
 ## Semantic Search
 
@@ -55,8 +59,8 @@ RawCull supports DataComp CLIP for catalog-wide similarity and semantic-search i
 | RawCull model | Purpose | Upstream model |
 |---|---|---|
 | OpenCLIP ViT-B/32 DataComp | Semantic search, similarity, and burst grouping | [DataComp `s34B-b86K` on Hugging Face](https://huggingface.co/laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K) |
-| Meta SAM 3 | Subject masks and Deep Review | [Meta SAM 3 on Hugging Face](https://huggingface.co/facebook/sam3) |
-| Qwen3-VL-2B-Instruct | Criteria-based vision-language assessment | [Qwen3-VL-2B-Instruct on Hugging Face](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) |
+| Meta SAM 3 | Subject masks, Deep Review, and individual Objects masks | [Meta SAM 3 on Hugging Face](https://huggingface.co/facebook/sam3) |
+| Qwen3-VL-2B-Instruct | Criteria-based assessment and Objects descriptions | [Qwen3-VL-2B-Instruct on Hugging Face](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) |
 
 The upstream files on Hugging Face are the source models. RawCull requires model bundles converted and validated for Apple Core AI on macOS 27.
 

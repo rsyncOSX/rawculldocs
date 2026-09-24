@@ -3,10 +3,10 @@ author = "Thomas Evensen"
 title = "AI Step by Step"
 linkTitle = "AI Step by Step"
 date = "2026-09-21"
-lastmod = "2026-09-21"
-description = "A short practical workflow for using Burst Review, SAM 3 with CLIP, and Qwen to narrow a catalog to its strongest photographs."
+lastmod = "2026-09-24"
+description = "A practical workflow for using Burst Review, SAM 3 with CLIP, Qwen Vision, and Objects to review selected photographs."
 weight = 57
-tags = ["ai", "culling", "burst-review", "clip", "sam3", "qwen"]
+tags = ["ai", "culling", "burst-review", "clip", "sam3", "qwen", "objects"]
 categories = ["guides"]
 +++
 
@@ -109,7 +109,14 @@ subject-detail scoring.
 
 ## 5. Run AI Objects
 
-Text to be added.
+Choose **Objects** and keep **Selected** or **Tagged** as the input. SAM 3 and Qwen must both show as ready.
+
+1. Leave **Concepts** on **Automatic** for Qwen to suggest concrete subjects in each photograph. If you already know what to look for, choose **Specific Concepts** and enter short comma-separated terms such as `puffin` or `deer, fawn`.
+2. Optionally edit the additional photographic criteria, then choose **Analyze [number] Images** to process the pending photos. You can cancel a running batch, retry failed results, or clear results from this view.
+3. Select a completed row. Compare the numbered outlines with the original image, then choose an object in the list to inspect its crop and Qwen description. The table also shows discovered concepts, object count, Qwen assessment confidence, and status.
+4. Read the whole-photo summary, per-object visibility and focus notes, relationships, strengths, and problems. Treat the SAM 3 mask score and Qwen assessment confidence as different signals. Check the crop, outline, and wording against the source photo; small or overlapping subjects can be missed or mixed up.
+
+Objects is useful when a frame contains several subjects, such as a deer with fawns or a group of musk oxen. Its numbered crops help you inspect each subject, but the analysis remains advisory. It does not rate, reject, or select a photograph for you.
 
 ## 6. Make the final choice
 
@@ -117,8 +124,9 @@ Put the evidence in this order:
 
 1. Your intent and visual judgment.
 2. Correct subject detail from SAM 3 + CLIP.
-3. Composition and visible issues from Qwen.
-4. The initial Burst Review ranking.
+3. Object visibility and relationships from Objects, when the frame has multiple subjects.
+4. Composition and visible issues from Qwen Vision.
+5. The initial Burst Review ranking.
 
 When the signals disagree, inspect the image. AI results are recommendations,
 and RawCull does not automatically turn a Qwen result into a rating.

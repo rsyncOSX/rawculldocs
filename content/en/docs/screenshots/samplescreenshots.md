@@ -2,6 +2,7 @@
 author = "Thomas Evensen"
 title = "RawCull Screenshots"
 date = "2026-08-20"
+lastmod = "2026-09-24"
 weight = 1
 aliases = ["/docs/screenshots/"]
 tags = ["screenshots"]
@@ -54,12 +55,28 @@ moment, rate it, or reject it.
 ## AI Analysis
 
 AI Analysis works with photographs selected in Grid View or rated two stars and higher.
-Choose **SAM 3 + CLIP** for a subject-aware Deep Review or **Qwen** for a
-criteria-based assessment. Both modes run locally on the Mac.
+Choose **SAM 3 + CLIP** for subject-aware Deep Review, **Qwen Vision** for a
+criteria-based assessment, or **Objects** to examine individual subjects. All
+three modes run locally on the Mac.
 
 ### AI Objects
 
-{{< figure src="/images/aiobjects.png" alt="AI Analysis using SAM 3 and CLIP to rank selected photographs and outline the subject in the preview" position="center" style="border-radius: 8px;" >}}
+In **Automatic** mode, Qwen suggests visible concepts and SAM 3 outlines each
+retained instance. Select a completed photograph to compare numbered masks with
+the source, then choose an object to inspect its crop and Qwen's notes. The
+example below shows separate musk oxen in one image.
+
+{{< figure src="/images/aiobjects.png" alt="Objects mode showing a completed mixed-subject batch, numbered musk ox masks, and one object's crop and assessment" position="center" style="border-radius: 8px;" >}}
+
+A deer photograph shows the mother and two fawns as separate objects.
+
+{{< figure src="/images/aiobjects-deer.png" alt="Objects mode showing numbered outlines for a deer and two fawns, with details for the mother deer" position="center" style="border-radius: 8px;" >}}
+
+A bird in flight can be reviewed as a single outlined object with a larger crop.
+The SAM 3 mask score and Qwen assessment confidence describe different parts of
+the analysis; verify the outline and description against the original photo.
+
+{{< figure src="/images/aiobjects-bird.png" alt="Objects mode showing a bird in flight with its SAM 3 outline, enlarged crop, and Qwen assessment" position="center" style="border-radius: 8px;" >}}
 
 ### SAM 3 + CLIP
 
