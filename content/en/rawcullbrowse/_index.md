@@ -1,6 +1,7 @@
 ---
 title: RawCullBrowse
 linkTitle: RawCullBrowse
+type: docs
 weight: 30
 menu: { main: { weight: 30 } }
 description: Browse local photo folders, develop supported RAW files, and optionally search and review photographs with three local AI models.

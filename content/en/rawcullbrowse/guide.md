@@ -1,6 +1,7 @@
 ---
 title: Browsing, RAW 9, and Local AI
 linkTitle: Feature Guide
+type: docs
 author: Thomas Evensen
 date: 2026-10-02
 weight: 10
