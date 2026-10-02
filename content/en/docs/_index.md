@@ -1,6 +1,6 @@
 ---
-title: RawCull Documentation
-linkTitle: Documentation
+title: RawCull
+linkTitle: RawCull
 menu: { main: { weight: 20 } }
 ---
 
