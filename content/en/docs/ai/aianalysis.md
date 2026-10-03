@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 title = "AI Analysis"
 date = "2026-07-28"
 lastmod = "2026-09-24"
-weight = 12
+weight = 20
 tags = ["AI", "CLIP", "SAM 3", "Qwen", "Objects", "semantic search", "similarity", "bursts"]
 categories = ["user doc"]
 +++

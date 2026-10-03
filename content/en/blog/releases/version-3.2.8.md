@@ -4,11 +4,18 @@ title = "Version 3.2.8"
 date = "2026-10-02"
 tags = ["changelog", "version 3.2.8"]
 categories = ["changelog"]
+summary = "RAW 9 preview handling, AF-point sharpness sorting, and measured focus-location evidence in AI review."
 +++
 
-# RawCull Changelog: v3.2.6 → v3.2.8
+RAW 9 preview handling, AF-point sharpness sorting, and measured focus-location evidence in AI review.
 
-This changelog continues from the [3.2.6 release notes](../version-3.2.6/) and covers subsequent development through the latest source commit on September 30, 2026. It includes the intervening development leading to version 3.2.8 and does not establish App Store availability.
+<!--more-->
+
+*Historical record dated 2026-10-02. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v3.2.6 → v3.2.8
+
+This changelog continues from the [3.2.6 release notes]({{< relref "version-3.2.6.md" >}}) and covers subsequent development through the latest source commit on September 30, 2026. It includes the intervening development leading to version 3.2.8 and does not establish App Store availability.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -91,5 +98,3 @@ The harness checks execution and numeric validity. Photographic ranking accuracy
 - Update RawParserKit from 1.3.0 to 1.3.1 and Swift Collections from 1.7.0 to 1.7.1.
 - Expand the Release integration documentation with sharpness scenarios and report interpretation.
 - Consolidate asset guidance into `Docs/assets.md` and add a future-release roadmap. Roadmap proposals are not implemented features or commitments for 3.2.8.
-
-

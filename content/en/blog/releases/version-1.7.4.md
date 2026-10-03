@@ -4,9 +4,16 @@ title = "Version 1.7.4"
 date = "2026-05-10"
 tags = ["changelog","version 1.7.4"]
 categories = ["changelog"]
+summary = "Full-size JPG caching, more consistent grid behavior, and clearer progress reporting."
 +++
 
-# RawCull Changelog — v1.7.0 → 1.7.4
+Full-size JPG caching, more consistent grid behavior, and clearer progress reporting.
+
+<!--more-->
+
+*Historical record dated 2026-05-10. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.7.0 → 1.7.4
 
 Version 1.7.4 is submitted for update on the Apple App Store. It focuses on faster zoom previews, better cache management, and more reliable culling-data saving.
 

@@ -4,9 +4,16 @@ title = "Version 1.8.5"
 date = "2026-05-20"
 tags = ["changelog","version 1.8.5"]
 categories = ["changelog"]
+summary = "Burst recommendations, richer comparison evidence, RAW diagnostics, and improved preview extraction."
 +++
 
-# RawCull Changelog — v1.8.1 → 1.8.5
+Burst recommendations, richer comparison evidence, RAW diagnostics, and improved preview extraction.
+
+<!--more-->
+
+*Historical record dated 2026-05-20. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.8.1 → 1.8.5
 
 ## ✨ Smarter Burst Culling
 

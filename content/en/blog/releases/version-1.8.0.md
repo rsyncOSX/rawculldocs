@@ -4,9 +4,16 @@ title = "Version 1.8.0"
 date = "2026-05-14"
 tags = ["changelog","version 1.8.0"]
 categories = ["changelog"]
+summary = "Side-by-side comparison, expanded zoom and rating controls, and more responsive thumbnail loading."
 +++
 
-# RawCull Changelog — v1.7.4 → 1.8.0
+Side-by-side comparison, expanded zoom and rating controls, and more responsive thumbnail loading.
+
+<!--more-->
+
+*Historical record dated 2026-05-14. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.7.4 → 1.8.0
 
 RawCull has received improvements to image comparison, zoom review, rating workflow, thumbnail responsiveness, cache reliability, sharpness/similarity behavior, and release/test tooling.
 Version 1.8.0 is submitted for update on Apple App Store.

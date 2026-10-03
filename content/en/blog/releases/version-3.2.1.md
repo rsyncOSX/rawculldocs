@@ -4,9 +4,16 @@ title = "Version 3.2.1"
 date = "2026-09-10"
 tags = ["changelog", "version 3.2.1"]
 categories = ["changelog"]
+summary = "Local CLIP and SAM 3 workflows, managed model downloads, and review-interface improvements."
 +++
 
-# RawCull Changelog: v3.1.1 -> v3.2.1
+Local CLIP and SAM 3 workflows, managed model downloads, and review-interface improvements.
+
+<!--more-->
+
+*Historical record dated 2026-09-10. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v3.1.1 -> v3.2.1
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 

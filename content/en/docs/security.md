@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Security & Privacy"
 date = "2026-07-15"
-weight = 50
+weight = 100
 tags = ["security", "privacy"]
 categories = ["user doc"]
 +++
@@ -32,3 +32,7 @@ RawCull's privacy manifest declares no tracking and lists only the required
 system API access reasons.
 
 RawCull does not request access to the Photos library, camera, microphone, location, contacts, calendars, Full Disk Access, iCloud, Bluetooth, screen recording, or accessibility services.
+
+## This Documentation Website
+
+The app's privacy behavior is separate from this website. The site is hosted on Netlify and is configured to use Google Analytics and Google Custom Search. Visiting the site or using its search involves online services; it does not give the website access to your photo catalogs. See [Google's privacy policy](https://policies.google.com/privacy) for information about those Google services.

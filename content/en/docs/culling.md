@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Culling Photos"
 date = "2026-07-15"
-weight = 1
+weight = 10
 tags = ["culling"]
 categories = ["user doc"]
 +++
@@ -19,6 +19,8 @@ RawCull records decisions without changing source photos. Add a folder as a cata
 | `T` | Set the default 3-star rating |
 | Arrow keys | Previous or next photo |
 | `Z` | Open the embedded JPG at actual-pixel view |
+
+These shortcuts apply to the catalog culling workflow. In Burst Review, `P` means previous frame; use the shortcut help for the active view.
 
 A rating key saves the decision and advances to the next photograph. The colored toolbar controls filter what is shown; they do not change ratings.
 
@@ -40,6 +42,6 @@ RawCull copies files with the system rsync tool. It does not delete source files
 
 ## Export JPGs
 
-Select one or more photos and use **Actions > Extract JPGs** (`Command-J`). You can export the embedded JPG or, for supported Sony files, a demosaiced RAW JPEG. Choose a destination folder before starting.
+Select one or more photos and use **Actions > Extract JPGs** (`Command-J`). You can export the embedded JPG or, for supported Sony files, a demosaiced RAW JPEG. The developed source may be labelled **RAW 9** when the installed decoder supports the selected file. Choose a destination folder before starting.
 
 For larger catalogs or difficult comparisons, use [Sharpness Scoring](/docs/sharpness/), [Similarity and Bursts](/docs/similarity/), or [AI Analysis](/docs/ai/).

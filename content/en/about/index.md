@@ -1,7 +1,7 @@
 ---
 title: About
 linkTitle: About
-menu: {main: {weight: 10}}
+menu: {main: {weight: 50}}
 ---
 
 {{% about-document %}}
@@ -18,11 +18,11 @@ Hello! I’m the developer behind **RsyncUI**, **RawCull**, and **RawCullBrowse*
 
 ### RawCull
 
-[RawCull](https://github.com/rsyncOSX/RawCull) is built for quickly culling RAW photographs. After a day in the field with my Sony A1 Mk II, I often come home with several thousand ARW files. I wanted a focused app to help me review them and decide which photographs to keep.
+[RawCull](/docs/) is built for quickly culling RAW photographs. After a day in the field with my Sony A1 Mk II, I often come home with several thousand ARW files. I wanted a focused app to help me review them and decide which photographs to keep.
 
 ### RawCullBrowse
 
-[RawCullBrowse](https://github.com/rsyncOSX/RawCullBrowse) builds on code from RawCull. It is a photo browser for exploring local folders, inspecting photographs and camera information, and adjusting supported RAW files. Optional AI models run locally on your Mac to help with searching and reviewing photographs.
+[RawCullBrowse](/rawcullbrowse/) builds on code from RawCull. It is a photo browser for exploring local folders, inspecting photographs and camera information, and adjusting supported RAW files. Optional AI models run locally on your Mac to help with searching and reviewing photographs.
 
 ## Background
 
@@ -38,7 +38,9 @@ These projects are built with **Swift** and **SwiftUI**, using native macOS APIs
 
 ## Get in touch
 
-Got ideas, feedback, or a bug to report? I’d love to hear from you at [thomeven@gmail.com](mailto:thomeven@gmail.com).
+For ideas, feedback, or bug reports, contact me at [thomeven@gmail.com](mailto:thomeven@gmail.com).
+
+Source code is available on GitHub for [RawCull](https://github.com/rsyncOSX/RawCull) and [RawCullBrowse](https://github.com/rsyncOSX/RawCullBrowse). For bugs, include the app and macOS versions, your camera model, and the steps to reproduce the problem.
 
 ## About this website
 

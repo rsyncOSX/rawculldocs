@@ -60,7 +60,7 @@ languages:
     label: English
     title: RawCull
     params:
-      description: A Docsy example site
+      description: RawCull photo-culling guides, screenshots, local AI workflows, and release notes.
       
 markup:
   goldmark:
@@ -117,7 +117,7 @@ params:
   github_repo: https://github.com/rsyncOSX/rawculldocs
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/rsyncOSX/rawculldocs
+  github_project_repo: https://github.com/rsyncOSX/RawCull
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -179,7 +179,6 @@ params:
     # add "hide_readingtime: true" to the page's front matter
     readingtime:
       enable: false
-  mainBranchPreviewURL: https://main--goldydocs.netlify.app/
   # Docs helpers: use with _param
   btn-lg: class="btn btn-lg btn-{1}" role="button"
   FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
@@ -201,14 +200,14 @@ params:
     #    desc: Practical questions and curated answers
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
-      - name: Site info
-        url: /site/
-        icon: fa-solid fa-hammer
-        desc: Site build information.
+      - name: About
+        url: /about/
+        icon: fa-solid fa-circle-info
+        desc: About the developer and this documentation.
       - name: GitHub
         url: https://github.com/rsyncOSX/rawculldocs
         icon: fab fa-github
-        desc: Development takes place here!
+        desc: Documentation source and issue tracker.
 
 
 security:

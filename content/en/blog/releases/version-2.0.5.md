@@ -4,14 +4,19 @@ title = "Version 2.0.5"
 date = "2026-06-18"
 tags = ["changelog","version 2.0.5"]
 categories = ["changelog"]
+summary = "Correctly oriented previews and sharpness and burst analysis scoped to selections or rating filters."
 +++
 
-# RawCull Changelog — v2.0.2 → 2.0.5
+Correctly oriented previews and sharpness and burst analysis scoped to selections or rating filters.
+
+<!--more-->
+
+*Historical record dated 2026-06-18. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.0.2 → 2.0.5
 
 Submitted for update on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
  - 🖼️ Fixed orientation handling for embedded JPEG previews, sidecar JPEGs, cached previews, comparison view, and zoom previews.
 - 🎯 Improved sharpness scoring and burst analysis so they can run on selected files or active star-rating filters instead of always processing the full catalog.
 - ⚡ Refreshed full-size JPEG cache keys to avoid reusing older non-orientation-normalized previews.

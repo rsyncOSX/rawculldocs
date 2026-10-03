@@ -4,9 +4,16 @@ title = "Version 1.7.0"
 date = "2026-05-06"
 tags = ["changelog","version 1.7.0"]
 categories = ["changelog"]
+summary = "Faster zoom previews, cache controls, and more reliable saving of culling decisions."
 +++
 
-# RawCull Changelog — v1.6.9 → 1.7.0
+Faster zoom previews, cache controls, and more reliable saving of culling decisions.
+
+<!--more-->
+
+*Historical record dated 2026-05-06. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.6.9 → 1.7.0
 
 Version 1.7.0 is submitted for update on Apple App Store. RawCull 1.7.0 focuses on faster zoom previews, better cache management, and more reliable culling-data saving.
 

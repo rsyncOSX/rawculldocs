@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Focus Mask"
 date = "2026-07-15"
-weight = 20
+weight = 30
 tags = ["focus mask", "focus peaking"]
 categories = ["user doc"]
 +++

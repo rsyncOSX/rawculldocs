@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Cache"
 date = "2026-07-15"
-weight = 30
+weight = 90
 tags = ["memory", "cache", "performance"]
 categories = ["user doc"]
 +++

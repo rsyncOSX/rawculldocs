@@ -4,14 +4,17 @@ title = "Version 2.3.3"
 date = "2026-08-01"
 tags = ["changelog","version 2.3.3"]
 categories = ["changelog"]
+summary = "Reusable similarity artifacts, improved burst grouping, and context-sensitive shortcut guidance."
 +++
 
-# RawCull Changelog: v2.3.2 → v2.3.3
+Reusable similarity artifacts, improved burst grouping, and context-sensitive shortcut guidance.
 
- ------------------------------------------------------------------------------------------------------------------------------
+<!--more-->
 
-# 📸 RawCull 2.3.3
+*Historical record dated 2026-08-01. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
 
+**Changes:** v2.3.2 → v2.3.3
+---
 Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 Changes since version 2.3.2 through commit `e576ca0`.

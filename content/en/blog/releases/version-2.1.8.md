@@ -4,14 +4,19 @@ title = "Version 2.1.8"
 date = "2026-06-22"
 tags = ["changelog","version 2.1.8"]
 categories = ["changelog"]
+summary = "Actual-pixels inspection, faster rating navigation, and adaptive memory handling."
 +++
 
-# RawCull Changelog — v2.0.5 → 2.1.8
+Actual-pixels inspection, faster rating navigation, and adaptive memory handling.
+
+<!--more-->
+
+*Historical record dated 2026-06-22. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.0.5 → 2.1.8
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ### 🔍 Actual-Pixels Inspection
 
 - Added `Z` as a fast inspection shortcut from grid, loupe, and comparison views.

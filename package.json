@@ -1,12 +1,12 @@
 {
-  "name": "docsy-example-site",
+  "name": "rawcull-docs",
   "version": "0.16.1-dev+001-over-main-9e5d51b7",
-  "description": "Example site that uses Docsy theme for technical documentation.",
-  "repository": "github:google/docsy-example",
-  "homepage": "https://example.docsy.dev",
+  "description": "RawCull documentation website built with Hugo and Docsy.",
+  "repository": "github:rsyncOSX/rawculldocs",
+  "homepage": "https://techrawcull.netlify.app",
   "author": "Docsy Authors",
   "license": "Apache-2.0",
-  "bugs": "https://github.com/google/docsy-example/issues",
+  "bugs": "https://github.com/rsyncOSX/rawculldocs/issues",
   "spelling": "cSpell:ignore docsy hugo precheck rtlcss -",
   "workspaces": [
     "packages/hugoautogen"

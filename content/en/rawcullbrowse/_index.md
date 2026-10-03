@@ -9,7 +9,7 @@ description: Browse local photo folders, develop supported RAW files, and option
 
 <div class="alert alert-info" role="alert">
 
-**App Store status — October 2, 2026:** RawCullBrowse has been submitted for approval on the Apple App Store.
+**Submission update — October 2, 2026:** RawCullBrowse was submitted for Apple App Store approval. This dated update does not confirm that the app is available to download.
 
 </div>
 
@@ -20,3 +20,5 @@ Three optional AI models—**DataComp CLIP**, **Meta SAM 3**, and **Qwen3-VL-2B-
 RawCullBrowse requires **macOS 27 or later** and an **Apple Silicon Mac**.
 
 [Read the feature guide and view the screenshots](/rawcullbrowse/guide/).
+
+Use [RawCull](/docs/) when you want a catalog workflow for ratings, burst decisions, and copying selected RAW files. RawCullBrowse focuses on folder browsing and RAW adjustments.

@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Focus Points"
 date = "2026-07-15"
-weight = 21
+weight = 31
 tags = ["focus points"]
 categories = ["user doc"]
 +++

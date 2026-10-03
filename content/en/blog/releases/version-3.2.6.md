@@ -4,11 +4,16 @@ title = "Version 3.2.6"
 date = "2026-09-28"
 tags = ["changelog", "version 3.2.6"]
 categories = ["changelog"]
+summary = "Objects analysis with numbered subjects and crops, plus improved AI review and file-copy handling."
 +++
 
-To be released on Apple App Store.
+Objects analysis with numbered subjects and crops, plus improved AI review and file-copy handling.
 
-# RawCull Changelog: v3.2.4 → v3.2.6
+<!--more-->
+
+*Historical record dated 2026-09-28. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v3.2.4 → v3.2.6
 
 This changelog covers development since the released RawCull 3.2.4 through the latest source commit on September 28, 2026. It includes the intervening 3.2.5 work and the current 3.2.6 implementation; it does not establish App Store availability for 3.2.6.
 

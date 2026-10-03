@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Similarity, Bursts, and Search"
 date = "2026-07-15"
-weight = 11
+weight = 40
 tags = ["similarity", "bursts"]
 categories = ["user doc"]
 +++

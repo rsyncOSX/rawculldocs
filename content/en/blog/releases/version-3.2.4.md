@@ -4,9 +4,16 @@ title = "Version 3.2.4"
 date = "2026-09-20"
 tags = ["changelog", "version 3.2.4"]
 categories = ["changelog"]
+summary = "A dedicated AI Analysis workspace with local Qwen Vision assessments of selected photographs."
 +++
 
-# RawCull Changelog: v3.2.1 → v3.2.4
+A dedicated AI Analysis workspace with local Qwen Vision assessments of selected photographs.
+
+<!--more-->
+
+*Historical record dated 2026-09-20. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v3.2.1 → v3.2.4
 
 Version 3.2.4 is submitted for update on Apple App Store. 
 

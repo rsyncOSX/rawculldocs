@@ -4,12 +4,17 @@ title = "Version 2.3.0"
 date = "2026-07-19"
 tags = ["changelog","version 2.3.0"]
 categories = ["changelog"]
+summary = "Shared photo-analysis components, improved cache controls, and burst-review refinements."
 +++
 
-# RawCull Changelog: v2.2.6 → v2.3.0
+Shared photo-analysis components, improved cache controls, and burst-review refinements.
 
- ------------------------------------------------------------------------------------------------------------------------------
+<!--more-->
 
+*Historical record dated 2026-07-19. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.2.6 → v2.3.0
+---
 ## 🚀 Version 2.3.0
 
 Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).

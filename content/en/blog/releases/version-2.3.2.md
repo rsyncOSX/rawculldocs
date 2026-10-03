@@ -4,14 +4,17 @@ title = "Version 2.3.2"
 date = "2026-07-23"
 tags = ["changelog","version 2.3.2"]
 categories = ["changelog"]
+summary = "Ranked burst frames, clearer candidate evidence, and Find Similar improvements."
 +++
 
-# RawCull Changelog: v2.3.0 → v2.3.2
+Ranked burst frames, clearer candidate evidence, and Find Similar improvements.
 
- ------------------------------------------------------------------------------------------------------------------------------
+<!--more-->
 
-# 📸 RawCull 2.3.2
+*Historical record dated 2026-07-23. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
 
+**Changes:** v2.3.0 → v2.3.2
+---
 Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 Changes since version 2.3.0.

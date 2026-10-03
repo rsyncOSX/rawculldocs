@@ -4,13 +4,19 @@ title = "Version 2.2.4"
 date = "2026-07-03"
 tags = ["changelog","version 2.2.4"]
 categories = ["changelog"]
+summary = "JPG export improvements, RAW-loading changes, and more responsive background processing."
 +++
 
-# RawCull Changelog: v2.2.1 → v2.2.4
+JPG export improvements, RAW-loading changes, and more responsive background processing.
+
+<!--more-->
+
+*Historical record dated 2026-07-03. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.2.1 → v2.2.4
 
 Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🖼️ JPG Export Improvements
 
 - Added a new **Extract JPGs** sheet.

@@ -3,14 +3,12 @@ author = "Thomas Evensen"
 title = "AI Step by Step"
 linkTitle = "AI Step by Step"
 date = "2026-09-21"
-lastmod = "2026-09-24"
+lastmod = "2026-10-03"
 description = "A practical workflow for using Burst Review, SAM 3 with CLIP, Qwen Vision, and Objects to review selected photographs."
-weight = 57
+weight = 10
 tags = ["ai", "culling", "burst-review", "clip", "sam3", "qwen", "objects"]
 categories = ["guides"]
 +++
-
-# AI Step by Step
 
 RawCull uses three local AI models. Each has a different job:
 
@@ -31,6 +29,8 @@ SAM 3 also requires acceptance of its licence.
 
 ## Why analyze only a small set with AI?
 
+CLIP runs quickly enough to index every photograph in the catalog for similarity and semantic search. Its cached embeddings can be reused without processing each image again for every search.
+
 Detailed AI review is much heavier than ordinary thumbnail browsing. SAM 3
 must create a subject mask for each photograph, while Qwen examines and
 describes one photograph at a time. Running both over every file would spend
@@ -49,11 +49,11 @@ order.
 
 ## 1. Begin with Burst Review
 
-Open a catalog, go to **Burst Review**, and choose **Analyze Bursts**.
+Open a catalog, go to **Similarity**, and choose **Analyze Bursts**. Open a group from **Needs Review** to compare its frames in the burst reviewer.
 
 RawCull performs three steps:
 
-1. **Similarity:** CLIP creates a visual description of each image and groups
+1. **Similarity:** CLIP creates a numeric image embedding and groups
    near-duplicates. If CLIP is unavailable, RawCull can use Apple Vision for
    similarity instead.
 2. **Sharpness:** RawCull measures focus and useful detail. This is traditional
@@ -73,7 +73,7 @@ Open **AI Analysis** from the toolbar. At the top right, choose one input:
 - **Selected** uses the images currently selected in Grid View.
 - **Tagged** uses every active-catalog image rated two stars or higher.
 
-Keep this set small. A handful of genuinely close candidates is ideal.
+Keep this set small. A handful of close candidates is ideal.
 
 ## 3. Run SAM 3 + CLIP
 
@@ -120,16 +120,14 @@ Objects is useful when a frame contains several subjects, such as a deer with fa
 
 ## 6. Make the final choice
 
-Put the evidence in this order:
+Use each result to answer a different question:
 
-1. Your intent and visual judgment.
-2. Correct subject detail from SAM 3 + CLIP.
-3. Object visibility and relationships from Objects, when the frame has multiple subjects.
-4. Composition and visible issues from Qwen Vision.
-5. The initial Burst Review ranking.
+- **Your visual judgment:** does the pose, timing, and framing match your intent?
+- **SAM 3 + CLIP:** is the intended subject masked correctly, and which candidate has useful subject detail?
+- **Objects:** are the individual subjects visible, and do their outlines and crops match the photograph?
+- **Qwen Vision:** which composition or visibility issues deserve a closer look?
+- **Burst Review:** which neighboring frames are worth comparing before you decide?
 
-When the signals disagree, inspect the image. AI results are recommendations,
-and RawCull does not automatically turn a Qwen result into a rating.
+When the signals disagree, inspect the original preview at a useful zoom level. Focus-map overlap and model confidence do not prove sharpness or photographic quality. Ratings and final picks remain your decision; RawCull does not automatically turn a Qwen result into a rating.
 
-For the implementation details behind this workflow, see
-[Burst Groups](../burstgroup/) and [AI Models in RawCull](../aiinrawcull/).
+For catalog grouping, see [Similarity, Bursts, and Search](/docs/similarity/). For models and downloads, see [AI Analysis](/docs/ai/aianalysis/). The [AI Screenshots](/docs/screenshotsai/screenshotsai/) tour shows the results in each tab.

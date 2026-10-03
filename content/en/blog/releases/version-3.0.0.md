@@ -4,9 +4,16 @@ title = "Version 3.0.0"
 date = "2026-08-31"
 tags = ["changelog","version 3.0.0"]
 categories = ["changelog"]
+summary = "The macOS 26 workflow: burst review, metadata, previews, ratings, and reliability improvements."
 +++
 
-# RawCull Changelog: v2.3.5 → v3.0.0
+The macOS 26 workflow: burst review, metadata, previews, ratings, and reliability improvements.
+
+<!--more-->
+
+*Historical record dated 2026-08-31. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.3.5 → v3.0.0
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
@@ -19,11 +26,7 @@ Version 3.0.0 on the Apple App Store is built and uploaded to App Store Connect 
 Version 3.0.0 is based on the latest version 3.2.0 with all AI features removed. There have been several updates since the last release, version 2.3.5.
 
 </div>
-
- ------------------------------------------------------------------------------------------------------------------------------
-
-# 📸 RawCull 3.0.0 Changelog
-
+---
 ## 🍂 macOS Tahoe
 
 - Updated RawCull for macOS Tahoe 26.

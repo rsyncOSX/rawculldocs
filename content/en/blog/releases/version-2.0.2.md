@@ -4,14 +4,19 @@ title = "Version 2.0.2"
 date = "2026-06-09"
 tags = ["changelog","version 2.0.2"]
 categories = ["changelog"]
+summary = "JPG/RAW source switching, burst-review queues, and reorganized comparison and RAW parsing."
 +++
 
-# RawCull Changelog — v1.9.6 → 2.0.2
+JPG/RAW source switching, burst-review queues, and reorganized comparison and RAW parsing.
+
+<!--more-->
+
+*Historical record dated 2026-06-09. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.9.6 → 2.0.2
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## ✨ New — Image source toggle in zoom / loupe view
 
  Switch between the embedded JPEG preview and a full-size JPEG created from the RAW file while inspecting an image:
@@ -21,9 +26,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - `ZoomOverlayView` updated with key-action routing
   - `FullSizeJPGDiskCache` extended to support the toggle flow
   - New `DiskCacheAndScanAdmissionTests` covering the cache admission logic
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## ✨ New — Burst Review Queue
 
  A structured review-queue workflow for burst groups:
@@ -36,9 +39,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - Filter buttons added to `SimilarityGridSelectionView` toolbar — live counts shown inline; filter resets to `.all` on Exit Groups
   - Auto-sharpness scoring toggle removed from toolbar; scoring now triggered automatically via `runWithAutoScoring` before burst analysis runs
   - Review states persisted to the burst analysis disk cache on every state change
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🏗️ Refactored — CullingGridView decomposed
 
  The monolithic `CullingGridView` split into focused, independently testable objects:
@@ -47,9 +48,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - `CullingGridRenderCache` — per-cell image caching (keyed by `CullingGridRenderCacheKey`)
   - `CullingGridProgressOverlay` — loading progress overlay
   - Cell data flow cleaned up: `isSelected`, `ratingValue`, `ratingDisplay`, `ratingColor` now passed directly to `ImageItemView`, removing ViewModel look-ups inside the cell
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🏗️ Refactored — ComparisonGridView decomposed and redesigned
 
   - `ComparisonGridDisplayState` — display/layout state extracted from the view
@@ -58,9 +57,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - `BurstComparisonEvidenceView` promoted to a floating overlay (`ZStack` + `.zIndex(2)`) so it no longer pushes image panes down
   - Image panes fill the full viewport height instead of being constrained to a fixed 3:2 ratio
   - Scroll indicators hidden; viewport transform resets automatically when the comparison group or active burst group changes
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 📦 New — RawParserKit SPM package (rsyncOSX/RawParserKit v1.1.0)
 
  All raw-file parsing logic extracted from RawCull into a standalone, reusable Swift package:
@@ -69,9 +66,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - Nikon: `NikonMakerNoteParser`, `NikonThumbnailExtractor`, `NikonRawFormat`, `JPGNikonNEFExtractor`
   - Shared: `RawFormat`, `RawFormatRegistry`, `RawParserDiagnostics`, `CancellableImageIOWork`, `ThumbnailSharpener`
   - ✨ New in package: `SonyRAWJPEGCreator` — Sony-specific embedded JPEG creator; `ThumbnailError` typed errors
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 📦 New — RawCullCore SPM package (rsyncOSX/RawCullCore v1.0.0)
 
  Core data models and domain logic extracted into a standalone package:
@@ -80,17 +75,13 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - File model: `RawCullFileItem` (replaces the internal `FileItem`)
   - Histogram: `HistogramCalculator` (replaces the internal `CalculateHistogram`)
   - ✨ New in package: `ExifMetadata`, `FocusPointParser`, `RawCullSourceCatalog`, `SaliencyInfo` — new shared data types
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🏗️ Refactored — ScanStatsSheetView expanded
 
   - Layout widened from 460 → 800 pt; content reorganised into a two-column `HStack`
   - Left column: Culling Status, Catalog Summary, Sharpness Summary, and a new **Burst Review** section (total groups, needs-review / deferred / reviewed counts)
   - Right column: new **Burst Label Guide** — caption-sized reference grid explaining every confidence and state badge
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🧹 Cleanup & dead-code removal
 
   - `FocusPeakingControlsView` and related `BurstAnalysisModels` display-only properties removed (moved to package / no longer needed)
@@ -99,9 +90,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
   - `SettingsViewModel` — dead state and unused helpers pruned
   - `ImageItemView` — substantial simplification following the cell data-flow refactor
   - `SharedMainToolbarContent` — stale toolbar items removed
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ## 🧪 Tests — Cleaned up & extended
 
  Tests for code that moved to SPM packages removed from the main test target; new and expanded tests added:

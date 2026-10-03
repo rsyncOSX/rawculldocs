@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "Memory Pressure"
 date = "2026-07-15"
-weight = 31
+weight = 91
 tags = ["memory", "pressure", "cache"]
 categories = ["user doc"]
 +++

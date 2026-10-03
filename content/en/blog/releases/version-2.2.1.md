@@ -4,14 +4,19 @@ title = "Version 2.2.1"
 date = "2026-06-27"
 tags = ["changelog","version 2.2.1"]
 categories = ["changelog"]
+summary = "More reliable burst cancellation, cache validation, saved review state, and copy-output reporting."
 +++
 
-# RawCull Changelog — v2.1.8 → 2.2.1
+More reliable burst cancellation, cache validation, saved review state, and copy-output reporting.
+
+<!--more-->
+
+*Historical record dated 2026-06-27. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.1.8 → 2.2.1
 
 To be submitted for update on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
-
- ------------------------------------------------------------------------------------------------------------------------------
-
+---
 ### ✨ Added
 
 - Added native parsing and display of rsync itemized output.
@@ -56,4 +61,3 @@ To be submitted for update on [Apple App Store](https://apps.apple.com/no/app/ra
 - Removed the `RsyncAnalyse` package dependency.
 - Updated app version/build settings to `2.2.1` / build `221`.
 - Updated README release information for `v2.1.8`.
-

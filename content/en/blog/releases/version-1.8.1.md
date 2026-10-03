@@ -4,9 +4,16 @@ title = "Version 1.8.1"
 date = "2026-05-16"
 tags = ["changelog","version 1.8.1"]
 categories = ["changelog"]
+summary = "Fixes for zoom-preview stalls, folder-access cleanup, and file-copy concurrency."
 +++
 
-# RawCull Changelog — v1.8.0 → 1.8.1
+Fixes for zoom-preview stalls, folder-access cleanup, and file-copy concurrency.
+
+<!--more-->
+
+*Historical record dated 2026-05-16. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.8.0 → 1.8.1
 
 A stability and resource-hygiene release. Focus is on eliminating main-thread hangs in the zoom preview, tightening security-scoped resource lifecycles, and fixing
 actor-isolation gaps in the rsync copy path.

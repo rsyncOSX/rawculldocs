@@ -1,7 +1,7 @@
 +++
 title = "AI Screenshots"
 linkTitle = "AI Screenshots"
-weight = 61
+weight = 70
 description = "A visual tour of SAM 3 + CLIP, Qwen Vision, Objects, and local AI model setup in RawCull."
 +++
 

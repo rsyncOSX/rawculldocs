@@ -1,46 +1,9 @@
-# How to Contribute
+# Contributing to the RawCull Documentation
 
-We'd love to accept your patches and contributions to this project. There are
-just a few small guidelines you need to follow.
+Report a documentation problem or propose a correction through the [repository issue tracker](https://github.com/rsyncOSX/rawculldocs/issues). Include the page URL, the app version where relevant, and the wording or behavior that needs correction.
 
-## Contributor License Agreement
+For a text change, edit the Markdown in `content/en` and open a pull request. Describe what changed and why. Keep instructions focused on the user's task, use the control labels shown in the app, and distinguish released behavior from source-development notes.
 
-Contributions to this project must be accompanied by a Contributor License
-Agreement. You (or your employer) retain the copyright to your contribution;
-this simply gives us permission to use and redistribute your contributions as
-part of the project. Head over to <https://cla.developers.google.com/> to see
-your current agreements on file or to sign a new one.
+Place screenshots in `static/images` and provide accurate alt text. Check image paths and internal links when renaming a page; preserve an alias for an existing published URL. Use Hugo `relref` links for dated release posts so the configured permalink is resolved correctly.
 
-You generally only need to submit a CLA once, so if you've already submitted one
-(even if it was for a different project), you probably don't need to do it
-again.
-
-## Code reviews
-
-All submissions, including submissions by project members, require review. We
-use GitHub pull requests for this purpose. Consult
-[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
-information on using pull requests.
-
-## Community Guidelines
-
-This project follows
-[Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
-
-## Maintainer notes
-
-### Upgrade Docsy
-
-Update Docsy to the latest tagged release:
-
-```bash
-npm run update:docsy:mod
-```
-
-Or update to the latest commit on the main branch:
-
-```bash
-npm run update:docsy:main
-```
-
-<!-- cSpell:ignore hugo docsy -->
+Compile and inspect the affected pages before publishing. See [README.md](README.md) for the repository layout and build commands.

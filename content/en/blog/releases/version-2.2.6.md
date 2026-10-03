@@ -4,12 +4,17 @@ title = "Version 2.2.6"
 date = "2026-07-13"
 tags = ["changelog","version 2.2.6"]
 categories = ["changelog"]
+summary = "A redesigned burst-group overview, a dedicated burst reviewer, and expanded keyboard controls."
 +++
 
-# RawCull Changelog: v2.2.4 → v2.2.6
+A redesigned burst-group overview, a dedicated burst reviewer, and expanded keyboard controls.
 
- ------------------------------------------------------------------------------------------------------------------------------
+<!--more-->
 
+*Historical record dated 2026-07-13. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.2.4 → v2.2.6
+---
 ## 🚀 Version 2.2.6
 
 Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).

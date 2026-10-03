@@ -4,9 +4,16 @@ title = "Version 2.3.5"
 date = "2026-08-07"
 tags = ["changelog","version 2.3.5"]
 categories = ["changelog"]
+summary = "More reliable actual-pixels inspection, histograms, thumbnail caching, and catalog loading."
 +++
 
-# RawCull Changelog: v2.3.3 → v2.3.5
+More reliable actual-pixels inspection, histograms, thumbnail caching, and catalog loading.
+
+<!--more-->
+
+*Historical record dated 2026-08-07. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v2.3.3 → v2.3.5
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
@@ -15,11 +22,7 @@ Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?
 Version 2.3.5 on the Apple App Store is built and uploaded to App Store Connect for release on the App Store by utilizing Xcode Cloud. I have installed macOS 27 developer beta on both my Macs and cannot build and upload a release version directly from Xcode 27 beta. The version 2.3.5 on GitHub is built by Xcode 27 beta, and if you have some doubts about it, please install this version from the Apple App Store.
 
 </div>
-
- ------------------------------------------------------------------------------------------------------------------------------
-
-  # 📸 RawCull 2.3.5 Changelog
-
+---
 RawCull 2.3.5 is a maintenance and stabilization update for macOS 26. It improves Actual Pixels inspection, histogram reliability, thumbnail-cache correctness, catalog-loading behavior, persistence testing, accessibility, and release validation.
 
 This release introduces no new AI requirements.

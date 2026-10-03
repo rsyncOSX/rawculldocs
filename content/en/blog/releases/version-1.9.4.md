@@ -4,9 +4,16 @@ title = "Version 1.9.4"
 date = "2026-05-31"
 tags = ["changelog","version 1.9.4"]
 categories = ["changelog"]
+summary = "Sharpness presets and precision modes, improved focus evidence, and stronger burst-review controls."
 +++
 
-# RawCull Changelog — v1.8.5 → 1.9.4
+Sharpness presets and precision modes, improved focus evidence, and stronger burst-review controls.
+
+<!--more-->
+
+*Historical record dated 2026-05-31. Requirements and release status below refer to this version. For usage instructions, see the [documentation](/docs/).*
+
+**Changes:** v1.8.5 → 1.9.4
 
 Updated on [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 

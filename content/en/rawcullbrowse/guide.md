@@ -8,13 +8,9 @@ weight: 10
 description: A concise guide to RawCullBrowse, including folder browsing, RAW 9 adjustments and exports, and three optional local AI models.
 ---
 
-<div class="alert alert-info" role="alert">
 
-**App Store status — October 2, 2026:** RawCullBrowse has been submitted for approval on the Apple App Store.
 
-</div>
-
-RawCullBrowse is built upon code from **RawCull**, bringing its photo-preview and local image-analysis foundations into a folder browser. It supports **three optional AI models** and includes development controls for files supported by **Apple's RAW 9 decoder on macOS 27 (Golden Gate)**. It requires macOS 27 or later and an Apple Silicon Mac.
+Use this guide to browse folders, inspect a photograph, adjust a supported RAW file, and optionally search or review images with local AI. Requirements and the dated App Store submission status are on the [RawCullBrowse overview](/rawcullbrowse/).
 
 ## Browse Your Photo Folders
 
@@ -77,3 +73,5 @@ CLIP indexing discovers JPEG, PNG, HEIC/HEIF, TIFF, and Sony ARW files recursive
 Photographs, metadata, search queries, prompts, embeddings, and AI assessments are processed on your Mac and are not sent to the developer. The app accesses folders you select through macOS permissions. Image caches, settings, and models are stored locally; RAW adjustment sidecars and semantic indexes are saved beside or within your photo folders.
 
 Model downloads require a network connection, but do not upload photographs or prompts. You can clear image caches in Settings, remove downloaded models in the download window, and remove `.clipbench` indexes in Finder. Indexes and sidecars in photo folders remain when the app is removed.
+
+For rating and burst culling before editing, see the separate [RawCull documentation](/docs/).
