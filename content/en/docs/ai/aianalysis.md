@@ -44,7 +44,7 @@ Select photographs in Grid View, or use photographs rated two stars and higher, 
 
 The numbered overview and crops are views of one source photograph. A SAM 3 mask percentage measures the model's confidence in that mask; Qwen assessment confidence is a separate judgment. Neither proves that an object was found or described correctly. Check each outline, crop, and description against the original photograph before making a culling decision.
 
-All three analysis modes run locally on the Mac. See [AI Step by Step](/docs/ai/aistepbystep/) for a practical Objects workflow and [RawCull Screenshots](/docs/screenshots/samplescreenshots/) for examples.
+All three analysis modes run locally on the Mac. See [AI Step by Step](/docs/ai/aistepbystep/) for a practical Objects workflow and [AI Screenshots](/docs/screenshotsai/screenshotsai/) for examples.
 
 ## Semantic Search
 

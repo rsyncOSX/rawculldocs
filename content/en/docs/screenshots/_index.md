@@ -2,9 +2,11 @@
 title = "RawCull Screenshots"
 linkTitle = "Screenshots"
 weight = 60
-description = "A visual tour of photo review, similarity, burst culling, semantic search, and local AI model setup in RawCull."
+description = "A visual tour of Loupe, Grid, focus overlays, and burst review in RawCull."
 +++
 
-See the main RawCull workflow, from photo inspection and burst review to local AI-assisted search and analysis.
+See how RawCull displays photographs, compares similar frames, and supports focus checks and burst decisions.
 
-[Explore the RawCull screenshots](/docs/screenshots/samplescreenshots/).
+[Explore the RawCull screenshots](/docs/screenshots/screenshots/).
+
+For the three AI Analysis tabs and model setup, see [AI Screenshots](/docs/screenshotsai/screenshotsai/).
