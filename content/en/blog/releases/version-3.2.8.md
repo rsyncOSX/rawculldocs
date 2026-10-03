@@ -92,6 +92,4 @@ The harness checks execution and numeric validity. Photographic ranking accuracy
 - Expand the Release integration documentation with sharpness scenarios and report interpretation.
 - Consolidate asset guidance into `Docs/assets.md` and add a future-release roadmap. Roadmap proposals are not implemented features or commitments for 3.2.8.
 
-## 📋 Release Status
 
-**Version 3.2.8 is not yet released.** These notes are provisional and may be updated with additional enhancements, fixes, and validation results before publication. The version and build above describe the inspected source, not a published App Store release.
