@@ -18,7 +18,13 @@ All three run locally on the Mac. The examples below use the same four deer phot
 
 <div class="alert alert-secondary" role="alert">
 
-AI Analysis is limited to selected photographs, including those selected in Grid View or rated two stars and higher, because SAM 3 and Qwen require substantial computation. CLIP runs quickly enough to analyze all images in the catalog for similarity, burst grouping, and semantic search. Use SAM 3 and Qwen for a closer review of a smaller set of candidates.
+<strong>CLIP — all catalog images:</strong> CLIP runs quickly enough to analyze every image in the catalog. Its saved image embeddings support similarity, burst grouping, and semantic search.
+
+</div>
+
+<div class="alert alert-secondary" role="alert">
+
+<strong>SAM 3 and Qwen — selected photographs:</strong> These models require substantially more computation, so AI Analysis uses a smaller set of candidates selected in Grid View or rated two stars and higher. Use them for a closer review after narrowing down the catalog.
 
 </div>
 
