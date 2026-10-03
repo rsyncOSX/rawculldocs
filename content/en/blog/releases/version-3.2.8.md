@@ -1,12 +1,10 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.2.8 (Unreleased)"
+title = "Version 3.2.8"
 date = "2026-10-02"
 tags = ["changelog", "version 3.2.8"]
 categories = ["changelog"]
 +++
-
-**Not yet released.** RawCull 3.2.8 is still in development. This changelog describes the changes currently checked in; more enhancements may be included before the release. The final scope and release date are not yet confirmed.
 
 # RawCull Changelog: v3.2.6 → v3.2.8
 
