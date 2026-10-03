@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title = "RawCull AI Screenshots"
+title = "AI Screenshots"
 date = "2026-08-20"
 lastmod = "2026-10-03"
 weight = 1
@@ -15,6 +15,12 @@ AI Analysis offers three tabs for reviewing selected photographs:
 - **Objects** finds individual subjects, outlines them, and provides crops and descriptions with focus evidence.
 
 All three run locally on the Mac. The examples below use the same four deer photographs, with **Selected (4)** active and **Tagged (0)** showing no photographs rated two stars or higher. The filmstrip at the bottom keeps the selected set in view. For the workflow, see [AI Step by Step](/docs/ai/aistepbystep/).
+
+<div class="alert alert-secondary" role="alert">
+
+AI Analysis is limited to selected photographs, including those selected in Grid View or rated two stars and higher, because SAM 3 and Qwen require substantial computation. CLIP runs quickly enough to analyze all images in the catalog for similarity, burst grouping, and semantic search. Use SAM 3 and Qwen for a closer review of a smaller set of candidates.
+
+</div>
 
 ## SAM 3 + CLIP
 

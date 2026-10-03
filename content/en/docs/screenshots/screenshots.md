@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title = "RawCull Screenshots"
+title = "Screenshots"
 date = "2026-08-20"
 lastmod = "2026-10-03"
 weight = 1
