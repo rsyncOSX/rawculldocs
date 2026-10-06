@@ -16,6 +16,7 @@ The reference is the local RawCull source inspected on **6 October 2026**, prima
 | Type | Technical theme | Contents |
 |---|---|---|
 | Tech doc | [Sharpness scoring](/docs/technical/sharpness-scoring/) | Laplacian energy, robust statistics, regional blending, and calibration |
+| Tech doc | [Focus mask](/docs/technical/focus-mask/) | Native-pixel detail, region selection, adaptive thresholds, and overlay rendering |
 | Tech doc | [Vision and CLIP indexes](/docs/technical/vision-clip-index/) | Representations, distance calculations, indexing, and compatibility |
 | Tech doc | [Subject evidence](/docs/technical/subject-evidence/) | Saliency, autofocus, masks, local detail, and Deep Review confidence |
 | Tech doc | [Burst groups](/docs/technical/burst-groups/) | Boundaries, metadata checks, ranking weights, and recommendation confidence |

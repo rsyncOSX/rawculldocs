@@ -51,6 +51,8 @@ Finally, subject micro-contrast drives an aperture-dependent blur gate. Between 
 
 ## Calibration and interpretation
 
+See [Focus mask](/docs/technical/focus-mask/) for the full overlay rendering pipeline, including local adaptive thresholds and morphology.
+
 `FocusMaskCalibration` samples positive finite overlay-detail energies and selects a percentile threshold, default p90, clamped to 0.01–0.95. It requires at least five successful images by default. **This calibrates the visual focus-mask threshold only.** Scalar scoring uses `stableScoringEnergyMultiplier` and is independent of the catalog's calibration threshold.
 
 The final scalar, AF-point measurement, focus-mask overlay, and [masked Deep Review score](/docs/technical/subject-evidence/) remain distinct results. A high whole-frame measurement can come from a detailed background; an AF coordinate records where focus was attempted, not proof that focus succeeded.
