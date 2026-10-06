@@ -61,6 +61,7 @@ Sony ARW is the primary format. Some functions depend on camera metadata and the
 | Review bursts or search with a description | [Similarity, Bursts, and Search](/docs/similarity/) |
 | Review a small set with local AI | [AI Step by Step](/docs/ai/aistepbystep/) |
 | Understand the models, downloads, and licences | [AI Analysis](/docs/ai/aianalysis/) |
+| Read implementation details, formulas, and evidence pipelines (tech docs) | [Technical Documentation](/docs/technical/) |
 | See the interface | [Screenshots](/docs/screenshots/screenshots/) and [AI Screenshots](/docs/screenshotsai/screenshotsai/) |
 | Adjust preferences or manage previews and memory | [Settings](/docs/settings/), [Cache](/docs/cache/), and [Memory Pressure](/docs/memorypressure/) |
 | Understand folder permissions and local storage | [Security & Privacy](/docs/security/) |
