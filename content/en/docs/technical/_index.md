@@ -15,6 +15,7 @@ The reference is the local RawCull source inspected on **6 October 2026**, prima
 
 | Type | Technical theme | Contents |
 |---|---|---|
+| Tech doc | [Visual walkthrough](/docs/technical/visual-walkthrough/) | Annotated example connecting pixels, focus evidence, indexes, bursts, and AI models |
 | Tech doc | [Sharpness scoring](/docs/technical/sharpness-scoring/) | Laplacian energy, robust statistics, regional blending, and calibration |
 | Tech doc | [Focus mask](/docs/technical/focus-mask/) | Native-pixel detail, region selection, adaptive thresholds, and overlay rendering |
 | Tech doc | [Vision and CLIP indexes](/docs/technical/vision-clip-index/) | Representations, distance calculations, indexing, and compatibility |
