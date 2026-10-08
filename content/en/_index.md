@@ -33,6 +33,6 @@ Optional AI runs locally: CLIP indexes the catalog for similarity and search, wh
 - [Screenshots](/docs/screenshots/screenshots/) shows browsing, focus overlays, and burst review.
 - [AI Screenshots](/docs/screenshotsai/screenshotsai/) explains the three AI Analysis tabs with examples.
 - [Release Notes](/blog/releases/) records version changes and development details.
-- [RawCullBrowse](/rawcullbrowse/) is the companion app for browsing folders and adjusting supported RAW files.
+- [RawBrowse](/rawcullbrowse/) is the companion app for browsing folders and adjusting supported RAW files.
 - [About](/about/) introduces the developer and provides contact information.
 {{% /blocks/section %}}

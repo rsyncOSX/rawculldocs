@@ -13,7 +13,7 @@ The site has useful, concrete documentation, especially the screenshot tours and
 - Fixed two obsolete AI links, the dated release-post link, and the footer's missing Site info destination. Preserved existing published page paths and the screenshot redirect.
 - Added concise summaries and explicit summary breaks to all 22 version posts. Removed duplicate page headings and oversized separators while keeping the historical changelog details.
 - Added a recent-release guide and explained that submission notes and source snapshots do not confirm current App Store availability.
-- Reduced duplicated RawCullBrowse introduction and status text, and added links explaining which app to choose.
+- Reduced duplicated RawBrowse introduction and status text, and added links explaining which app to choose.
 - Distinguished app privacy from the website's configured Google Analytics and Google Custom Search services.
 - Replaced example-site descriptions, package identity, the unrelated preview URL, and the inherited Google contribution instructions. Kept dependency versions and licence declarations unchanged.
 

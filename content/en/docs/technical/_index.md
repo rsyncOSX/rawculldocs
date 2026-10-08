@@ -9,7 +9,7 @@ description = "Technical documentation of RawCull analysis implementation and re
 
 These **tech docs** describe how RawCull computes analysis results, stores evidence, and turns measurements into review recommendations. They are intended for readers who want implementation detail beyond the user guides.
 
-The reference is the local RawCull source inspected on **6 October 2026**, primarily the `RawCull/RawCull` application, `RawCullCore`, `PhotoAnalysisKit`, and `PhotoAIKit`. Defaults and algorithms describe that source snapshot; they do not establish which features are available in an App Store release. RawCullBrowse and RawCullFB have separate integrations and should not be assumed to behave identically.
+The reference is the local RawCull source inspected on **6 October 2026**, primarily the `RawCull/RawCull` application, `RawCullCore`, `PhotoAnalysisKit`, and `PhotoAIKit`. Defaults and algorithms describe that source snapshot; they do not establish which features are available in an App Store release. RawBrowse and RawCullFB have separate integrations and should not be assumed to behave identically.
 
 ## Technical index
 
