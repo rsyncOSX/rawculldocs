@@ -10,7 +10,7 @@ description: A concise guide to RawBrowse, including folder browsing, RAW 9 adju
 
 
 
-Use this guide to browse folders, inspect a photograph, adjust a supported RAW file, and optionally search or review images with local AI. Requirements and the GitHub release development status are on the [RawBrowse overview](/rawcullbrowse/).
+Use this guide to browse folders, inspect a photograph, adjust a supported RAW file, and optionally search or review images with local AI. Requirements, release status, and security information are on the [RawBrowse overview](/rawcullbrowse/).
 
 ## Browse Your Photo Folders
 
@@ -32,8 +32,9 @@ RawBrowse checks each file for RAW 9 or RAW 9 DNG decoder support. A file that c
 
 {{< figure src="/images/rawcullbrowse/sparrowraw.png" alt="RAW 9 rendering of the same bird photograph with white balance, exposure, noise, sharpness, contrast, crop, and export controls" position="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/images/rawcullbrowse/sparrowrawclean.png" alt="RAW 9 rendering of the same bird photograph with white balance, exposure, noise, sharpness, contrast, crop, and export controls" position="center" style="border-radius: 8px;" >}}
+Preview mode hides the information and RAW adjustment panels, giving the photograph more space for an unobstructed view of the developed image.
 
+{{< figure src="/images/rawcullbrowse/sparrowrawclean.png" alt="RawBrowse preview mode showing the developed bird photograph with the information and RAW adjustment panels hidden" position="center" style="border-radius: 8px;" >}}
 
 The RAW 9 controls provide:
 
