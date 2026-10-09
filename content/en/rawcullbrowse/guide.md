@@ -32,6 +32,9 @@ RawBrowse checks each file for RAW 9 or RAW 9 DNG decoder support. A file that c
 
 {{< figure src="/images/rawcullbrowse/sparrowraw.png" alt="RAW 9 rendering of the same bird photograph with white balance, exposure, noise, sharpness, contrast, crop, and export controls" position="center" style="border-radius: 8px;" >}}
 
+{{< figure src="/images/rawcullbrowse/sparrowrawclean.png" alt="RAW 9 rendering of the same bird photograph with white balance, exposure, noise, sharpness, contrast, crop, and export controls" position="center" style="border-radius: 8px;" >}}
+
+
 The RAW 9 controls provide:
 
 - **White balance:** adjust temperature and tint, or use the eyedropper on a neutral white or gray area.
