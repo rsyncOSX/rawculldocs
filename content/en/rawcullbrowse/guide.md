@@ -39,11 +39,13 @@ Preview mode hides the information and RAW adjustment panels, giving the photogr
 The RAW 9 controls provide:
 
 - **White balance:** adjust temperature and tint, or use the eyedropper on a neutral white or gray area.
-- **Exposure:** adjust brightness from −3 to +3 stops.
-- **Noise, Sharpness, and Contrast:** adjust offsets from the decoder's camera defaults.
+- **Exposure:** adjust brightness from −5 to +5 stops.
+- **Light, Color, and Detail:** adjust tone mapping, shadows, overall contrast, saturation, vibrance, noise reduction, sharpening, and detail contrast.
 - **Crop:** choose the area to retain in the developed image.
 - **Reset:** return to the original development settings.
 - **Export:** save the developed image in a format supported by the Mac, with additional HEIF (10-bit) and OpenEXR options. PNG and TIFF exports use 16-bit output.
+
+See [RAW 9 Controls](/rawcullbrowse/raw9-controls/) for every control’s purpose, range, default, and double-click reset behavior.
 
 Adjustments are saved automatically in an app-specific `.rawcull-raw9.json` sidecar beside the original RAW file. The original remains unchanged. These sidecars are separate from XMP files used by other editors. Exports run in a background queue and continue after Zoom View closes.
 
