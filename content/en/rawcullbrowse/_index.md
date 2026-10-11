@@ -9,7 +9,7 @@ description: Browse local photo folders, develop supported RAW files, and option
 
 <div class="alert alert-info" role="alert">
 
-**Release status:** RawBrowse **1.0.0** is available on [GitHub](https://github.com/rsyncOSX/RawBrowse/releases).
+**Release status:** RawBrowse **1.0.2** is available on [GitHub](https://github.com/rsyncOSX/RawBrowse/releases).
 
 </div>
 
