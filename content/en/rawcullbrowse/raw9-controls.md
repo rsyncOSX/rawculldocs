@@ -5,7 +5,7 @@ type: docs
 author: Thomas Evensen
 date: 2026-10-11
 weight: 20
-description: RAW 9 adjustment controls, their ranges and defaults, plus crop, reset, copy, paste, and export actions.
+description: Sony camera support on macOS 27.0.1 and RAW 9 adjustment controls, their ranges and defaults, plus crop, reset, copy, paste, and export actions.
 ---
 
 ## What is RAW 9?
@@ -15,6 +15,34 @@ RAW 9 is version 9 of Apple's built-in RAW processing engine. It develops suppor
 Apple explains the engine in [Enhance RAW image processing with Core Image](https://developer.apple.com/videos/play/wwdc2026/305/). Although this presentation is aimed at developers, its introduction describes the improvements in sharpness, color, and processing performance.
 
 For general guidance aimed at users, see Apple's [How the Photos app and iCloud Photos handle RAW images](https://support.apple.com/en-us/104964). That article covers RAW images generally rather than decoder version 9.
+
+## Sony cameras supporting RAW 9
+
+As of **October 11, 2026**, the Images settings panel on **macOS 27.0.1**
+reports these **18 Sony cameras** as supporting RAW 9. This list was transcribed
+from the supplied settings screenshots.
+
+Camera support is provided by the RAW 9 decoder installed on the Mac and updates
+with macOS. Support can vary by RAW file format and camera shooting mode.
+
+- Sony Alpha ILCE-7 II
+- Sony Alpha ILCE-7C
+- Sony Alpha ILCE-7C II
+- Sony Alpha ILCE-7M IV
+- Sony Alpha ILCE-7M3
+- Sony Alpha ILCE-7M4
+- Sony Alpha ILCE-7R III
+- Sony Alpha ILCE-7R III A
+- Sony Alpha ILCE-7R V
+- Sony Alpha ILCE-7RM6B
+- Sony Alpha ILCE-7S III
+- Sony Alpha ILCE-6100
+- Sony Alpha ILCE-6100A
+- Sony Alpha ILCE-6400
+- Sony Alpha ILCE-6400A
+- Sony Alpha ILCE-6700
+- Sony Alpha ZV-E10
+- Sony Cyber-shot DSC-RX1R III
 
 ## Using RAW 9 in RawBrowse
 
