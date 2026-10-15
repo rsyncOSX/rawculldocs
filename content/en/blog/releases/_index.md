@@ -8,6 +8,8 @@ RawCull changes, listed by publication date. Each entry begins with a short summ
 
 ## Recent Changes
 
+- [Version 3.3.2 — In Development]({{< relref "version-3.3.2.md" >}}): not yet released; Combined Review, evidence inspection, AI memory guidance, and improvements since 3.2.8.
+
 - [Version 3.2.8]({{< relref "version-3.2.8.md" >}}): RAW 9 preview handling, AF-point sharpness sorting, and focus evidence in AI review.
 - [Version 3.2.6]({{< relref "version-3.2.6.md" >}}): Objects analysis with numbered subjects, crops, and local descriptions.
 - [Version 3.2.4]({{< relref "version-3.2.4.md" >}}): the AI Analysis workspace and Qwen Vision assessments.
