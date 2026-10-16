@@ -1,34 +1,34 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.3.2 - In Development"
-date = "2026-10-15"
-tags = ["changelog", "version 3.3.2"]
+title = "Version 3.3.3 - In Development"
+date = "2026-10-16"
+tags = ["changelog", "version 3.3.3"]
 categories = ["changelog"]
-summary = "In development, not yet released: Combined Review, evidence inspection, AI memory guidance, and catalog and cache reliability improvements since 3.2.8."
+summary = "In development, not yet released: Combined Review, evidence inspection, AI memory guidance, and keyboard, export, persistence, accessibility, and catalog reliability improvements since 3.2.8."
 +++
 
-**RawCull 3.3.2 is in development and has not yet been released.**
+**RawCull 3.3.3 is in development and has not yet been released.**
 
 Combined Review brings local AI findings and their supporting evidence into a dedicated review workspace. This cumulative changelog also includes JPEG extraction, Burst Groups preparation status, and catalog and cache improvements since 3.2.8.
 
 <!--more-->
 
-**Changes:** v3.2.8 → v3.3.2 (in development)
+**Changes:** v3.2.8 → v3.3.3 (in development)
 
-This changelog continues from the [3.2.8 release notes]({{< relref "version-3.2.8.md" >}}) and covers source changes through October 15, 2026. It replaces the earlier 3.2.9 development changelog and includes the intervening development toward 3.3.2.
+This changelog continues from the [3.2.8 release notes]({{< relref "version-3.2.8.md" >}}) and covers source changes through October 16, 2026. It replaces the earlier 3.2.9 development changelog and includes the intervening development toward 3.3.3.
 
 <div class="alert alert-warning" role="alert">
 
-**In development — not yet released.** RawCull 3.3.2 is a development snapshot. Features and build numbers may change before release. This page does not announce App Store, TestFlight, or downloadable release availability.
+**In development — not yet released.** RawCull 3.3.3 is a development snapshot. Features and build numbers may change before release. This page does not announce App Store, TestFlight, or downloadable release availability.
 
 </div>
 
 RawCull requires macOS 27 (Golden Gate) and an Apple Silicon Mac. Building from source requires Xcode 27.
 
-**Commit range:** `v3.2.8..76daf365`  
+**Commit range:** `v3.2.8..97c68c49`  
 **Baseline tag:** `v3.2.8` at `2b04aa6e` (2026-09-30), RawCull 3.2.8 Build 398  
-**Latest source commit:** `76daf365` (2026-10-15)  
-**Current source version:** RawCull 3.3.2 (Build 420)  
+**Latest source commit:** `97c68c49` (2026-10-16)  
+**Current source version:** RawCull 3.3.3 (Build 421)  
 **Release status:** In development; not yet released
 
 ## Major Enhancements
@@ -40,6 +40,22 @@ RawCull requires macOS 27 (Golden Gate) and an Apple Silicon Mac. Building from 
 - Support any number of ARW inputs in the local analysis diagnostic scripts, with bounded batches for Combined Review.
 - Add complete-catalog JPEG extraction and clearer Burst Groups preparation status.
 - Strengthen catalog cancellation, background folder access, asynchronous sorting, and cache accounting.
+- Improve keyboard routing, embedded JPEG export, saved-review recovery, thumbnail readiness, Settings error reporting, and accessibility.
+
+## Latest Updates — October 15–16
+
+- Correct burst keyboard routing: **2** keeps the top two candidates in burst mode and remains rating 2 in ordinary grids. Unavailable burst commands no longer fall through to rating changes.
+- Scope photo shortcuts to the active review window. Settings, About, sheets, text fields, and native controls retain their keyboard input. Guard against duplicate thumbnail keyboard monitors.
+- Export embedded JPEGs directly from ARW, NEF, and DNG files, independently of sidecar JPEGs and display-preview caches. Preserve original JPEG bytes where possible and normalize orientation when required.
+- Reload thumbnails when size, style, or source metadata changes, and prevent cancelled or superseded requests from publishing stale images.
+- Initialize saved review history before accepting edits, including when no catalog is open. Provide explicit retry after a failed load and refresh ratings, filters, scoring, and selections after recovery.
+- Correct tagging dates when rating existing photo records, while preserving them during scoring-only updates.
+- Show Settings load/save errors with retry controls while retaining edits after a failed save.
+- Add accessible slider names, values, and hints. Respect **Reduce Motion** throughout review interactions, including scrolling, transitions, thumbnail hover, and memory warnings.
+- Bound concurrent metadata reads and coalesce scan progress updates. Release ready thumbnails individually before the entire catalog preload finishes.
+- Cache filtered and ranked grid projections by mutation revisions, allowing selection-only changes to reuse existing projections. Restore saved sharpness scores in a single batch.
+
+Focused Xcode regression suites passed for these changes. The October 15 full smoke run reported **388 passed, 11 failed, and 1 skipped**: nine failures required missing recorded AI fixtures, and two concerned release metadata/documentation checks. That run predates the latest version bump and October 16 keyboard changes; it is not a passing full-suite result for this snapshot. Manual VoiceOver and Reduce Motion checks, review-window keyboard checks, and Instruments measurements remain outstanding. The previously reported runtime crash has not been reproduced or diagnosed.
 
 ## Combined Review
 
@@ -105,7 +121,7 @@ These memory recommendations are estimates, not measured peak-memory requirement
 ## Release Tooling and Verification
 
 - Add `Scripts/release.sh` and Makefile commands for internal TestFlight and App Store Connect uploads, including dry-run support and explicit build numbers. Uploading does not submit the app for review or publish it.
-- Update the Core AI and PhotoAIKit integrations, including PhotoAIKit 1.0.0 integration work, and advance source metadata to 3.3.2 Build 420.
+- Update the Core AI and PhotoAIKit integrations, including PhotoAIKit 1.0.0 integration work, and advance source metadata to 3.3.3 Build 421.
 - Expand regression coverage for review evidence ownership, response validation, presentation, memory thresholds, catalog cancellation, retained folder access, and cache accounting.
 - On October 15, complete a local 12-ARW AI Analysis evaluation: **36 analysis steps, zero failures** after the focus-evidence fix.
 - Complete a local 12-ARW Combined Review evaluation in batches of eight and four: **12 reports, all scheduled work items completed**, with engineering acceptance passing.
