@@ -7,8 +7,6 @@ categories = ["changelog"]
 summary = "In development, not yet released: Combined Review, evidence inspection, AI memory guidance, and keyboard, export, persistence, accessibility, and catalog reliability improvements since 3.2.8."
 +++
 
-**RawCull 3.3.3 is in development and has not yet been released.**
-
 Combined Review brings local AI findings and their supporting evidence into a dedicated review workspace. This cumulative changelog also includes JPEG extraction, Burst Groups preparation status, and catalog and cache improvements since 3.2.8.
 
 **Changes:** v3.2.8 → v3.3.3 
