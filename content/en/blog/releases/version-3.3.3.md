@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.3.3 - In Development"
+title = "Version 3.3.3"
 date = "2026-10-16"
 tags = ["changelog", "version 3.3.3"]
 categories = ["changelog"]
@@ -11,17 +11,9 @@ summary = "In development, not yet released: Combined Review, evidence inspectio
 
 Combined Review brings local AI findings and their supporting evidence into a dedicated review workspace. This cumulative changelog also includes JPEG extraction, Burst Groups preparation status, and catalog and cache improvements since 3.2.8.
 
-<!--more-->
-
-**Changes:** v3.2.8 → v3.3.3 (in development)
+**Changes:** v3.2.8 → v3.3.3 
 
 This changelog continues from the [3.2.8 release notes]({{< relref "version-3.2.8.md" >}}) and covers source changes through October 16, 2026. It replaces the earlier 3.2.9 development changelog and includes the intervening development toward 3.3.3.
-
-<div class="alert alert-warning" role="alert">
-
-**In development — not yet released.** RawCull 3.3.3 is a development snapshot. Features and build numbers may change before release. This page does not announce App Store, TestFlight, or downloadable release availability.
-
-</div>
 
 RawCull requires macOS 27 (Golden Gate) and an Apple Silicon Mac. Building from source requires Xcode 27.
 
