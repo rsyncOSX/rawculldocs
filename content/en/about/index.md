@@ -10,19 +10,15 @@ menu: {main: {weight: 50}}
 
 Hello! I’m the developer behind **RsyncUI**, **RawCull**, and **RawBrowse** — three focused macOS apps shaped by my interests in computing and photography.
 
-## The apps
+## macOS apps by Thomas (rsyncOSX)
 
-### RsyncUI
+Native macOS applications for file synchronization, photo culling, and private on-device image search. All three applications are actively developed, and their core processing stays on your Mac.
 
-[RsyncUI](https://github.com/rsyncOSX/RsyncUI) provides a graphical interface for rsync on macOS, making it easier to organize and run file synchronization tasks. Built with SwiftUI, it began in late 2020 as the successor to RsyncOSX.
-
-### RawCull
-
-[RawCull](/docs/) is built for quickly culling RAW photographs. After a day in the field with my Sony A1 Mk II, I often come home with several thousand ARW files. I wanted a focused app to help me review them and decide which photographs to keep.
-
-### RawBrowse
-
-[RawBrowse](/rawcullbrowse/) builds on code from RawCull. It is a photo browser for exploring local folders, inspecting photographs and camera information, and adjusting supported RAW files. Optional AI models run locally on your Mac to help with searching and reviewing photographs.
+| Application | Purpose | Requirements |
+| --- | --- | --- |
+| [RsyncUI](https://github.com/rsyncOSX/RsyncUI) | Graphical file synchronization with `rsync` | macOS Sonoma and later |
+| [RawCull](https://github.com/rsyncOSX/RawCull) | AI-assisted Sony RAW photo culling | Apple Silicon, macOS Golden Gate |
+| [RawBrowse](https://github.com/rsyncOSX/RawBrowse) | Photo browsing, local AI search, and RAW editing | Apple Silicon, macOS Golden Gate |
 
 ## Background
 
