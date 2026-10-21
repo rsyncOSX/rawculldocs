@@ -43,9 +43,21 @@ This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.
 - Move image pixel dimensions beside the current rating badge in the zoom overlay.
 - Remove the extra zoom hint and rating action bar from the zoom overlay controls to leave more space for the photograph.
 
-## Dependencies and Maintenance
+## Broader RAW Support with RawParserKit
 
-- Update RawParserKit from **1.3.1** to **1.3.2**.
+- Update [RawParserKit](https://github.com/rsyncOSX/RawParserKit) from **1.3.1** to **1.3.2**, adding generic RAW handling for more camera brands alongside the dedicated Sony ARW, Nikon NEF, and DNG handlers.
+- Recognize additional formats including Canon CR2/CR3/CRW, Fujifilm RAF, Olympus / OM System ORF, Panasonic RW2, Pentax / Ricoh PEF/PTX, and formats from Samsung, Sigma, Phase One, Hasselblad, Kodak, Minolta, Epson, Mamiya, Leaf, Leica, and Casio, plus Nikon NRW and legacy Sony SR2/SRF.
+- These additional formats use macOS ImageIO for thumbnails and embedded previews. Availability depends on the installed macOS camera support and the previews exposed by each file; recognizing an extension does not guarantee support for every camera or compression mode.
+
+### Why Direct Sony ARW Parsing Helps
+
+Sony ARW keeps its dedicated parser. RawParserKit can read the file's TIFF structure and Sony MakerNotes to locate the camera's embedded JPEG previews and autofocus information directly. For preview-based culling, this provides a fallback when Apple's ImageIO cannot expose a usable preview and avoids requiring Core Image to develop the sensor data just to display the photograph.
+
+That makes preview access less dependent on Apple's support for a particular Sony camera or RAW compression mode. It also uses the camera-rendered JPEG, preserving the camera's rendering for that preview, while the Sony MakerNote parser supplies focus information that generic image loading may not expose.
+
+This reliability advantage applies to embedded previews and supported metadata. Developing the RAW sensor data, including creating a new full-size JPEG from it, still uses Apple's Core Image RAW decoder and depends on its camera and compression support. The broader format support does not change the dedicated Sony ARW loading path.
+
+## Dependencies and Maintenance
 - Advance app and model downloader metadata to **3.3.4 Build 424** and update Xcode project and test scheme configuration.
 - Add regression coverage for saving and restoring Single Images workflow states without choosing a winner.
 - Apply source formatting and internal cleanup across image loading, catalog handling, and AI review components.
