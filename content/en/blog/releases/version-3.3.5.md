@@ -1,25 +1,38 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.3.4 — In Development"
-date = "2026-10-21"
-tags = ["changelog", "version 3.3.4"]
+title = "Version 3.3.5 — In Development"
+date = "2026-10-22"
+tags = ["changelog", "version 3.3.5"]
 categories = ["changelog"]
-summary = "In development, not yet released: a combined Single Images review group, simpler cache and saved-data management, and cleaner image rating overlays."
+summary = "In development, not yet released: RAW exposure inspection, AF-point sharpness sorting, a combined Single Images review group, and simpler cache management."
 +++
 
-**In development — version 3.3.4 has not yet been released.** These notes describe the current source changes and may change before release.
+**In development — version 3.3.5 has not yet been released.** These notes describe the current source changes and may change before release.
 
-This update brings single photographs together for review, simplifies cache and saved-data management, and reduces clutter over photographs.
+This update adds RAW exposure inspection and AF-point sharpness sorting, brings single photographs together for review, and simplifies cache and saved-data management.
 
-**Changes:** v3.3.3 → v3.3.4 development
+**Changes:** v3.3.3 → v3.3.5 development
 
-This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.3.md" >}}). It covers the 10 commits after the `v3.3.3` release tag through the source snapshot below, rather than the earlier development snapshot described in that post.
+This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.3.md" >}}). It covers the 32 commits after the `v3.3.3` release tag through the source snapshot below, rather than the earlier development snapshot described in that post.
 
-**Commit range:** `v3.3.3..69c0be8f`  
+**Commit range:** `v3.3.3..ad5ac9af`  
 **Baseline tag:** `v3.3.3` at `e7516156` (2026-10-16), RawCull 3.3.3 Build 423  
-**Latest source commit:** `69c0be8f` (2026-10-20)  
-**Current source version:** RawCull 3.3.4 (Build 424)  
+**Latest source commit:** `ad5ac9af` (2026-10-22)  
+**Current source version:** RawCull 3.3.5 (Build 425)  
 **Release status:** In development; not yet released
+
+## RAW Exposure Inspection
+
+- Add **EV analysis** in the zoom viewer to inspect a developed RAW preview with exposure adjustments from **−5 to +5 EV** in 0.1 EV steps. The preview updates when the slider is released, with a Reset action to return to zero.
+- Add optional clipping warnings and an expandable RGB preview histogram with near-black and near-white percentages. These describe the tone-adjusted, displayed preview; they do not measure RAW sensor clipping or prove that detail is unrecoverable.
+- Restore the previous image source and RAW inspection settings when EV analysis closes, and prevent image navigation during inspection.
+- Keep adjusted inspection previews separate from the export/JPEG cache, with background rendering and cancellation handling.
+
+## AF-point Sharpness Sorting
+
+- Add a burst display-order picker for **Best frame** or **AF-point sharpness**. Load missing focus-point measurements when needed and place frames without a usable measurement last.
+- Select the first frame when changing sort order and after focus-point measurements finish loading, and refresh the filmstrip for the selected order.
+- Stack image dimensions, rating, suggestion, and subject badges vertically in the burst viewer.
 
 ## Single Images and Burst Review
 
@@ -58,7 +71,9 @@ That makes preview access less dependent on Apple's support for a particular Son
 This reliability advantage applies to embedded previews and supported metadata. Developing the RAW sensor data, including creating a new full-size JPEG from it, still uses Apple's Core Image RAW decoder and depends on its camera and compression support. The broader format support does not change the dedicated Sony ARW loading path.
 
 ## Dependencies and Maintenance
-- Advance app and model downloader metadata to **3.3.4 Build 424** and update Xcode project and test scheme configuration.
+- Advance app and model downloader metadata to **3.3.5 Build 425** and update Xcode project and test scheme configuration.
+- Split viewer and analysis screens into focused components, share image overlays and preview preparation, and centralize keyboard monitor and image-loading task lifecycles.
+- Add regression coverage for RAW inspection state restoration, viewer keyboard handling, overlay presentation, and AF-point sorting, plus release sharpness comparison tooling.
 - Add regression coverage for saving and restoring Single Images workflow states without choosing a winner.
 - Apply source formatting and internal cleanup across image loading, catalog handling, and AI review components.
 
