@@ -1,25 +1,44 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.3.5 — In Development"
-date = "2026-10-22"
+date = "2026-10-25"
 tags = ["changelog", "version 3.3.5"]
 categories = ["changelog"]
-summary = "In development, not yet released: RAW exposure inspection, AF-point sharpness sorting, a combined Single Images review group, and simpler cache management."
+summary = "In development, not yet released: RAW exposure inspection, AF-point sharpness sorting, a combined Single Images review group, simpler cache management, and catalog performance improvements."
 +++
 
 **In development — version 3.3.5 has not yet been released.** These notes describe the current source changes and may change before release.
 
-This update adds RAW exposure inspection and AF-point sharpness sorting, brings single photographs together for review, and simplifies cache and saved-data management.
+This update adds RAW exposure inspection and AF-point sharpness sorting, brings single photographs together for review, simplifies cache and saved-data management, and reduces progress-update work during catalog preparation.
 
 **Changes:** v3.3.3 → v3.3.5 development
 
-This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.3.md" >}}). It covers the 32 commits after the `v3.3.3` release tag through the source snapshot below, rather than the earlier development snapshot described in that post.
+This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.3.md" >}}). It covers the 80 commits after the `v3.3.3` release tag through the source snapshot below, rather than the earlier development snapshot described in that post.
 
-**Commit range:** `v3.3.3..ad5ac9af`  
-**Baseline tag:** `v3.3.3` at `e7516156` (2026-10-16), RawCull 3.3.3 Build 423  
-**Latest source commit:** `ad5ac9af` (2026-10-22)  
-**Current source version:** RawCull 3.3.5 (Build 425)  
+**Commit range:** `v3.3.3..c0d5a3d6`\
+**Baseline tag:** `v3.3.3` at `e7516156` (2026-10-16), RawCull 3.3.3 Build 423\
+**Latest source commit:** `c0d5a3d6` (2026-10-25)\
+**Current source version:** RawCull 3.3.5 (Build 426)\
 **Release status:** In development; not yet released
+
+## Catalog Performance
+
+- Coalesce metadata and thumbnail progress updates to a 100 ms cadence, while publishing initial and final states promptly and preserving exact completion counts. Cancellation and catalog-switch guards prevent stale progress updates.
+- Simplify progress animation to a short ring-only transition, update numeric progress immediately, and respect **Reduce Motion**.
+- Phase-aligned app recordings showed roughly **71% less sampled main-thread work during thumbnail preparation** (4.575 s → 1.325 s). Elapsed preparation time was broadly similar (20.577 s → 20.254 s); this is evidence of reduced progress-presentation work, not a 71% loading speedup or verified improvement in frame smoothness.
+- A separate 23 October / 25 October build comparison on **809 Sony ARW files**, with three repetitions and 1616-pixel previews, recorded the following results:
+
+| Measurement | 23 October build | 25 October build |
+| --- | ---: | ---: |
+| Empty-thumbnail-cache preload, median | 8.617 s | 8.188 s |
+| Warm-thumbnail-cache preload, median | 3.973 s | 3.634 s |
+| Preload with browsing, median | 4.169 s | 3.685 s |
+| Process CPU time, average per repetition | 34.019 s | 29.648 s |
+| Highest sampled process memory footprint | 310.7 MiB | 253.4 MiB |
+
+All recorded correctness checks passed in that comparison. Grid preparation in the compared builds changed from AppKit drawing to direct `CGImage` resizing, with output capped at 200 pixels rather than 200 points. The smaller output is part of the workload change and should be considered when interpreting the time and memory savings. RawParserKit sources and decoder concurrency were unchanged.
+
+Occasional background image loads remain a follow-up: the longest measured load increased from 343 ms to 2.012 s, despite a lower median. This timer includes access, scheduling, parser waits, I/O, and image construction; it does not isolate decoder CPU time. These measurements describe image readiness, not first painted frames. Broader interaction smoothness and long-duration stability validation remain incomplete, and the results should not be generalized to every catalog or camera.
 
 ## RAW Exposure Inspection
 
@@ -71,10 +90,10 @@ That makes preview access less dependent on Apple's support for a particular Son
 This reliability advantage applies to embedded previews and supported metadata. Developing the RAW sensor data, including creating a new full-size JPEG from it, still uses Apple's Core Image RAW decoder and depends on its camera and compression support. The broader format support does not change the dedicated Sony ARW loading path.
 
 ## Dependencies and Maintenance
-- Advance app and model downloader metadata to **3.3.5 Build 425** and update Xcode project and test scheme configuration.
+- Advance app and model downloader metadata to **3.3.5 Build 426** and update Xcode project and test scheme configuration.
 - Split viewer and analysis screens into focused components, share image overlays and preview preparation, and centralize keyboard monitor and image-loading task lifecycles.
 - Add regression coverage for RAW inspection state restoration, viewer keyboard handling, overlay presentation, and AF-point sorting, plus release sharpness comparison tooling.
 - Add regression coverage for saving and restoring Single Images workflow states without choosing a winner.
 - Apply source formatting and internal cleanup across image loading, catalog handling, and AI review components.
 
-These notes were checked against the Git changes in the stated range. They do not represent a completed release validation or a new test run.
+These notes were checked against the Git changes in the stated range. Performance figures summarize the recorded investigations and build comparison; no new benchmark or test run was performed for this documentation update. These notes do not represent completed release validation. Version 3.3.5 remains in development and has not been released.
