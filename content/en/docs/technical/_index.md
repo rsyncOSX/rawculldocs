@@ -5,16 +5,18 @@ weight = 80
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
+lastmod = "2026-10-25"
 +++
 
 These **tech docs** describe how RawCull computes analysis results, stores evidence, and turns measurements into review recommendations. They are intended for readers who want implementation detail beyond the user guides.
 
-The reference is the local RawCull source inspected on **6 October 2026**, primarily the `RawCull/RawCull` application, `RawCullCore`, `PhotoAnalysisKit`, and `PhotoAIKit`. Defaults and algorithms describe that source snapshot; they do not establish which features are available in an App Store release. RawBrowse and RawCullFB have separate integrations and should not be assumed to behave identically.
+The reference is the local RawCull source inspected on **25 October 2026**, primarily the `RawCull/RawCull` application, `RawCullCore`, `PhotoAnalysisKit`, `PhotoAIKit`, and `RawParserKit`. Defaults and algorithms describe that source snapshot; they do not establish which features are available in an App Store release. RawBrowse and RawCullFB have separate integrations and should not be assumed to behave identically.
 
 ## Technical index
 
 | Type | Technical theme | Contents |
 |---|---|---|
+| Tech doc | [RAW loading](/docs/technical/raw-loading/) | Format discovery, direct embedded previews, ImageIO, and RAW development |
 | Tech doc | [Visual walkthrough](/docs/technical/visual-walkthrough/) | Annotated example connecting pixels, focus evidence, indexes, bursts, and AI models |
 | Tech doc | [Sharpness scoring](/docs/technical/sharpness-scoring/) | Laplacian energy, robust statistics, regional blending, and calibration |
 | Tech doc | [Focus mask](/docs/technical/focus-mask/) | Native-pixel detail, region selection, adaptive thresholds, and overlay rendering |

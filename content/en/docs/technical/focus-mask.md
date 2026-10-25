@@ -5,11 +5,12 @@ weight = 15
 categories = ["tech doc"]
 tags = ["technical", "focus mask"]
 description = "Technical documentation of focus-mask edge detection, region selection, adaptive thresholds, and rendering."
+lastmod = "2026-10-25"
 +++
 
 The focus mask renders spatial detail as a colored overlay. It answers where the decoded image contains strong edge energy. It shares low-level processing with [sharpness scoring](/docs/technical/sharpness-scoring/), but its thresholds and visual styling serve a different purpose from the scalar ranking score.
 
-This page describes the RawCull source inspected on 6 October 2026. For controls and keyboard shortcuts, see the [Focus Mask user guide](/docs/focuspeaking/).
+This page describes the RawCull source inspected on 25 October 2026. For controls and keyboard shortcuts, see the [Focus Mask user guide](/docs/focuspeaking/).
 
 ## Detail signal and image scale
 

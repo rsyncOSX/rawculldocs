@@ -5,12 +5,15 @@ date = "2026-07-15"
 weight = 31
 tags = ["focus points"]
 categories = ["user doc"]
+lastmod = "2026-10-25"
 +++
 
-Focus Point shows the autofocus location stored in supported Sony ARW and Nikon NEF metadata.
+Focus Point shows the autofocus location stored in supported Sony ARW, Nikon NEF, and DNG metadata. Other recognized RAW formats can supply a location through standard EXIF SubjectArea metadata.
 
 Open a photograph in the full-window viewer or Compare view, then press `A` or use the focus-point control. The marker appears only when RawCull can decode a valid focus location for that file.
 
 The point shows where the camera reported focus; it does not prove that the subject is sharp. Use it together with [Focus Mask](/docs/focuspeaking/) and a high-resolution preview.
 
 Support varies by camera model, firmware, and RAW format. If no marker appears, the file may not contain a supported focus location.
+
+DNG focus information depends on which standard tags or supported camera MakerNotes survive in the file. Conversion to DNG does not guarantee preservation of the original autofocus information. ImageIO-only formats have no dedicated vendor autofocus parser in RawCull; see [Supported RAW Files](/docs/raw-support/).

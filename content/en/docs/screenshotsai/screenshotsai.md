@@ -2,11 +2,14 @@
 author = "Thomas Evensen"
 title = "AI Screenshots"
 date = "2026-08-20"
-lastmod = "2026-10-03"
+lastmod = "2026-10-25"
 weight = 1
 tags = ["screenshots"]
 categories = ["user doc"]
 +++
+
+These screenshots illustrate an earlier interface. RawCull 3.3.5 also includes [EV analysis](/docs/culling/#ev-analysis), [Combined Review](/docs/ai/combined-review/), and updated [cache controls](/docs/cache/). Screenshot labels and generated example assessments may differ from current behavior.
+
 
 AI Analysis offers three tabs for reviewing selected photographs:
 

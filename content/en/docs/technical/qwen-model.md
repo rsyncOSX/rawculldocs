@@ -5,6 +5,7 @@ weight = 70
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
+lastmod = "2026-10-25"
 +++
 
 Qwen Vision performs vision-language assessment of selected photographs and detected objects. It generates a response from an image attachment and an instruction. Its scores are model-generated judgments, followed by explicit application validation and weighting.
@@ -19,9 +20,9 @@ The ordinary photo request uses a 512-token response budget. This limits generat
 
 ## Photo assessment and numeric score
 
-The default review criteria cover composition, exposure, subject visibility, expression, and obstructions. The structured assessment contains subject text, composition score, exposure score, subject-visibility score, optional eyes-open state, problems, strengths, and confidence.
+The default review criteria cover composition, exposure, subject visibility, expression, and obstructions. The structured assessment contains subject text, composition score, exposure score, subject-visibility score, evidence text for each supported score, and an eyes-open field required to be null in the whole-image path, problems, strengths, and confidence.
 
-The decoder extracts the first opening brace through the last closing brace and attempts JSON decoding. Validation requires each numeric assessment score to be in 1–5 and confidence in 0–1. RawCull computes the overall score from valid fields:
+The decoder extracts the first opening brace through the last closing brace and attempts JSON decoding. Validation requires schema version 2, all expected keys, confidence in 0–1, and each supported score in 1–5 paired with nonempty evidence of at most 240 characters. Unsupported score/evidence pairs must both be null. Subject text and each strength/problem have a 240-character limit; each list has at most four unique entries. The whole-image path requires `eyesOpen` to be null because it supplies no qualified anatomical evidence. RawCull computes an overall score only when all three scores are present:
 
 ```text
 overall = 0.50 × (compositionScore / 5)
@@ -29,9 +30,9 @@ overall = 0.50 × (compositionScore / 5)
           + 0.30 × (subjectVisibilityScore / 5)
 ```
 
-Thus the validated weighted score ranges from 0.2 to 1.0. Expression and eyes-open information can appear in the assessment but have no separate term in this formula. Generated confidence also does not multiply the overall score.
+When all dimensions are supported, the validated weighted score ranges from 0.2 to 1.0. Otherwise the overall score is absent. Expression and eyes-open information can appear in the assessment but have no separate term in this formula. Generated confidence also does not multiply the overall score.
 
-Nonempty responses that cannot be decoded as a valid structured assessment are retained as freeform text. They remain useful review output, but do not acquire an invented numeric score. Empty output fails. Per-file results keep structured assessment, freeform output, or failure information.
+Nonempty plain prose can be retained as freeform output without a numeric score. Responses containing JSON-like braces, starting with an array, or a JSON code fence that fail structured validation are rejected. The application can retry an invalid assessment with validation feedback. Empty output fails. Per-file results keep a supported structured assessment, plain freeform output, or failure information.
 
 ## Objects workflow
 

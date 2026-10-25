@@ -2,11 +2,12 @@
 title: RawCull
 linkTitle: Documentation
 menu: { main: { weight: 20 } }
+lastmod: 2026-10-25
 ---
 
 RawCull is a native macOS app for reviewing RAW photos before editing. It shows fast previews and camera information, records picks and ratings, groups similar frames, and copies the selected files to an editing folder.
 
-This guide describes the RawCull 3.2 workflow. It requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features **run locally** for semantic search, visual similarity, and deeper analysis of selected photographs. See [Release Notes](/blog/releases/) for version-specific changes; a development changelog does not confirm App Store availability.
+This guide describes the RawCull 3.3.5 workflow. It requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features **run locally** for semantic search, visual similarity, and deeper analysis of selected photographs. See [Release Notes](/blog/releases/) for version-specific changes; a development changelog does not confirm App Store availability.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -39,6 +40,7 @@ Ratings, sharpness results, and catalog state are saved automatically on your Ma
 | Similarity | Analyze bursts and review suggested frames |
 | Semantic Search | Find locally indexed photos using a written description |
 | AI Analysis | Review selected or rated photographs with SAM 3 + CLIP, Qwen Vision, or Objects |
+| Combined Review | Review 1–8 finalists with linked image, subject, regional, and model evidence; enable it in AI settings |
 | Rated | Show photos with saved culling data |
 | Compare | Inspect up to four selected photos closely |
 
@@ -46,15 +48,17 @@ Ratings, sharpness results, and catalog state are saved automatically on your Ma
 
 - macOS 27 (Golden Gate)
 - Apple Silicon Mac
-- Sony ARW catalogs
-- Nikon NEF catalogs (experimental)
+Starting with **RawCull 3.3.5**, catalogs accept more RAW formats, including Adobe DNG, Canon CR2/CR3/CRW, Fujifilm RAF, Olympus/OM System ORF, Panasonic RW2, and others alongside Sony ARW and Nikon NEF.
 
-Sony ARW is the primary format. Some functions depend on camera metadata and the RAW support available in macOS. Demosaiced RAW previews and exports are Sony-specific; RawCull uses embedded previews when RAW development is unavailable.
+**ARW and DNG have dedicated preview parsers**, including direct extraction of embedded JPEGs. NEF also has a dedicated extraction path. Other recognized RAW formats rely on **macOS ImageIO** for thumbnails and previews. Camera-model support, available metadata, and RAW development can therefore differ between files and macOS versions. Direct preview extraction does not mean RawCull can develop every camera's sensor data.
+
+See [Supported RAW Files](/docs/raw-support/) for the complete extension list, the difference between direct and ImageIO support, and practical compatibility checks.
 
 ## Find the Right Guide
 
 | Task | Guide |
 |---|---|
+| Check camera formats and preview compatibility | [Supported RAW Files](/docs/raw-support/) |
 | Rate, compare, copy RAW files, or export JPGs | [Culling Photos](/docs/culling/) |
 | Understand sharpness rankings | [Sharpness Scoring](/docs/sharpness/) |
 | Check detected detail and camera autofocus locations | [Focus Mask](/docs/focuspeaking/) and [Focus Points](/docs/focuspoints/) |

@@ -5,13 +5,14 @@ weight = 50
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
+lastmod = "2026-10-25"
 +++
 
 CLIP supplies image and text representations for visual similarity and semantic search. RawCull's Core AI provider runs separate image and text inference functions from a validated model bundle. It does not generate prose or measure optical focus.
 
 ## Inference inputs
 
-`CoreAICLIPProvider` reads runtime configuration that specifies function names, tensor input/output names, image preprocessing, and tokenizer behavior. RawCull includes model assets for OpenAI CLIP and DataComp CLIP; selected bundle identity and configuration determine which representation is used.
+`CoreAICLIPProvider` reads runtime configuration that specifies function names, tensor input/output names, image preprocessing, and tokenizer behavior. The provider supports model configurations including OpenAI CLIP and DataComp CLIP; RawCull uses separately downloaded DataComp CLIP for catalog indexing. Selected bundle identity and configuration determine which representation is used. Model weights are not bundled with the application download.
 
 Image preprocessing resamples the source and prepares RGB values in channel-first order. Channels are converted from bytes to 0–1 floats, then normalized:
 

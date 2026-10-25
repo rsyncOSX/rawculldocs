@@ -5,6 +5,7 @@ date = "2026-07-15"
 weight = 100
 tags = ["security", "privacy"]
 categories = ["user doc"]
+lastmod = "2026-10-25"
 +++
 
 RawCull is designed for local photo culling. Core culling works offline, and AI indexing, search, and review run on the Mac.
@@ -36,3 +37,7 @@ RawCull does not request access to the Photos library, camera, microphone, locat
 ## This Documentation Website
 
 The app's privacy behavior is separate from this website. The site is hosted on Netlify and is configured to use Google Analytics and Google Custom Search. Visiting the site or using its search involves online services; it does not give the website access to your photo catalogs. See [Google's privacy policy](https://policies.google.com/privacy) for information about those Google services.
+
+## Retained Review Inputs
+
+Combined Review can retain exact model inputs and crops locally for inspection. Bounded rejected-response retention is a separate option and is off by default. Its controls can clear retained inputs or rejected responses. **Settings > Cache > Delete Cache** also deletes saved Combined Reviews, masks, retained inputs, and review history. **Delete Saved Files** separately deletes saved catalog records, ratings, and analysis results; see [Cache](/docs/cache/).

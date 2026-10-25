@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 title = "AI Step by Step"
 linkTitle = "AI Step by Step"
 date = "2026-09-21"
-lastmod = "2026-10-03"
+lastmod = "2026-10-25"
 description = "A practical workflow for using Burst Review, SAM 3 with CLIP, Qwen Vision, and Objects to review selected photographs."
 weight = 10
 tags = ["ai", "culling", "burst-review", "clip", "sam3", "qwen", "objects"]
@@ -100,8 +100,8 @@ specific question, for example: *Which visible problems would matter in a
 final edit?*
 
 Choose **Run Analyze**. Qwen processes the pending images one at a time and
-returns scores plus strengths and issues. It may also report whether eyes are
-open when that can be judged from the image.
+returns supported scores, evidence, strengths, and issues. Unsupported dimensions
+can remain unscored; the whole-image workflow does not report eyes-open judgments.
 
 Use this review to answer: **Does the photograph work as a photograph?** Qwen
 adds a visual critique; it does not participate in burst similarity or SAM 3
@@ -131,3 +131,5 @@ Use each result to answer a different question:
 When the signals disagree, inspect the original preview at a useful zoom level. Focus-map overlap and model confidence do not prove sharpness or photographic quality. Ratings and final picks remain your decision; RawCull does not automatically turn a Qwen result into a rating.
 
 For catalog grouping, see [Similarity, Bursts, and Search](/docs/similarity/). For models and downloads, see [AI Analysis](/docs/ai/aianalysis/). The [AI Screenshots](/docs/screenshotsai/screenshotsai/) tour shows the results in each tab.
+
+For a review linking overview and regional evidence across 1–8 finalists, enable and open [Combined Review](/docs/ai/combined-review/).
