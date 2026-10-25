@@ -1,15 +1,10 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.3.5 — In Development"
+title = "Version 3.3.5"
 date = "2026-10-25"
 tags = ["changelog", "version 3.3.5"]
 categories = ["changelog"]
-summary = "In development, not yet released: RAW exposure inspection, AF-point sharpness sorting, a combined Single Images review group, simpler cache management, and catalog performance improvements."
 +++
-
-**In development — version 3.3.5 has not yet been released.** These notes describe the current source changes and may change before release.
-
-This update adds RAW exposure inspection and AF-point sharpness sorting, brings single photographs together for review, simplifies cache and saved-data management, and reduces progress-update work during catalog preparation.
 
 **Changes:** v3.3.3 → v3.3.5 development
 
@@ -19,7 +14,7 @@ This changelog continues from the [3.3.3 release notes]({{< relref "version-3.3.
 **Baseline tag:** `v3.3.3` at `e7516156` (2026-10-16), RawCull 3.3.3 Build 423\
 **Latest source commit:** `c0d5a3d6` (2026-10-25)\
 **Current source version:** RawCull 3.3.5 (Build 426)\
-**Release status:** In development; not yet released
+**Release status:**  [Released on Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12)
 
 ## Catalog Performance
 

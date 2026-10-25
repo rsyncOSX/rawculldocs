@@ -4,7 +4,6 @@ title = "Version 3.3.3"
 date = "2026-10-16"
 tags = ["changelog", "version 3.3.3"]
 categories = ["changelog"]
-summary = "In development, not yet released: Combined Review, evidence inspection, AI memory guidance, and keyboard, export, persistence, accessibility, and catalog reliability improvements since 3.2.8."
 +++
 
 Combined Review brings local AI findings and their supporting evidence into a dedicated review workspace. This cumulative changelog also includes JPEG extraction, Burst Groups preparation status, and catalog and cache improvements since 3.2.8.
