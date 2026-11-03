@@ -1,19 +1,19 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.3.6"
-date = "2026-11-02"
+date = "2026-11-03"
 tags = ["changelog", "version 3.3.6"]
 categories = ["changelog"]
 +++
 
 **Changes:** v3.3.5 → v3.3.6 development
 
-This changelog continues from the [3.3.5 release notes]({{< relref "version-3.3.5.md" >}}) and covers the eight commits after the `v3.3.5` release tag through the source snapshot below.
+This changelog continues from the [3.3.5 release notes]({{< relref "version-3.3.5.md" >}}) and covers the eleven commits after the `v3.3.5` release tag through the source snapshot below.
 
-**Commit range:** `v3.3.5..c78f891e`\
+**Commit range:** `v3.3.5..f75adff7`\
 **Baseline tag:** `v3.3.5` at `8613323b` (2026-10-25), RawCull 3.3.5 Build 426\
-**Latest source commit:** `c78f891e` (2026-11-01)\
-**Current source version:** RawCull 3.3.6 (Build 428)\
+**Latest source commit:** `f75adff7` (2026-11-03)\
+**Current source version:** RawCull 3.3.6 (Build 429)\
 **Release status:** In development; not yet released
 
 ## Faster Fit-to-window RAW Previews
@@ -32,6 +32,13 @@ This changelog continues from the [3.3.5 release notes]({{< relref "version-3.3.
 - Release the active RAW rendering graph when Zoom View closes while retaining completed previews for revisits. Memory-pressure events and **Delete Cache** also clear the preview cache and rendering resources.
 - Keep exposure and clipping inspection at native resolution. Reuse the source filter between exposure adjustments, and reset it when entering or leaving inspection so inspection settings do not carry into normal viewing.
 - Keep adjusted inspection previews separate from the persistent JPEG/export cache. Loupe and burst previews retain their existing full-size loading policy.
+
+## RAW Preview Status in Zoom View
+
+- Show **RAW Preview** for reduced-resolution developed previews and **RAW Full detail** for native-resolution results. The badge follows the displayed image, including while a full-detail replacement loads.
+- Show a progress indicator with **Preparing RAW preview…** or **Preparing full-detail RAW…** while the requested RAW image loads.
+- Display the latest RAW render-request duration in seconds, including cache retrieval. This measures the request, not the time to draw the image on screen.
+- Clear RAW status and timing when resetting the preview or opening a different image without preserving the current display.
 
 ## Zoom View and Metadata
 
@@ -59,9 +66,10 @@ These are standalone pipeline measurements, not application-wide memory measurem
 
 ## Dependencies, Tooling, and Verification
 
-- Update RawParserKit from **1.3.2** to **1.3.3** and advance app metadata to **3.3.6 Build 428**.
+- Update RawParserKit from **1.3.2** to **1.3.3** and advance app metadata to **3.3.6 Build 429**.
 - Add a reproducible RAW preview benchmark with geometry, pixel-comparison, cache-revisit, and exposure-inspection checks, retaining measurements and source hashes in the repository.
 - Add regression coverage for preview sizing, cache limits and invalidation, resize coalescing, cancellation, stale completions, saved-JPEG reuse, inspection cache separation, and display publication before analysis completes.
+- Add regression coverage for the RAW status badge when a full-detail result replaces a reduced preview and when RAW decoding fails.
 - Refresh the README and scripts guide with RAW preview behavior, catalog benchmark commands, diagnostics, and script checks. Refine benchmark helpers and progress-test synchronization.
 
 The recorded RAW preview validation passed **32 focused tests**, including **10 new preview tests**. Its full run executed **696 tests** and reported **three failures**: two README release-metadata mismatches and a Zoom View default-source expectation. The README version and dependency entries were subsequently updated in the source range covered here, but these notes do not claim a passing full-suite rerun.
