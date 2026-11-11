@@ -5,6 +5,7 @@ weight = 40
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
+lastmod = "2026-11-11"
 +++
 
 Burst analysis has two independent parts: deciding which adjacent photographs belong together, then ranking candidates within each group. `RawCullCore` implements these as deterministic engines. Optional deeper AI review is a subsequent stage.
@@ -57,7 +58,15 @@ High confidence requires at least three group members, a best-versus-second abso
 
 The result's `isSafeForOneClickCulling` flag is true only for high confidence. The engine returns scores, reasons, cautions, recommendation IDs, and review state; it does not itself mutate file ratings. Expression, moment, and framing are not directly measured by this ordinary ranking formula. Use [subject evidence](/docs/technical/subject-evidence/) or [Qwen Vision](/docs/technical/qwen-model/) to understand the separate deeper-review stages.
 
+## People Ranking preview
+
+The burst workspace can apply an experimental ordering to a burst of one person. It evaluates all frames using embedded-preview face geometry and local sharpness. It requires at least two frames, one usable face per frame, matching preview dimensions, and comparable face sizes. Check that every frame shows the same person before applying it. Both normalized face width and height must have a largest-to-smallest ratio of at most 1.25.
+
+RawCull sorts ascending by zero-based Best Frame position minus 1.5 times the frame’s face detail divided by the highest detail in the burst. Ties retain Best Frame order. Only the first two baseline candidates can take the top position. The separate **Most face detail** marker uses the maximum face-detail measurement across all evaluated frames. The preview changes presentation order only. See the [Burst Review guide](/docs/similarity/#try-people-ranking) for the controls.
+
 ## Source map
+
+- `RawCull/Intelligence/BurstAnalysis/PeopleRankingPreview.swift` and `RawCull/Intelligence/Persistence/FaceEvidenceCache.swift` implement the preview and reuse of face evidence.
 
 - `RawCullCore/Sources/RawCullCore/BurstGroupingEngine.swift`: boundary calculation.
 - `RawCullCore/Sources/RawCullCore/BurstAnalysisModels.swift`: defaults, version, and evidence types.

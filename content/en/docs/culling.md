@@ -5,7 +5,7 @@ date = "2026-07-15"
 weight = 10
 tags = ["culling"]
 categories = ["user doc"]
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 +++
 
 RawCull records decisions without changing source photos. Add a folder as a catalog, then use **Loupe** to review one photograph at a time or **Grid** to work with many photographs.
@@ -30,6 +30,8 @@ In Grid view, use Command-click to select separate photographs or Shift-click to
 ## Inspect a Photo
 
 Double-click a thumbnail to open the full-window viewer. From there you can zoom, rate, show focus aids, and switch between the embedded JPG and a developed RAW preview when supported.
+
+While a developed preview is being prepared, the RAW control shows progress. The overlay reports RAW detail level and render-request time.
 
 Open the information panel to see the histogram, culling evidence, file and camera details, and quick actions for the selected photograph.
 

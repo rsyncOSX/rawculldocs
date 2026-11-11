@@ -5,12 +5,12 @@ weight = 15
 categories = ["tech doc"]
 tags = ["technical", "focus mask"]
 description = "Technical documentation of focus-mask edge detection, region selection, adaptive thresholds, and rendering."
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 +++
 
 The focus mask renders spatial detail as a colored overlay. It answers where the decoded image contains strong edge energy. It shares low-level processing with [sharpness scoring](/docs/technical/sharpness-scoring/), but its thresholds and visual styling serve a different purpose from the scalar ranking score.
 
-This page describes the RawCull source inspected on 25 October 2026. For controls and keyboard shortcuts, see the [Focus Mask user guide](/docs/focuspeaking/).
+RawCull 3.4.5 build 442 uses PhotoAnalysisKit 1.3.7 for this pipeline. For controls and keyboard shortcuts, see the [Focus Mask user guide](/docs/focuspeaking/).
 
 ## Detail signal and image scale
 
@@ -63,7 +63,7 @@ The renderer sorts positive finite energies from the visual search regions. Its 
 
 The effective threshold is the selected percentile value, optionally capped at T, clamped between the floor and 0.95. If no positive finite samples exist, the result is the floor capped at 0.95.
 
-The rendering path does not lower this threshold to satisfy a minimum visible coverage. Weak detail may produce an empty mask, and the recorded `relaxedForVisibility` flag is false. Although the source contains a visibility-relaxation helper, this rendering path does not call it.
+The rendering path does not lower this threshold to satisfy a minimum visible coverage. Weak detail may produce an empty mask, and the recorded `relaxedForVisibility` flag is false.
 
 Catalog calibration is another stage: it samples positive detail energies across images and supplies an overlay threshold, default p90. It does not recalibrate the fixed scalar sharpness gain. Local adaptive rendering then derives the effective threshold from this configured fallback and the visual region.
 

@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "AI Analysis"
 date = "2026-07-28"
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 weight = 20
 tags = ["AI", "CLIP", "SAM 3", "Qwen", "Objects", "semantic search", "similarity", "bursts"]
 categories = ["user doc"]
@@ -71,7 +71,7 @@ download**. Open **Settings > AI** and select **Download AI Models** to view the
 available models, their purpose, publisher, version, licence, and installation
 status.
 
-Downloads use macOS Managed Background Assets. macOS stores and manages each
+Downloads use macOS Managed Background Assets. App Store builds use Apple-hosted packs, and standalone Release builds use self-hosted packs. macOS stores and manages each
 asset pack, and its location can change between app launches. RawCull validates
 an installed model before enabling it and falls back safely when a required
 model is missing or invalid.

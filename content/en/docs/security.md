@@ -5,7 +5,7 @@ date = "2026-07-15"
 weight = 100
 tags = ["security", "privacy"]
 categories = ["user doc"]
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 +++
 
 RawCull is designed for local photo culling. Core culling works offline, and AI indexing, search, and review run on the Mac.
@@ -25,7 +25,7 @@ advertising, or tracking. Photographs, search descriptions, embeddings, masks,
 and inference results are not sent to an external AI service.
 
 Optional AI model downloads use macOS Managed Background Assets and therefore
-require a network connection. macOS stores and manages those model resources;
+require a network connection. App Store builds fetch Apple-hosted packs, and standalone Release builds fetch self-hosted packs. macOS stores and manages those model resources;
 after installation, RawCull runs them locally. Model downloading does not
 upload photographs.
 

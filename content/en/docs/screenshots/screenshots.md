@@ -2,14 +2,14 @@
 author = "Thomas Evensen"
 title = "Screenshots"
 date = "2026-08-20"
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 weight = 1
 aliases = ["/docs/screenshots/samplescreenshots/"]
 tags = ["screenshots"]
 categories = ["user doc"]
 +++
 
-These screenshots illustrate an earlier interface. RawCull 3.3.5 also includes [EV analysis](/docs/culling/#ev-analysis), [Combined Review](/docs/ai/combined-review/), and updated [cache controls](/docs/cache/). Screenshot labels and generated example assessments may differ from current behavior.
+These screenshots illustrate an earlier interface. The current workflow also includes [EV analysis](/docs/culling/#ev-analysis), [Combined Review](/docs/ai/combined-review/), and [burst close-ups and People Ranking](/docs/similarity/#compare-close-ups). Screenshot labels and generated example assessments may differ from current behavior.
 
 
 This visual tour follows a puffin catalog through photo inspection, grid comparison, focus checks, and burst review. For detailed analysis of selected photographs, see the separate [AI Screenshots](/docs/screenshotsai/screenshotsai/) section.

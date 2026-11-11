@@ -2,12 +2,12 @@
 title: RawCull
 linkTitle: Documentation
 menu: { main: { weight: 20 } }
-lastmod: 2026-10-25
+lastmod: 2026-11-11
 ---
 
 RawCull is a native macOS app for reviewing RAW photos before editing. It shows fast previews and camera information, records picks and ratings, groups similar frames, and copies the selected files to an editing folder.
 
-This guide describes the RawCull 3.3.5 workflow. It requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features **run locally** for semantic search, visual similarity, and deeper analysis of selected photographs. See [Release Notes](/blog/releases/) for version-specific changes; a development changelog does not confirm App Store availability.
+This guide describes RawCull **3.4.5**, based on build **442**. It requires **macOS 27 (Golden Gate)** and an **Apple Silicon Mac**. Optional AI features **run locally** for semantic search, visual similarity, and deeper analysis of selected photographs. See [Release Notes](/blog/releases/) for version-specific changes; a development changelog does not confirm App Store availability.
 
 <div class="alert alert-secondary" role="alert">
 
@@ -37,7 +37,7 @@ Ratings, sharpness results, and catalog state are saved automatically on your Ma
 |---|---|
 | Loupe | Browse a list and inspect one photo at a time |
 | Grid | Rate, filter, and select many thumbnails |
-| Similarity | Analyze bursts and review suggested frames |
+| Similarity | Analyze bursts, review suggested frames, and compare close-ups |
 | Semantic Search | Find locally indexed photos using a written description |
 | AI Analysis | Review selected or rated photographs with SAM 3 + CLIP, Qwen Vision, or Objects |
 | Combined Review | Review 1–8 finalists with linked image, subject, regional, and model evidence; enable it in AI settings |

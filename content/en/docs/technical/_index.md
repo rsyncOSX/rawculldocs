@@ -5,12 +5,12 @@ weight = 80
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 +++
 
 These **tech docs** describe how RawCull computes analysis results, stores evidence, and turns measurements into review recommendations. They are intended for readers who want implementation detail beyond the user guides.
 
-The reference is the local RawCull source inspected on **25 October 2026**, primarily the `RawCull/RawCull` application, `RawCullCore`, `PhotoAnalysisKit`, `PhotoAIKit`, and `RawParserKit`. Defaults and algorithms describe that source snapshot; they do not establish which features are available in an App Store release. RawBrowse and RawCullFB have separate integrations and should not be assumed to behave identically.
+The reference is RawCull **3.4.5 build 442** at commit `3a92139b` and its pinned packages, including `RawCullCore`, `PhotoAnalysisKit`, `PhotoAIKit`, and `RawParserKit`. RawBrowse and RawCullFB have separate integrations.
 
 ## Technical index
 
@@ -26,6 +26,7 @@ The reference is the local RawCull source inspected on **25 October 2026**, prim
 | Tech doc | [CLIP model](/docs/technical/clip-model/) | Image/text inference, preprocessing, semantic search, and model identities |
 | Tech doc | [SAM 3 model](/docs/technical/sam3-model/) | Prompted segmentation, union masks, object instances, and downstream scoring |
 | Tech doc | [Qwen Vision model](/docs/technical/qwen-model/) | Vision-language generation, structured scores, and object assessment |
+| Tech doc | [RawCull testing and validation](/docs/technical/testing/) | Python regression coverage, Swift test plans, and recorded real-input results |
 
 The three principal AI model families are **CLIP, SAM 3, and Qwen Vision**. The AI tabs combine them: SAM 3 + CLIP uses segmentation and semantic evidence, Qwen Vision performs image assessment, and Objects combines SAM 3 instances with Qwen. Apple Vision also supplies feature prints, attention saliency, and classification. EfficientSAM has a separate provider in the source tree; it is not one of the three families documented here.
 

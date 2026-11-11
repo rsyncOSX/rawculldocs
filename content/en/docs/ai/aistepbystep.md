@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 title = "AI Step by Step"
 linkTitle = "AI Step by Step"
 date = "2026-09-21"
-lastmod = "2026-10-25"
+lastmod = "2026-11-11"
 description = "A practical workflow for using Burst Review, SAM 3 with CLIP, Qwen Vision, and Objects to review selected photographs."
 weight = 10
 tags = ["ai", "culling", "burst-review", "clip", "sam3", "qwen", "objects"]
@@ -62,7 +62,7 @@ RawCull performs three steps:
    strongest frames in each burst.
 
 Start with **Needs review**. Compare the best-ranked frames, check important
-details at a useful zoom level, and make your own decision. Select the
+details at a useful zoom level or use [Close-ups](/docs/similarity/#compare-close-ups) to compare crops from the filmstrip. Select the
 remaining candidates in Grid View, or rate promising images with **two or more
 stars** so that they appear as Tagged images later.
 
