@@ -1,12 +1,12 @@
 +++
 author = "Thomas Evensen"
 title = "Version 3.4.5"
-date = "2026-11-09"
+date = "2026-11-11"
 tags = ["changelog", "version 3.4.5"]
 categories = ["changelog"]
 +++
 
-**In development.** RawCull 3.4.5 is planned for release around November 16–23, 2026.
+**RawCull 3.4.5 is submitted for update on App Store.**
 
 RawCull 3.4.5 expands burst review with a **Close-ups** panel and an experimental **People Ranking** option. Compared with [3.3.6]({{< relref "version-3.3.6.md" >}}), you can inspect expressions, eye detail, and focus across near-identical frames and try a face-detail-based ordering for bursts of one person.
 
