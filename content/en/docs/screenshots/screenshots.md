@@ -2,17 +2,17 @@
 author = "Thomas Evensen"
 title = "Screenshots"
 date = "2026-08-20"
-lastmod = "2026-11-11"
+lastmod = "2026-11-12"
 weight = 1
 aliases = ["/docs/screenshots/samplescreenshots/"]
 tags = ["screenshots"]
 categories = ["user doc"]
 +++
 
-These screenshots illustrate an earlier interface. The current workflow also includes [EV analysis](/docs/culling/#ev-analysis), [Combined Review](/docs/ai/combined-review/), and [burst close-ups and People Ranking](/docs/similarity/#compare-close-ups). Screenshot labels and generated example assessments may differ from current behavior.
+The puffin screenshots show an earlier interface. The current workflow also includes [EV analysis](/docs/culling/#ev-analysis) and [Combined Review](/docs/ai/combined-review/). Screenshot labels and generated example assessments may differ from current behavior.
 
 
-This visual tour follows a puffin catalog through photo inspection, grid comparison, focus checks, and burst review. For detailed analysis of selected photographs, see the separate [AI Screenshots](/docs/screenshotsai/screenshotsai/) section.
+This visual tour follows a puffin catalog through photo inspection, grid comparison, focus checks, and burst review, then shows how to inspect details with Close-ups. For detailed analysis of selected photographs, see the separate [AI Screenshots](/docs/screenshotsai/screenshotsai/) section.
 
 ## Loupe View
 
@@ -61,5 +61,17 @@ The burst reviewer opens **Burst 15** with a large preview and a ten-frame films
 Move between frames to compare pose and detail, then rate a photograph, set a pick, or reject it. **Burst list** returns to the grouped overview, and **Mark Reviewed** records that you have checked the burst.
 
 {{< figure src="/images/burstreview.png" alt="Burst reviewer comparing a puffin sequence with a large preview, filmstrip, and scoring details" position="center" style="border-radius: 8px;" >}}
+
+## Close-ups
+
+The **Close-ups** panel lets you inspect a small area while keeping the full photograph visible. In the first screenshot, **Source pixels** shows detail around the deer's eye. **Use AF point** positions the close-up at the recorded autofocus point.
+
+{{< figure src="/images/closeup.png" alt="RawCull showing a full photo of a deer beside a close-up of its eye" position="center" style="border-radius: 8px;" >}}
+
+In the second screenshot, **Fit region** shows a manually selected area that includes both people. The two people in the photo are my wife and me.
+
+{{< figure src="/images/closeup2.png" alt="RawCull showing a close-up of two people sitting beside a stone wall in the snow" position="center" style="border-radius: 8px;" >}}
+
+See [Compare close-ups](/docs/similarity/#compare-close-ups) for instructions on comparing the same area across frames.
 
 For the next stage of review, see [AI Screenshots](/docs/screenshotsai/screenshotsai/) or follow [AI Step by Step](/docs/ai/aistepbystep/).
