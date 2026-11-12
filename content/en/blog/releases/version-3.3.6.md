@@ -6,16 +6,6 @@ tags = ["changelog", "version 3.3.6"]
 categories = ["changelog"]
 +++
 
-**Changes:** v3.3.5 → v3.3.6 development
-
-This changelog continues from the [3.3.5 release notes]({{< relref "version-3.3.5.md" >}}) and covers the eleven commits after the `v3.3.5` release tag through the source snapshot below.
-
-**Commit range:** `v3.3.5..f75adff7`\
-**Baseline tag:** `v3.3.5` at `8613323b` (2026-10-25), RawCull 3.3.5 Build 426\
-**Latest source commit:** `f75adff7` (2026-11-03)\
-**Current source version:** RawCull 3.3.6 (Build 429)\
-**Release status:** In development; not yet released
-
 ## Faster Fit-to-window RAW Previews
 
 - Develop RAW previews to match the Zoom View viewport in backing pixels when a completed preview or compatible saved developed JPEG is unavailable. Preview sizes round up to 256-pixel steps to avoid unnecessary work during small window resizes.

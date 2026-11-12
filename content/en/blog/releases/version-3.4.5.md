@@ -6,7 +6,7 @@ tags = ["changelog", "version 3.4.5"]
 categories = ["changelog"]
 +++
 
-**RawCull 3.4.5 is submitted for update on App Store.**
+Download RawCull from the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 RawCull 3.4.5 expands burst review with a **Close-ups** panel and an experimental **People Ranking** option. Compared with [3.3.6]({{< relref "version-3.3.6.md" >}}), you can inspect expressions, eye detail, and focus across near-identical frames and try a face-detail-based ordering for bursts of one person.
 
