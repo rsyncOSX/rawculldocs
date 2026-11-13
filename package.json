@@ -1,6 +1,6 @@
 {
   "name": "rawcull-docs",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "description": "RawCull documentation website built with Hugo and Docsy.",
   "repository": "github:rsyncOSX/rawculldocs",
   "homepage": "https://techrawcull.netlify.app",
@@ -64,7 +64,8 @@
     "hugo-extended": "0.169.0",
     "link-cache": "^0.3.0",
     "postcss-cli": "^11.0.1",
-    "rtlcss": "^4.3.0"
+    "rtlcss": "^4.3.0",
+    "sass-embedded": "1.106.1"
   },
   "optionalDependencies": {
     "npm-check-updates": "^23.0.0",

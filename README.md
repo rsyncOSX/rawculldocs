@@ -16,12 +16,17 @@ The documentation sidebar follows the review workflow: culling, sharpness and fo
 
 ## Local Preview and Build
 
-Use the Hugo Extended version declared in `package.json` and `hugo.yaml`, with the project's Node and Sass dependencies available.
+With Node.js and Go installed, run the following from the repository root.
 
 ```sh
+npm install
 npm run serve
 npm run build:production
 ```
+
+The npm scripts put the project's Hugo Extended and Dart Sass executables on
+`PATH`. If you run `hugo server` directly, Hugo needs a `sass` executable on
+your shell's `PATH`.
 
 The production build writes to `public`. Netlify uses the configuration in `netlify.toml` when published changes reach `main`.
 
