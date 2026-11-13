@@ -63,6 +63,7 @@ See [Supported RAW Files](/docs/raw-support/) for the complete extension list, t
 | Understand sharpness rankings | [Sharpness Scoring](/docs/sharpness/) |
 | Check detected detail and camera autofocus locations | [Focus Mask](/docs/focuspeaking/) and [Focus Points](/docs/focuspoints/) |
 | Review bursts or search with a description | [Similarity, Bursts, and Search](/docs/similarity/) |
+| See a burst analysis run from Codex | [Model Context Protocol (MCP)](/docs/mcp/) |
 | Review a small set with local AI | [AI Step by Step](/docs/ai/aistepbystep/) |
 | Understand the models, downloads, and licences | [AI Analysis](/docs/ai/aianalysis/) |
 | Read implementation details, formulas, and evidence pipelines (tech docs) | [Technical Documentation](/docs/technical/) |
