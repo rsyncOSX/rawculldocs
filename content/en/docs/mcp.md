@@ -60,4 +60,6 @@ All five recommendations had low confidence because the top two candidates were 
 
 RawCull’s MCP service is still early in development. This run verified the workflow end to end. Codex requested the analysis, tracked its progress, and retrieved recommendations after RawCull analyzed all 1,846 photos and ranked 156 bursts.
 
+Codex reported **3 minutes and 8 seconds** for the burst-analysis prompt, including the retry after RawCull was busy, the progress checks, and retrieval of the first five recommendations.
+
 For more on reviewing the resulting groups in RawCull, see [Similarity, Bursts, and Search](/docs/similarity/).
