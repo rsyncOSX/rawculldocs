@@ -18,4 +18,4 @@ RawCull changes, listed by publication date. Each entry begins with a short summ
 
 Release notes record behavior and release status at the date shown. Older versions may have different requirements, controls, and model support. Source-development notes are not confirmation of App Store availability.
 
-For the current documented workflow, use [Quick Start](/docs/), [AI Step by Step](/docs/ai/aistepbystep/), or the [screenshot tour](/docs/screenshots/screenshots/).
+For the current documented workflow, see [Quick Start](/docs/) and [AI Analysis](/docs/ai/).

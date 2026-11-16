@@ -64,10 +64,8 @@ See [Supported RAW Files](/docs/raw-support/) for the complete extension list, t
 | Check detected detail and camera autofocus locations | [Focus Mask](/docs/focuspeaking/) and [Focus Points](/docs/focuspoints/) |
 | Review bursts or search with a description | [Similarity, Bursts, and Search](/docs/similarity/) |
 | See a burst analysis run from Codex | [Model Context Protocol (MCP)](/docs/mcp/) |
-| Review a small set with local AI | [AI Step by Step](/docs/ai/aistepbystep/) |
-| Understand the models, downloads, and licences | [AI Analysis](/docs/ai/aianalysis/) |
+| Set up local AI and review selected photos | [AI Analysis](/docs/ai/) |
 | Read implementation details, formulas, and evidence pipelines (tech docs) | [Technical Documentation](/docs/technical/) |
-| See the interface | [Screenshots](/docs/screenshots/screenshots/) and [AI Screenshots](/docs/screenshotsai/screenshotsai/) |
 | Adjust preferences or manage previews and memory | [Settings](/docs/settings/), [Cache](/docs/cache/), and [Memory Pressure](/docs/memorypressure/) |
 | Understand folder permissions and local storage | [Security & Privacy](/docs/security/) |
 

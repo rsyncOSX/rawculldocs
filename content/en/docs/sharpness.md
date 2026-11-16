@@ -35,6 +35,4 @@ The parameter sheet also controls thumbnail size, border exclusion, subject clas
 - Use [Focus Mask](/docs/focuspeaking/) to see where RawCull detects detail.
 - In a burst, combine sharpness with expression, pose, framing, and timing.
 
-See [Grid View by AF-Point Sharpness](/docs/screenshots/screenshots/#grid-view-by-af-point-sharpness) for an example of the ordering.
-
 Files without supported autofocus metadata can still be reviewed visually and analyzed from available pixels, but cannot supply an AF-point measurement. Preview support and RAW development are separate; see [Supported RAW Files](/docs/raw-support/).

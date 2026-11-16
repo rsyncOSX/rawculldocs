@@ -22,8 +22,8 @@ Open **RawCull > Settings**. The settings shown in this guide provide five tabs.
 
 Use **Save Settings** after changing thumbnail or focus values. **Reset to Defaults** restores the values in that settings area. Scoring options are available from **Scoring Parameters** in the main window.
 
-**Settings > AI** reports whether DataComp CLIP, SAM 3, and Qwen are available. Enable DataComp CLIP before indexing a catalog for similarity and semantic search. **Download AI Models** opens the model manager. The Qwen section includes **Validate Again** to recheck the selected model; button labels can differ between versions. See [AI Settings screenshots](/docs/screenshotsai/screenshotsai/#ai-settings) for the illustrated layout.
+**Settings > AI** reports whether DataComp CLIP, SAM 3, and Qwen are available. Enable DataComp CLIP before indexing a catalog for similarity and semantic search. **Download AI Models** opens the model manager. The Qwen section includes **Validate Again** to recheck the selected model; button labels can differ between versions.
 
 AI features require macOS 27 (Golden Gate) and an Apple Silicon Mac. See [AI Analysis](/docs/ai/) for the purpose of each model.
 
-Enable **Combined Review** in the AI tab to make its workspace available. See [Combined Review](/docs/ai/combined-review/) for source selection, review limits, and retention controls.
+Enable **Combined Review** in the AI tab to make its workspace available.

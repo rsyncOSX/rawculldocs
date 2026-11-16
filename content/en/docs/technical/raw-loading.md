@@ -26,7 +26,7 @@ Fit-to-window RAW 9 uses a bounded direct render when a developed JPEG is unavai
 
 EV analysis uses a separate serialized `CIRAWFilter` render, applies the requested exposure, shadow boost, supported highlight recovery, and highlight compression, then converts to sRGB RGBA8. Adjusted inspection images do not enter the normal export/JPEG cache. Clipping warnings and the sampled histogram describe preview pixels, not sensor clipping.
 
-Combined Review records source fidelity, orientation, render settings, and limitations. Its default source admission limits are 24 million pixels and an estimated 2 billion working bytes, with an estimate of 80 bytes per pixel. Oversized embedded previews can be reduced; full RAW admission can be denied. These are workflow guards, not guarantees about decoder peak memory. See [Combined Review](/docs/ai/combined-review/).
+Combined Review records source fidelity, orientation, render settings, and limitations. Its default source admission limits are 24 million pixels and an estimated 2 billion working bytes, with an estimate of 80 bytes per pixel. Oversized embedded previews can be reduced; full RAW admission can be denied. These are workflow guards, not guarantees about decoder peak memory.
 
 ## Source map
 

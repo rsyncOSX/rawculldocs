@@ -8,9 +8,6 @@ description: Review RAW photographs, compare burst frames, and copy your selecte
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Start with RawCull <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/screenshots/screenshots/">
-  View Screenshots <i class="fas fa-images ms-2"></i>
-</a>
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
@@ -30,8 +27,7 @@ Optional AI runs locally: CLIP indexes the catalog for similarity and search, wh
 
 ## Explore the site
 
-- [Screenshots](/docs/screenshots/screenshots/) shows browsing, focus overlays, and burst review.
-- [AI Screenshots](/docs/screenshotsai/screenshotsai/) explains the three AI Analysis tabs with examples.
+- [AI Analysis](/docs/ai/) explains how to use local models to review selected photos.
 - [Release Notes](/blog/releases/) records version changes and development details.
 - [RawBrowse](/rawcullbrowse/) is the companion app for browsing folders and adjusting supported RAW files.
 - [About](/about/) introduces the developer and provides contact information.

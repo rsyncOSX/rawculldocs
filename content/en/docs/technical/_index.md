@@ -40,4 +40,4 @@ The three principal AI model families are **CLIP, SAM 3, and Qwen Vision**. The 
 
 A similarity distance, a sharpness scalar, a segmentation confidence, and a generated assessment score have different meanings. Their scales cannot be interchanged. The pages below identify the computation and its limits at each stage.
 
-For operating instructions, start with [Sharpness Scoring](/docs/sharpness/), [Similarity, Bursts, and Search](/docs/similarity/), and [AI Step by Step](/docs/ai/aistepbystep/).
+For operating instructions, start with [Sharpness Scoring](/docs/sharpness/), [Similarity, Bursts, and Search](/docs/similarity/), and [AI Analysis](/docs/ai/).

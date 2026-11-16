@@ -60,7 +60,7 @@ languages:
     label: English
     title: RawCull
     params:
-      description: RawCull photo-culling guides, screenshots, local AI workflows, and release notes.
+      description: RawCull photo-culling guides, local AI workflows, and release notes.
       
 markup:
   goldmark:
