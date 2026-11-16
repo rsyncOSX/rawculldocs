@@ -1,14 +1,14 @@
 +++
 title = "Technical Documentation"
 linkTitle = "Technical"
-weight = 80
+weight = 110
 categories = ["tech doc"]
 tags = ["technical"]
 description = "Technical documentation of RawCull analysis implementation and result computation."
 lastmod = "2026-11-11"
 +++
 
-These **tech docs** describe how RawCull computes analysis results, stores evidence, and turns measurements into review recommendations. They are intended for readers who want implementation detail beyond the user guides.
+These pages explain how RawCull loads photos, measures detail, groups bursts, and uses AI in review.
 
 The reference is RawCull **3.4.5 build 442** at commit `3a92139b` and its pinned packages, including `RawCullCore`, `PhotoAnalysisKit`, `PhotoAIKit`, and `RawParserKit`. RawBrowse and RawCullFB have separate integrations.
 

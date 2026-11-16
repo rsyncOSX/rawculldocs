@@ -11,11 +11,11 @@ The Focus Mask highlights areas with strong edge detail. Use it in the full-wind
 
 Press `F` or use the focus-mask control. For a more detailed check, switch from the small thumbnail to the embedded JPG (`J`) or developed RAW preview (`R`) when supported.
 
-Sharpness scoring calibrates the mask threshold for the current catalog. You can adjust it in **RawCull > Settings > Focus**:
+When RawCull scores sharpness, it sets how strong an edge needs to be to show in the mask. You can adjust it in **RawCull > Settings > Focus**:
 
 | Control | Effect |
 |---|---|
-| Threshold | Lower shows more detail; higher keeps only stronger edges |
+| Threshold | Lower values show more edges. Higher values show only stronger edges. |
 | Pre-blur | Reduces fine texture and high-ISO noise |
 | Amplify | Strengthens the visible mask |
 | Erosion | Removes isolated highlighted pixels |

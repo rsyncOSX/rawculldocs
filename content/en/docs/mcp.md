@@ -10,25 +10,25 @@ categories = ["user doc"]
 +++
 
 RawCull bundles a local Model Context Protocol (MCP) helper. A client such as
-Codex can use it to read authorized catalog metadata, request burst analysis,
-check its progress, and retrieve recommended frames. The setup described here
+Codex can use it to read details from catalogs you approve, request burst
+analysis, follow its progress, and show recommended frames. The setup described here
 was validated with RawCull 3.4.6 (TestFlight build 452) and helper 0.7.0.
 
 [Watch the RawCull MCP video on YouTube](https://youtu.be/ahWjBtW8iN0).
 
 ## How MCP works in RawCull
 
-MCP gives a client a standard way to discover tools, call them with structured
-arguments, and receive results. Codex is the client, and `rawcull-mcp` is the
+MCP gives Codex a standard way to find available tools, send them
+requests, and read their results. Codex is the client, and `rawcull-mcp` is the
 server. The helper and the RawCull app run as separate processes.
 
 1. Codex starts the helper and communicates over standard input and output
    (`stdio`). There is no local web address or port to configure.
 2. Codex asks the helper for its tools and the arguments each accepts.
 3. When you ask for the helper version, Codex calls `rawcull_status` with no
-   arguments. The helper receives the tool name and arguments; Codex keeps the
-   conversation.
-4. The helper returns the version, transport, and available capabilities. Codex
+   arguments. The helper receives the tool name and any arguments. Codex keeps
+   the conversation.
+4. The helper returns the version, connection type, and available tools. Codex
    can report the result or use it to choose the next tool.
 
 The helper runs on your Mac. If Codex uses a cloud model, data returned by the
@@ -54,13 +54,13 @@ Start a fresh Codex session and check the connection:
 ## Control catalog access
 
 After the catalog finishes loading, open **Settings → MCP** and choose
-**Authorize Selected Catalog** to share a snapshot of its metadata. Before
+**Authorize Selected Catalog** to share saved details about the catalog and its photos. Before
 authorizing, enable **Allow MCP to start burst analysis** if you want Codex to
 start jobs. For a folder whose photos change between runs, also enable **Allow
 analysis of future photos in this folder**.
 
-Codex can also request analysis from a prompt. If there is no eligible saved
-permission, RawCull opens and asks you to select or confirm a folder.
+Codex can also request analysis from a prompt. If you haven’t saved permission for
+that run, RawCull opens and asks you to select or confirm a folder.
 **Approve This Job** allows one run. **Approve and Remember** saves permission
 to run analysis again. RawCull keeps one saved catalog authorization and runs
 one MCP analysis job at a time.

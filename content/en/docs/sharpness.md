@@ -8,7 +8,7 @@ categories = ["user doc"]
 lastmod = "2026-10-25"
 +++
 
-Sharpness scoring estimates image detail and sorts stronger candidates first. It is a comparison aid, not an automatic reason to reject a photograph.
+Sharpness scoring measures detail to help you decide which photos to inspect first.
 
 ## Score Photos
 
@@ -16,9 +16,9 @@ Sharpness scoring estimates image detail and sorts stronger candidates first. It
 2. Choose **Score AF Sharpness**.
 3. Enable the sharpness sort to show stronger candidates first. **AF-point sharpness** sorts by measured detail around the camera autofocus location.
 
-For AF-point sorting, files without a usable recorded autofocus location or measurement appear after measured files. The general sharpness and Deep Review scores remain separate comparison aids.
+When you sort by AF-point sharpness, photos with a measurement appear first. General sharpness and Deep Review each have their own scores.
 
-RawCull scores the current multi-selection, the active star-rating filter, or the full catalog. It calibrates the focus threshold for those photographs, then saves the scores and detected subject labels.
+RawCull scores the selected photos, the photos shown by the current star filter, or the whole catalog. It adjusts the focus threshold for those photos and saves their scores and detected subject labels.
 
 Choose **Re-score** after changing scoring parameters. Canceling a run discards that run's results.
 
@@ -26,7 +26,7 @@ Choose **Re-score** after changing scoring parameters. Canceling a run discards 
 
 For normal culling, use **Fast** quality with **Embedded Preview**. Use **Balanced** or **High Precision** when fine detail matters, and **RAW Demosaic** only for slower final checks when the installed macOS decoder supports the file.
 
-The parameter sheet also controls thumbnail size, border exclusion, subject classification, and how strongly the detected subject affects the score. Larger images and RAW demosaicing take longer.
+The parameter sheet also controls thumbnail size, border exclusion, subject classification, and how strongly the detected subject affects the score. Larger images and developing RAW data take longer.
 
 ## Good Practice
 

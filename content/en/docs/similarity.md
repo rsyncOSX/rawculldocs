@@ -18,9 +18,9 @@ RawCull can use DataComp CLIP or Apple Vision for visual grouping. Install and e
 2. Choose **Analyze Bursts**.
 3. Open **Needs Review** when analysis finishes.
 
-RawCull runs missing sharpness scoring and visual indexing automatically. Use **Re-index** after changing the catalog or updating the CLIP model to rebuild compatible visual representations.
+RawCull scores and indexes photos as needed. Choose **Re-index** after changing the catalog or updating the CLIP model.
 
-The similarity slider controls grouping: lower values make tighter groups; higher values include more related frames.
+Lower the similarity slider to group only very similar photos. Raise it to include more related frames.
 
 ## Review Bursts
 
@@ -39,13 +39,13 @@ The main queues are:
 
 Analysis results are cached for the catalog. Ratings and manual picks are saved with the rest of the culling data.
 
-For deeper model-based review, select photographs in Grid View and open [AI Analysis](/docs/ai/). SAM 3 and Qwen operate on the selected set rather than on every catalog photograph.
+For a closer look at a few candidates, select them in Grid View and open [AI Analysis](/docs/ai/).
 
 ### Compare close-ups
 
 Open **Close-ups** in Burst Review to inspect the active frame. Command-click frames or Shift-click a range in the filmstrip to compare multiple frames. Use **Jump to image** to go directly to the detected crops for a selected frame. Opening Burst Review from a specific frame in the culling grid starts on that frame.
 
-Set a reference region manually or use the recorded autofocus point when available. The **JPG** and **RAW** source picker applies to both the main burst preview and the close-ups. The picker reads **RAW 9** when every relevant frame supports it. In a mixed selection, each crop identifies the decoder it used.
+Choose an area to inspect or use the recorded autofocus point when available. The **JPG** and **RAW** source picker applies to both the main burst preview and the close-ups. The picker reads **RAW 9** when every relevant frame supports it. In a mixed selection, each crop identifies the decoder it used.
 
 The panel can detect human faces and, where supported, show experimental animal head and eye crops. Automatic detection pauses during catalog indexing and resumes afterward.
 
@@ -57,4 +57,4 @@ Face detail can move either of the first two Best Frame candidates to the top. *
 
 ## Semantic Search
 
-After DataComp CLIP indexing finishes, enter a short English description such as `bird in flight` or `backlit portrait`. RawCull ranks the catalog by relative text-to-image similarity. The ranking is not a confidence score, so inspect the results before making culling decisions.
+After DataComp CLIP indexing finishes, enter a short English description such as `bird in flight` or `backlit portrait`. RawCull shows the closest matches first. Open the results to check how well they fit your search.

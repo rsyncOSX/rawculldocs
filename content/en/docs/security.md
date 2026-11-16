@@ -12,13 +12,13 @@ RawCull is designed for local photo culling. Core culling works offline, and AI 
 
 ## File Access
 
-RawCull runs in the macOS App Sandbox. It can read a catalog or write to a destination only after you choose that folder. macOS security-scoped bookmarks allow previously approved folders to be used again.
+RawCull runs in the macOS App Sandbox. It can read a catalog or write to a destination only after you choose that folder. macOS lets RawCull reopen folders you’ve already approved.
 
-Copying is non-destructive: RawCull copies the chosen RAW files with the system rsync tool and does not delete files from the source catalog.
+When you copy selected RAW files, RawCull keeps the originals in the source folder.
 
 ## Local Data
 
-RawCull stores settings, approved folder locations, ratings, sharpness results, burst choices, and rebuildable preview caches on your Mac. Embeddings, masks, and AI review results are also stored locally. Caches can be cleared from Settings.
+RawCull stores settings, approved folder locations, ratings, sharpness results, burst choices, and rebuildable preview caches on your Mac. RawCull also saves its search index, subject outlines, and AI review results on your Mac. You can clear cached data in Settings.
 
 RawCull does not use analytics, telemetry, cloud inference, cloud sync,
 advertising, or tracking. Photographs, search descriptions, embeddings, masks,
@@ -36,8 +36,8 @@ RawCull does not request access to the Photos library, camera, microphone, locat
 
 ## This Documentation Website
 
-The app's privacy behavior is separate from this website. The site is hosted on Netlify and is configured to use Google Analytics and Google Custom Search. Visiting the site or using its search involves online services; it does not give the website access to your photo catalogs. See [Google's privacy policy](https://policies.google.com/privacy) for information about those Google services.
+The app's privacy behavior is separate from this website. The site is hosted on Netlify and is configured to use Google Analytics and Google Custom Search. Viewing or searching the site uses online services. Your photo catalogs stay on your Mac. See [Google's privacy policy](https://policies.google.com/privacy) for information about those Google services.
 
 ## Retained Review Inputs
 
-Combined Review can retain exact model inputs and crops locally for inspection. Bounded rejected-response retention is a separate option and is off by default. Its controls can clear retained inputs or rejected responses. **Settings > Cache > Delete Cache** also deletes saved Combined Reviews, masks, retained inputs, and review history. **Delete Saved Files** separately deletes saved catalog records, ratings, and analysis results; see [Cache](/docs/cache/).
+Combined Review can retain exact model inputs and crops locally for inspection. Combined Review can also save a limited amount of model output that it rejected. That option is off by default. Its controls can clear retained inputs or rejected responses. **Settings > Cache > Delete Cache** also deletes saved Combined Reviews, masks, retained inputs, and review history. **Delete Saved Files** separately deletes saved catalog records, ratings, and analysis results; see [Cache](/docs/cache/).

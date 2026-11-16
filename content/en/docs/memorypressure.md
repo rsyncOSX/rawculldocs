@@ -7,13 +7,13 @@ tags = ["memory", "pressure", "cache"]
 categories = ["user doc"]
 +++
 
-Large catalogs and high-resolution previews can use substantial unified memory. RawCull monitors macOS memory pressure and adjusts its caches automatically.
+Large catalogs and full-size previews can use a lot of your Mac’s memory. macOS reports how much strain the system is under as memory pressure. RawCull uses that reading to adjust how many previews and thumbnails it keeps in memory.
 
 | Level | RawCull response |
 |---|---|
-| Normal | Uses adaptive cache limits based on available memory |
+| Normal | Sizes the cache to fit the available memory |
 | Warning | Reduces preview and grid cache limits |
-| Critical | Clears memory caches and keeps a small working limit |
+| Critical | Clears its memory caches and uses smaller limits |
 
 When pressure returns to normal, RawCull recalculates its normal cache limits. Source photos and saved ratings are not affected.
 
