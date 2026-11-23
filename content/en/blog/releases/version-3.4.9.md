@@ -95,8 +95,8 @@ Measured on the source tree at the `v3.4.5` tag and at commit `bf7516c7`. Line c
 - **AI features cleanup:** replacing the legacy AI Analysis tabs with Review removed 5,640 app lines and added 930 (net −4,710). In tests, 2,244 lines were removed and 317 added (net −1,927).
 - **View-model split:** 31 refactoring-step commits moved state out of the root view model into ten focused models and controllers. Views now read only the slices they use from the environment.
 - **Overall diff:** 332 files changed, 20,856 insertions and 12,498 deletions. This includes the new MCP helper (+3,189 lines) and documentation (+1,976 lines).
-- **Test reliability:** the full test plan used to hang after 809 tests, with every worker thread blocked inside Vision. After the shared Vision request gate, three consecutive runs finished with 955 passed and 0 failed.
-- **Real-catalog check:** on a 275-photo ARW catalog, PhotoAnalysisKit 1.4.0 produced output identical to 1.3.9 (all values and 1,650 rendered images). The release sharpness test passed 3,025 of 3,025 comparisons.
+- **Test reliability:** the full test plan used to hang after 809 tests, with every worker thread blocked inside Vision. After the shared Vision request gate, three consecutive runs finished with 955 passed and 0 failed (recorded 2026-11-21).
+- **Real-catalog check:** on a 275-photo ARW catalog, PhotoAnalysisKit 1.4.0 produced output identical to 1.3.9 (all values and 1,650 rendered images). The release sharpness test passed 3,025 of 3,025 comparisons (recorded 2026-11-21).
 - **Static checks:** a new SwiftLint rule rejects `try? … ?? Data()`. The AI import boundary script now also catches views that depend on `SimilarityScoringModel`.
 
 Not every number improved:
