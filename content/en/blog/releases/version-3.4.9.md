@@ -76,4 +76,32 @@ RawCull 3.4.9 makes **Review** the single in-app AI review, adds a bundled **MCP
 - Updated PhotoAnalysisKit to 1.4.0, PhotoAIKit to 3.1.0, and PhotoEvidenceKit to 1.1.5, and added the MCP Swift SDK 0.12.1.
 - Added regression coverage for AF orientation, mask regeneration, model swaps, burst caches, review actions, MCP controller transitions, and the MCP helper. Documented the Metal `MDB_MAP_FULL` console messages and how to clear them.
 
+## Code cleanup and quality metrics
+
+Measured on the source tree at the `v3.4.5` tag and at commit `bf7516c7`. Line counts include comments and blank lines.
+
+| Metric | 3.4.5 | 3.4.9 | Change |
+| --- | ---: | ---: | ---: |
+| App Swift files | 343 | 332 | −11 |
+| App Swift lines | 48,685 | 50,104 | +1,419 |
+| Test Swift lines | 23,553 | 24,603 | +1,050 |
+| MCP helper Swift lines | 0 | 3,096 | new |
+| Swift Testing `@Test` cases (app and MCP helper) | 708 | 769 | +61 |
+| `RawCullViewModel` source files | 8 | 1 | −7 |
+| `RawCullViewModel` lines | 2,434 | 209 | −91% |
+| App files referencing `RawCullViewModel` | 68 | 5 | −63 |
+| `Task.detached` call sites | 19 | 16 | −3 |
+
+- **AI features cleanup:** replacing the legacy AI Analysis tabs with Review removed 5,640 app lines and added 930 (net −4,710). In tests, 2,244 lines were removed and 317 added (net −1,927).
+- **View-model split:** 31 refactoring-step commits moved state out of the root view model into ten focused models and controllers. Views now read only the slices they use from the environment.
+- **Overall diff:** 332 files changed, 20,856 insertions and 12,498 deletions. This includes the new MCP helper (+3,189 lines) and documentation (+1,976 lines).
+- **Test reliability:** the full test plan used to hang after 809 tests, with every worker thread blocked inside Vision. After the shared Vision request gate, three consecutive runs finished with 955 passed and 0 failed.
+- **Real-catalog check:** on a 275-photo ARW catalog, PhotoAnalysisKit 1.4.0 produced output identical to 1.3.9 (all values and 1,650 rendered images). The release sharpness test passed 3,025 of 3,025 comparisons.
+- **Static checks:** a new SwiftLint rule rejects `try? … ?? Data()`. The AI import boundary script now also catches views that depend on `SimilarityScoringModel`.
+
+Not every number improved:
+- The app line count grew, because the MCP integration, the Review Record window and the burst AI assessment were added alongside the cleanup.
+- `try?` uses rose from 117 to 132. Only the uses that hid failures were fixed.
+- App files over 500 lines went from 8 to 11.
+
 These notes cover the changes from the `v3.4.5` tag through commit `bf7516c7` (RawCull 3.4.9, build 466).
