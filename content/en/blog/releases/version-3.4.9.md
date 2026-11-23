@@ -40,7 +40,7 @@ RawCull 3.4.9 makes **Review** the single in-app AI review, adds a bundled **MCP
 - The burst list has an **AI assessment** card that runs the local Qwen assessment on each burst's recommended and alternate frame. It is available when the burst lists are ready and no other heavy or AI work runs, shows progress, and can be cancelled.
 - Results are kept for the current session and shown in the AI Assessments window. MCP jobs wait while the assessment runs.
 
-## RawCull MCP server (in development)
+## RawCull MCP server
 
 - RawCull bundles a signed, local Model Context Protocol helper, `rawcull-mcp`, for compatible desktop AI clients such as Codex. It communicates over stdio; there is no network port.
 - An AI client can list authorized catalogs, read catalog summaries and photo lists, start and cancel burst analysis, poll progress, and page through ranked bursts with recommendation, alternate, confidence, reasons, cautions, and per-frame evidence. Results stay readable after RawCull quits while they remain shared.
