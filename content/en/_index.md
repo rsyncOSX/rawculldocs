@@ -27,8 +27,6 @@ Optional AI runs locally: CLIP indexes the catalog for similarity and search, wh
 
 ## Explore the site
 
-- [AI Analysis](/docs/ai/) explains how to use local models to review selected photos.
 - [Release Notes](/blog/releases/) records version changes and development details.
-- [RawBrowse](/rawcullbrowse/) is the companion app for browsing folders and adjusting supported RAW files.
 - [About](/about/) introduces the developer and provides contact information.
 {{% /blocks/section %}}
