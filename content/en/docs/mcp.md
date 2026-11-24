@@ -13,6 +13,8 @@ RawCull bundles a local Model Context Protocol (MCP) helper. A client such as
 Codex can read authorized catalog metadata, run burst analysis, retrieve ranked
 frames, and request follow-up photo assessments.
 
+**Codex** is only used as an example here, the following applies to any local AI-agent.
+
 [Watch the RawCull MCP video on YouTube](https://youtu.be/ahWjBtW8iN0).
 
 ## How MCP works in RawCull
@@ -41,8 +43,7 @@ run `codex mcp remove rawcull` first.
 
 ```bash
 helper=/Applications/RawCull.app/Contents/MacOS/rawcull-mcp
-codesign --verify --strict --verbose=2 "$helper" &&
-  codex mcp add rawcull -- "$helper"
+codex mcp add rawcull -- "$helper"
 ```
 
 Start a fresh Codex session and use the [connection prompt](#check-the-connection-and-catalog-access) to verify what your installed helper supports.
