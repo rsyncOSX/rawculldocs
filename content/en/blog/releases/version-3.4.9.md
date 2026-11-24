@@ -6,7 +6,7 @@ tags = ["changelog", "version 3.4.9"]
 categories = ["changelog"]
 +++
 
-To be updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Updated on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 RawCull 3.4.9 makes **Review** the single in-app AI review, adds a bundled **MCP server** for desktop AI clients, and lets you run an **AI assessment** of the top two frames of every burst. Compared with [3.4.5]({{< relref "version-3.4.5.md" >}}), every review result now ends in a decision, the legacy AI Analysis tabs are gone, and burst ranking, focus scoring, and Vision work are more reliable.
 
