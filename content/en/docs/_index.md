@@ -51,7 +51,7 @@ RawCull can read embedded previews directly from ARW, DNG, and NEF files. For ot
 | Understand sharpness rankings | [Sharpness Scoring](/docs/sharpness/) |
 | Check detected detail and camera autofocus locations | [Focus Mask](/docs/focuspeaking/) and [Focus Points](/docs/focuspoints/) |
 | Review bursts or search with a description | [Similarity, Bursts, and Search](/docs/similarity/) |
-| See a burst analysis run from Codex | [Model Context Protocol (MCP)](/docs/mcp/) |
+| Analyze bursts and assess photos from Codex | [Model Context Protocol (MCP)](/docs/mcp/) |
 | Set up local AI and review selected photos | [AI Analysis](/docs/ai/) |
 | Adjust preferences or manage previews and memory | [Settings](/docs/settings/), [Cache](/docs/cache/), and [Memory Pressure](/docs/memorypressure/) |
 | Understand folder permissions and local storage | [Security & Privacy](/docs/security/) |
