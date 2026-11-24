@@ -146,6 +146,27 @@ provide the exact source IDs.
 > similarity backend, and up to five recommendation and alternate pairs with
 > confidence. Include the catalog and job IDs.
 
+### Analyze a catalog and assess the closest calls
+
+> Use RawCull MCP to analyze `<absolute folder path>` for bursts and complete
+> the AI photo assessments in the same run. If RawCull asks for approval, show
+> the setup request ID and keep checking until a job is queued or setup ends.
+> Wait for the analysis to complete, then read every `list_bursts` page. Select
+> up to five bursts with distinct recommendations and alternates, starting with
+> the lowest confidence and keeping the returned order for ties.
+>
+> For each selected burst, call `start_photo_assessment` with the `catalogId`,
+> the analysis job ID as `sourceJobId`, the `burstId`, a fresh request UUID, and
+> the rubric `["composition", "exposure", "subjectVisibility"]`. Reuse the UUID
+> if retrying the same request. Poll `get_photo_assessment_status` every two
+> seconds until the assessment reaches a final state. On completion, retrieve
+> `get_photo_assessment_result` before starting the next assessment.
+>
+> Report the total burst count, each assessed pair's filenames, original ranks,
+> scores out of 5, and findings. Suggest a keeper where the findings support
+> one. Include the catalog, source job, and assessment request IDs, and report
+> any failures or if there were no eligible pairs.
+
 ### Review the closest calls
 
 > Use the completed burst job from this chat. Read all ranking pages and show up
