@@ -62,6 +62,8 @@ RawCull 3.4.9 makes **Review** the single in-app AI review, adds a bundled **MCP
 ## Stability and performance
 
 - Every Vision request runs through one shared request gate (PhotoAnalysisKit 1.4.0 and PhotoAIKit 3.1.0). This fixes a hang where concurrent sharpness scoring, feature prints, and face detection could block every worker thread. Full sharpness-scoring concurrency is restored with identical scores.
+- Review image rendering, subject outlines, and RAW Demosaic scoring each reuse one Core Image context instead of creating one per call. Creating a context is expensive and goes through Metal's shared shader-cache database, where parallel renders could occupy every worker thread.
+- Creating a photo analyzer no longer does Core Image work on the main thread (PhotoAnalysisKit 1.4.1).
 - Face and animal detection for Close-ups and People Ranking runs off the shared loader, behind a two-pass limiter.
 - Heavy image work (full-size JPEG decodes, sidecar loads, thumbnail decodes, preview sharpening, TIFF conversions) stops when its caller is cancelled, for example after a catalog switch.
 - The analysis artifact store no longer decodes every record on each write. A similarity record that cannot be read temporarily is kept instead of being deleted.
@@ -73,8 +75,10 @@ RawCull 3.4.9 makes **Review** the single in-app AI review, adds a bundled **MCP
 - Split the main view model into focused slices and controllers (catalog, selection, ratings, burst workflow, zoom, loupe viewport, navigation, presentation, and file operations), with views reading them from the environment.
 - Removed the legacy AI Analysis code, Deep AI Review, and the unreachable saved-files views. The Objects mask cache is deleted from disk at launch.
 - Fixed `try?` uses that hid failures in cache keys, mask storage, and review cleanup; cache settings show **Unavailable** instead of 0 B on failure.
-- Updated PhotoAnalysisKit to 1.4.0, PhotoAIKit to 3.1.0, and PhotoEvidenceKit to 1.1.5, and added the MCP Swift SDK 0.12.1.
+- Updated PhotoAnalysisKit to 1.4.1, PhotoAIKit to 3.1.0, and PhotoEvidenceKit to 1.1.5, and added the MCP Swift SDK 0.12.1.
 - Added regression coverage for AF orientation, mask regeneration, model swaps, burst caches, review actions, MCP controller transitions, and the MCP helper. Documented the Metal `MDB_MAP_FULL` console messages and how to clear them.
+- Added `make release-check`, which runs the automated release checks in order and stops at the first failure. The release preflight now fails when the version tag is missing, and build scripts read the app's version from Xcode instead of picking up a test target's version.
+- Added `make analyze` for SwiftLint's unused-declaration and unused-import rules, which never ran before. Test folders have their own SwiftLint configuration for test-style names.
 
 ## Code cleanup and quality metrics
 
@@ -104,4 +108,4 @@ Not every number improved:
 - `try?` uses rose from 117 to 132. Only the uses that hid failures were fixed.
 - App files over 500 lines went from 8 to 11.
 
-These notes cover the changes from the `v3.4.5` tag through commit `bf7516c7` (RawCull 3.4.9, build 466).
+These notes cover the changes from the `v3.4.5` tag through the `v3.4.9` tag at commit `3c8e7aba` (RawCull 3.4.9, build 466). The code metrics above were measured earlier, at commit `bf7516c7`.
