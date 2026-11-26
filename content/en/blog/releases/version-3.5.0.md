@@ -6,13 +6,13 @@ tags = ["changelog", "version 3.5.0"]
 categories = ["changelog"]
 +++
 
-**Release status:** In development; not yet released. These notes may change before release.
+Version 3.5.0 is submitted for update on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
 RawCull 3.5.0 adds a **magnifier** and **focus overlays** to the Review photo, and shows where the AI and the measured best frames disagree in a burst. Compared with [3.4.9]({{< relref "version-3.4.9.md" >}}), it is also clearer which review type you are about to run, existing AI assessments are protected from an accidental rerun, and an AI run no longer cancels itself while loading its model.
 
 ## Inspect focus on the Review photo
 
-- **Magnifier**: choose **Off**, **100%**, or **200%** under the photo, then hover to see a round lens at that pixel scale. It uses the full-size embedded JPG, and falls back to the smaller review preview until the JPG has loaded or when the two are framed differently. The choice is remembered between sessions. The lens is hidden while you choose a region for a rerun.
+- **Magnifier**: choose **Off**, **100%**, or **200%** under the photo, then hover to see a round lens at that pixel scale. It uses the full-size embedded JPG, and falls back to the smaller review preview until the JPG has loaded or when the two are framed differently. The magnifier is off each time Review opens. The lens is hidden while you choose a region for a rerun.
 - **Focus point** shows the camera's recorded autofocus point. **Focus mask** shows the areas measured as in focus, so you can compare the two. Both are off when Review opens, and Focus point is disabled when the photo has no recorded autofocus point.
 
 ## Choose a review, then run it
@@ -45,4 +45,4 @@ RawCull 3.5.0 adds a **magnifier** and **focus overlays** to the Review photo, a
 - The README release checklist now makes the App Store upload the release step, with a manual test of the TestFlight build, including an AI model download, before submission.
 - Package dependencies are unchanged from 3.4.9.
 
-These notes cover the changes from the `v3.4.9` tag through commit `328b570b` (RawCull 3.5.0, build 469), as of November 25, 2026.
+These notes cover the changes from the `v3.4.9` tag through the `v3.5.0` tag at commit `c2e04a2a` (RawCull 3.5.0, build 470).
