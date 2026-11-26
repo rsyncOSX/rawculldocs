@@ -8,7 +8,29 @@ categories = ["changelog"]
 
 Version 3.5.0 is submitted for update on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
-RawCull 3.5.0 adds a **magnifier** and **focus overlays** to the Review photo, and shows where the AI and the measured best frames disagree in a burst. Compared with [3.4.9]({{< relref "version-3.4.9.md" >}}), it is also clearer which review type you are about to run, existing AI assessments are protected from an accidental rerun, and an AI run no longer cancels itself while loading its model.
+RawCull 3.5.0 is a supplementary release to [3.4.9]({{< relref "version-3.4.9.md" >}}). It builds on the Review and burst AI assessment that 3.4.9 introduced, and adds no new models or package dependencies. It adds a **magnifier** and **focus overlays** to the Review photo, and shows where the AI and the measured best frames disagree in a burst. Compared with 3.4.9, it is also clearer which review type you are about to run, existing AI assessments are protected from an accidental rerun, and an AI run no longer cancels itself while loading its model.
+
+## App Store changelog
+
+The **What's New** text for App Store Connect:
+
+```text
+RawCull 3.5.0 is a supplementary release to 3.4.9. It refines Review and burst AI assessment.
+
+Review
+- New magnifier: choose 100% or 200% under the photo and hover to inspect focus at pixel level.
+- Show the camera's focus point and the measured in-focus areas on the photo to compare them.
+- Choose a review type first, then run it. Focus check is now the default on every Mac.
+
+Bursts
+- The burst workspace and AI Assessments window mark the sharpest frame, the Best Frame suggestion and the AI's top-scored frame.
+- A "Best frame differs" bar shows when the AI and the measurements disagree. Click a pick to show that frame.
+- Reassess asks before it replaces existing AI assessments.
+- Back to burst returns from an AI assessment to the burst you came from.
+
+Fixes
+- A burst AI assessment no longer cancels itself while it loads the Qwen model.
+```
 
 ## Inspect focus on the Review photo
 
