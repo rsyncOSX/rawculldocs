@@ -8,7 +8,7 @@ RawCull changes, listed by publication date. Each entry begins with a short summ
 
 ## Recent Changes
 
-- [Version 3.5.0]({{< relref "version-3.5.0.md" >}}) (in development): Adds a **magnifier** and **focus overlays** to the Review photo, and marks where the AI and measured best frames differ in a burst.
+- [Version 3.5.1]({{< relref "version-3.5.1.md" >}}) (submitted to the App Store): Adds a **magnifier** and **focus overlays** to the Review photo, and marks where the AI and measured best frames differ in a burst.
 - [Version 3.4.9]({{< relref "version-3.4.9.md" >}}): Makes **Review** the single in-app AI review with Tag, Rate and Mark Reviewed, adds a bundled **MCP server**, and an **AI assessment** of every burst.
 - [Version 3.4.5 ]({{< relref "version-3.4.5.md" >}}): Expands burst review with a **Close-ups** panel and an experimental **People Ranking** option.
 - [Version 3.3.3 ]({{< relref "version-3.3.3.md" >}}): Combined Review, evidence inspection, AI memory guidance, and improvements since 3.2.8.
