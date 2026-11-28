@@ -1,21 +1,21 @@
 +++
 author = "Thomas Evensen"
-title = "Version 3.5.0"
+title = "Version 3.5.1"
 date = "2026-11-25"
-tags = ["changelog", "version 3.5.0"]
+tags = ["changelog", "version 3.5.1"]
 categories = ["changelog"]
 +++
 
-Version 3.5.0 is submitted for update on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
+Version 3.5.1 is submitted for update on the [Apple App Store](https://apps.apple.com/no/app/rawcull/id6759362764?mt=12).
 
-RawCull 3.5.0 is a supplementary release to [3.4.9]({{< relref "version-3.4.9.md" >}}). It builds on the Review and burst AI assessment that 3.4.9 introduced, and adds no new models or package dependencies. It adds a **magnifier** and **focus overlays** to the Review photo, and shows where the AI and the measured best frames disagree in a burst. Compared with 3.4.9, it is also clearer which review type you are about to run, existing AI assessments are protected from an accidental rerun, and an AI run no longer cancels itself while loading its model.
+RawCull 3.5.1 is a supplementary release to [3.4.9]({{< relref "version-3.4.9.md" >}}). It builds on the Review and burst AI assessment that 3.4.9 introduced, and adds no new models or package dependencies. It adds a **magnifier** and **focus overlays** to the Review photo, and shows where the AI and the measured best frames disagree in a burst. Compared with 3.4.9, it is also clearer which review type you are about to run, existing AI assessments are protected from an accidental rerun, and an AI run no longer cancels itself while loading its model.
 
 ## App Store changelog
 
 The **What's New** text for App Store Connect:
 
 ```text
-RawCull 3.5.0 is a supplementary release to 3.4.9. It refines Review and burst AI assessment.
+RawCull 3.5.1 is a supplementary release to 3.4.9. It refines Review and burst AI assessment.
 
 Review
 - New magnifier: choose 100% or 200% under the photo and hover to inspect focus at pixel level.
@@ -67,4 +67,4 @@ Fixes
 - The README release checklist now makes the App Store upload the release step, with a manual test of the TestFlight build, including an AI model download, before submission.
 - Package dependencies are unchanged from 3.4.9.
 
-These notes cover the changes from the `v3.4.9` tag through the `v3.5.0` tag at commit `c2e04a2a` (RawCull 3.5.0, build 470).
+These notes cover the changes from the `v3.4.9` tag through the `v3.5.1` tag at commit `6f2fc03e` (RawCull 3.5.1, build 472).
